@@ -1,0 +1,71 @@
+\subsection{Równoważność dwóch postaci warunków na transport 
+Fermiego-Walkera}
+Pokażemy, że następujące warinki są równoważne:
+\begin{enumerate}
+\item
+\begin{align} 
+\frac{\widetilde{\D} v}{\d s}  : = \frac{\D v}{\d s} +
+(v\cdot A) u - (v\cdot u) A = 0,
+\end{align}
+\item
+\begin{align}
+\frac{\d (v \cdot u)}{\d s}=0,
+\end{align}
+\begin{align}
+\left(\frac{\D (v_\perp)}{\d s}\right)_\perp = 0, 
+\text{ gdzie } v_\perp = v-(v\cdot u)u 
+\end{align}
+\end{enumerate}
+\begin{proof}
+$1. \implies 2.$\\
+Pierwszą z równości udowodnimy mnożąc skalarnie obustronnie 
+równość $1.$ przez $u$
+\begin{align}
+0 = \frac{\D v}{\d s} \cdot u + ( v\cdot A ) (u\cdot u) - (v\cdot u)(A\cdot u)
+=\frac{\D v}{\d s} \cdot u + v\cdot \frac{\D u }{\d s} =
+\frac{\d (v \cdot u)}{\d s}
+\end{align}
+Teraz pakżemy drugą równość
+\begin{align}
+\frac{\D (v)_\perp }{\d s}=
+\frac{\D v}{\d s} - \frac{\D u}{\d s}(v\cdot u) - \frac{\d (v\cdot u)}{\d s} u
+= \frac{\D v}{\d s} - A (v \cdot u)  \stackrel{1.}{=}  -(v\cdot A)u,
+\end{align}
+\begin{align}
+\left( \frac{\D (v)_\perp }{\d s}\right)_\perp=
+ -(v\cdot A)u  + (v\cdot A) (u\cdot u) u = 0.
+\end{align}
+$2. \implies 1.$\\
+Z pierwszej równości w $2.$ mamy
+\begin{align}\label{DodatekA2to1_1}
+\frac{\D (v)_\perp}{\d s}=  \frac{\D v}{\d s} -\frac{\d (v\cdot u)}{\d s}
+ - A(v\cdot u) 
+=  \frac{\D v}{\d s}  - A(v\cdot u) 
+\end{align}
+oraz
+\begin{align}\label{DodatekA2to1_2}
+\frac{\D v}{\d s}\cdot u = - \frac{\D u}{\d s} \cdot v.
+\end{align}
+Teraz rozpisujemy drugą równość w $2.$
+\begin{align}
+0 &= \left(\frac{\D (v_\perp)}{\d s}\right)_\perp = 
+\frac{\D (v_\perp)}{\d s} - 
+\left(\frac{\D (v_\perp)}{\d s}\cdot u \right)u 
+\stackrel{\eqref{DodatekA2to1_1}}{=} \\ &
+\stackrel{\eqref{DodatekA2to1_1}}{=} 
+\frac{\D v}{\d s} - (v\cdot u)A + 
+\left( \left( \frac{\D v}{\d s} - (v\cdot u)A \right)\cdot u \right)u
+\stackrel{\eqref{DodatekA2to1_2}}{=} 
+\frac{\D v}{\d s} - (v\cdot u)A + (v\cdot A) u = 
+\frac{\widetilde{\D} v}{\d s}  .
+\end{align}
+%\begin{align}
+%\frac{\D v}{\d s} + 
+%(v\cdot A) u - (v\cdot u) A 
+%= \frac{\D v}{\d s} 
+%\end{align}
+\end{proof}
+%\subsection{Stałość współrzynników wektora w bazie B
+%lokalnie nierotującej $(e=u)$}
+%Pokażemy, że wektor ma stałe współrzynniki w bazie 
+

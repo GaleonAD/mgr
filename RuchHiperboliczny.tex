@@ -1,0 +1,77 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% konstrukcja reperu poruszającego 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ruch hiperboliczny}
+Jako pierwszy chcemy zbadać relatywistyczny odpowiednik ruchu jednostajnie 
+przyspieszonego.
+W układzie obserwatora inercjalnego $\mathcal{I}$ posługującego się 
+kartezjańskim układem współrzędnych rozważamy linię 
+świata~$y(s)$~obzerwatora~$\mathcal{Z}$~parametruzowaną czasem własnym~$s$.
+Ruch ten będzie odbywał się w jednym wymiarze przestrzennym. 
+W takim przypadku ogólna postać czteroprędkości, po uwzględnieniu warunku 
+unormowania, ma postać~\eqref{UHiper}.
+\begin{align}\label{UHiper}
+(u^\mu) = (\cosh \beta( s ),\ \sinh \beta( s ),\ 0,\   0),
+\end{align}
+gdzie $\beta( s)$ jest pewną funkcją parametryzowaną czasem własnym $s$.
+Rządamy, aby przyspieszenie właściwe było stałe.
+\begin{align}\nonumber
+(A^\mu) = ( \dot{\beta}( s ) \sinh \beta( s ),\ 
+\dot{\beta}( s ) \cosh \beta( s ),\ 0,\ 0 ).
+\end{align}
+\begin{align}\nonumber
+\alpha = \sqrt{ - A^\mu A_\mu } = \dot{\beta}( s )
+\end{align}
+Otrzymaliśmy równanie różniczkowe na funkcję $\beta(s)$. 
+Możemy bez straty ogólności przyjąć, że $\beta(0)  = 0$. Wtedy
+\begin{align}\nonumber
+\beta( s ) = \alpha s,
+\end{align}
+\begin{align}\nonumber
+(u^\mu) = (\cosh \alpha s ,\ \sinh \alpha s ,\ 0,\   0),
+\end{align}
+\begin{align}\nonumber
+(A^\mu) = ( \alpha \sinh \alpha s,\ \alpha \cosh \alpha s,\ 0,\ 0 ).
+\end{align}
+A zatem odpowiednik ruchu jednostajnie przyspieszonego w
+czasoprzestrzeni Minkowskiego to ruch opisany przez hiperbolę.
+Łatwo sprawdzić, że dla małych prędkości ruch ten przechodzi 
+w ruch jednostajnie przyspieszony. Ciało w takim ruchu porusza
+się po linii świata~\eqref{YHiper}.
+\begin{align}\label{YHiper}
+(y^\mu) = \left( \frac{1}{\alpha} \sinh \alpha s,\ 
+\frac{1}{\alpha} \cosh \alpha s,\ 0,\ 0 \right).
+\end{align}
+\\
+Chcemy skonstruować reper współporuszający się z~$\mathcal{Z}$. 
+W tym celu wersor czasowy obieramy prędkość $e_0 = u$, 
+a za pierwszy z wersorów przestrzennych unormowane 
+przyspieszenie $e_1 = A/\alpha$.
+Wersory te uzupełniamy do bazy za pomocą wersorów kanonicznych.
+Otrzymaną bazę możemy zapisać zgrabnie w postaci 
+macierzy~\eqref{EHiper}.
+Łatwo sprawdzić, że tak skonstruowany reper spełnia
+prawo transportu Fermiego-Walkera.
+
+\begin{align}\label{EHiper}
+\begin{pmatrix}
+e_0\\
+e_1\\
+e_2\\
+e_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+\cosh \alpha s & \sinh \alpha s & 0 &   0 \\
+\sinh \alpha s & \cosh \alpha s & 0 &   0 \\
+0 & 0 & 1 &   0 \\
+0 & 0 & 0 &   1 \\
+\end{pmatrix}.
+\end{align}
+
+Możemy teraz podać równanie na kąt $\phi$ zegara 
+\begin{align}
+\chi &= \pi, \quad \alpha = \text{const} \\
+\dot{\varphi} &= \pm \frac{2}{\ell} + \alpha \sin ( \varphi - \pi )
+ = \pm \frac{2}{\ell} -  \alpha \sin ( \varphi )
+\end{align}

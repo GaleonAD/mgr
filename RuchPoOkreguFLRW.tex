@@ -1,0 +1,208 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% reper w ruchu po okręgu w metryce FLRW
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Ruch po okręgu względem galaktyk}
+Rozważymy teraz ponownie ruch po okręgu z tą różnicą, że 
+wiążemy obserwatora~$\mathcal{I}$ z pyłem (galaktykami) w 
+ekspandującym wszechświecie. 
+Sytuacji tej odpowiada metryka 
+Friedmana-Lemaître’a-Robertsona-Walkera~(FLRW).
+Dla uproszczenia zakładamy zerową krzywizną przestrzenną.
+Tensor metryczny dany jest przez~\eqref{FLRWmetric}
+\begin{equation}\label{FLRWmetric}
+(g_{\mu\nu}) = \text{diag} (1,\ -a(t)^2,\ -a(t)^2,\ -a(t)^2).
+\end{equation}
+Warto zauważyć, że dla $a(t) \equiv 1$ metryka ta przechodzi
+w zwykłą metrykę czasoprzestrzeni Minkowskiego, a zatem 
+można łatwo weryfikować poprawność wyników sprawdzając, czy
+dla przy przejściu $a(t)\to 1$ pokrywają się one~z otrzymanymi 
+w poprzednim podrozdziale.
+W dalszej części przyjmujemy następujące oznaczenia 
+\begin{align}\nonumber
+a:=a(t),\quad a':=\frac{\d a(t)}{ \d t}.
+\end{align}
+%\begin{equation}
+%\d s^2 = \d t^2 - (a(t))^2 (\d x^2 + \d y^2 + \d z^2)
+%\end{equation}
+%i konsekwentnie
+%\begin{align}
+%(g^{\mu\nu}) = \text{diag} (1,\ -1/a^2,\ -1/a^2,\ -1/a^2).
+%\end{align}
+Dla tej metryki symbole Chrostofella $\Gamma^k _{ij}$ 
+przedstawiam poniżej w tablicach odpowiednio dla $k=0,1,2,3$
+$$
+\begin{array}{cccc}
+\left(
+    \begin{array}{cccc}
+    0 & 0 & 0 & 0 \\
+    0 & a a' & 0 & 0 \\
+    0 & 0 & a a' & 0 \\
+    0 & 0 & 0 & a a' \\
+    \end{array}
+    \right), &
+    \left(
+    \begin{array}{cccc}
+    0 & \frac{a'}{a} & 0 & 0 \\
+    \frac{a'}{a} & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    \end{array}
+    \right), &
+    \left(
+    \begin{array}{cccc}
+    0 & 0 & \frac{a'}{a} & 0 \\
+    0 & 0 & 0 & 0 \\
+    \frac{a'}{a} & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    \end{array}
+    \right), &
+    \left(
+    \begin{array}{cccc}
+    0 & 0 & 0 & \frac{a'}{a} \\
+    0 & 0 & 0 & 0 \\
+    0 & 0 & 0 & 0 \\
+    \frac{a'}{a} & 0 & 0 & 0 \\
+    \end{array}
+    \right). \\
+\end{array}
+ $$ 
+ \\
+Rozważamy więc linie świata cząstki w ruchu po okręgu 
+\begin{align}\nonumber
+y^\mu(s) = (t,x,y,z)= (t(s),\ R\cos\omega t(s),\ R\sin\omega t(s),\ 0),
+\end{align}  
+gdzie $\d t/\d s=\gamma= (1-a^2R^2\omega^2)^{-1/2}$.
+Wtedy czterowektory prędkości i przyspieszenia mają postać 
+\begin{align}\nonumber
+u^\mu = \dot{y}^\mu = \frac{\d y}{\d s} = 
+(\gamma,\ -R\omega\gamma\sin\omega t,
+\ R\omega\gamma\cos\omega t,\ 0),
+\end{align}
+%Pochodną kowariantną wzdłuż linii świata $y$ (w kierunku wektora $\dot{y}$) 
+%definiujemy
+%\begin{align}
+%\frac{\D v^\mu}{\d s} =  \frac{\d v^\mu}{\d s} + \Gamma^\mu _{ij}  v^i u^j
+%\end{align}
+%Czterowektor przyspieszenia cząstki dany jest przez pochodną kowariantną 
+%wektora prędkości
+\begin{flalign}\nonumber
+( A^\mu ) =& \left( \frac{\D u^\mu}{\d s} \right) = \nonumber \\
+& =(a'a R^2\omega^2 \gamma^2(\gamma^2+1)
+,\ -\frac{a'}{a}R\omega \gamma^2(\gamma^2+1) 
+\sin \omega t -R\omega^2\gamma^2\cos\omega t
+,\ \frac{a'}{a}R\omega \gamma^2(\gamma^2+1) 
+\cos \omega t -R\omega^2\gamma^2\sin\omega t
+,\ 0)
+\end{flalign}
+Właściwe przyspieszenie wynosi
+\begin{align}\nonumber
+\alpha =\sqrt{ -A_\mu A^\mu},
+\end{align}
+\begin{align}\nonumber
+A^{\mu } A_{\mu }=-\left(\frac{a' }{a}\right)^2\left(\gamma ^2-1\right) 
+\left(\gamma ^2+1\right)^2-a^2 R^2 \omega^4\gamma^4
+\end{align}
+
+%Oznaczając 
+%\begin{align}
+%\alpha_0 = a'a R^2\omega^2 \gamma^2(\gamma^2+1), \quad
+%\alpha_1 = \frac{a'}{a}R\omega \gamma^2 (\gamma^2+1), \quad
+%\alpha_2 = R\omega^2\gamma^2
+%\end{align}
+%mamy 
+%\begin{align}
+%A^\mu = ( \alpha_0 ,\ -\alpha_1 \sin \omega t -\alpha_2 \cos \omega t 
+%,\ -\alpha_1\cos \omega t-\alpha_2  \sin \omega t,\ 0)
+%\end{align}
+%\begin{align}
+%A^\mu A_\mu =  (\alpha_0)^2 -a^2\left((\alpha_1)^2 
+%+(\alpha_2)^2\right) = -\alpha^2 
+%\end{align}
+
+Konstruując w tym przypadku reper $E$ którego wersory będą spełniać
+prawo transortu~\eqref{FW} można konstrukcję przeprowadzić 
+analogicznie do przedstawionej w poprzednim przypadku 
+- czasoprzestrzeni Minkowskiego. Jednakże rachunki można znacząco uprościć 
+wykonując konstrukcję w inny sposób. Mianowicie można stosunkowo łatwo 
+uogólnić wersory uzyskanej wcześniej bazy~\eqref{Esimple}, tak aby 
+tworzyły bazę ortonormalną w metryce~\eqref{FLRWmetric}.
+Odpowiednia baza jest postaci~\eqref{EFLRW}.
+Jak poprzednio wersory $e$ i $e_3$ są transportowane wzdłuż linii świata 
+zgodnie z prawem~\eqref{FW}. Wersory $e_1$ i $e_2$ 
+zależą od kąta obrotu $\psi$. Jak metryka FLRW przy $a\to 1$ przechodzi~w 
+metrykę Minkowskiego tak szukany 
+kąt obrotu $\psi$ powinien w granicy $a\to 1$ przechodzić w kąt znaleziony 
+dla ciała poruszającego się po okręgu w czasoprzestrzeni Minkowskiego.
+Traktujemy tę granicę jako test poprawności wyników. 
+Wartość $\psi$ można znaleźć 
+żądając, aby wersory $e_1$ i $e_2$ spełniały prawo transportu~\eqref{FW}. 
+Wspólne rozwiązanie dla otrzymanych równań różniczkowych 
+można wyrazić przez~\eqref{PsiFLRW}.
+
+
+%Wtedy wystarczy, analogicznie jak poprzednio, 
+%rozważyć obrót wersorów $e_1$ i $e_2$ w płaszczyźnie przez nie tworzonej, 
+%aby uzyskać bazę $E$, której wersory spełniają prawo transportu~\eqref{FW}.
+%Wspomniane uogólnienie ma postać
+%\begin{align}
+%\tilde{E} = 
+%\begin{pmatrix}
+%e\\
+%e_1'\\
+%e_2'\\
+%e_3
+%\end{pmatrix}
+%=
+%\begin{pmatrix}
+%\gamma 			& -R\omega\gamma\sin\omega t 	
+%& R\omega\gamma\cos\omega t & 0 \\
+%0		 			& \frac{1}{a} \cos\omega t 					
+%& \frac{1}{a} \sin\omega t 				 & 0 \\
+%a R\omega\gamma  & -\frac{1}{a}\gamma\sin\omega t			
+%&\frac{1}{a} \gamma\cos\omega t			 & 0 \\
+%0		 			&	0											
+%& 0										 & 1 \\
+%\end{pmatrix}.
+%\end{align}
+%Po obrocie otrzymujemy następującą bazę 
+\begin{align}\label{EFLRW}
+E_{FLRW} = 
+\begin{pmatrix}
+e\\
+e_1\\
+e_2\\
+e_3
+\end{pmatrix}
+=
+\begin{pmatrix}
+\gamma 	& -R\omega\gamma\sin\omega t 	
+& R\omega\gamma\cos\omega t & 0 \\
+a R\omega\gamma \sin \psi	
+& \frac{1}{a} \cos\omega t \cos\psi - \frac{1}{a}\gamma \sin\omega t \sin\psi
+& \frac{1}{a} \sin\omega t \cos\psi + \frac{1}{a}\gamma \cos\omega t \sin\psi
+& 0 \\
+a R\omega\gamma \cos \psi & -\frac{1}{a} \cos\omega t \sin\psi - 
+\frac{1}{a}\gamma \sin\omega t \cos\psi
+& -\frac{1}{a} \sin\omega t \sin\psi + 
+\frac{1}{a}\gamma \cos\omega t \cos\psi		 & 0 \\
+0&	0	& 0	& \frac{1}{a} \\
+\end{pmatrix}.
+\end{align}
+\begin{align}\label{PsiFLRW}
+\psi(s) =\int_0^s -\omega \gamma(s_1)^2  \d s_1 , \quad 
+\text{gdzie } \gamma(s) = (1-a(t(s))^2R^2\omega^2)^{-1/2}.
+\end{align}
+
+Mając znaleziony odpowiedni reper możemy obliczyć wielkości
+potrzebne do równania na fazę zegara~$\varphi$.
+\begin{align}\nonumber
+A\cdot e_1 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\sin\psi
+ + a R \omega^2\gamma^2\cos\psi        \\
+A\cdot e_2 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\cos\psi
+ - a R \omega^2 \gamma^2 \sin \psi      \nonumber  \\ \nonumber
+\alpha &= a R \omega \gamma \sqrt{a'^2 \left(\gamma ^2+1\right)^2
+ +   \omega^2\gamma^2}
+\end{align}
+
+
+
