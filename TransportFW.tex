@@ -6,7 +6,15 @@ Konstrukcję zegara przeprowadzimy w lokalnie nierotującej bazie. W tej częśc
 pracy przedstawimy koncepcje potrzebne do konstrukcji takiej bazy. Dokładne 
 omówienie prezentowanych zagadnień można znaleźć np. 
 tu~\cite{synge1960, FWframesconstruct}
-Zaczniemy od wprowadzenia odwzorowań $P$ i $R$. Niech $u$ będzie jednostkowym
+Zauważmy, że dla transport równoległy wzdłuż linii geodezyjnej
+przekształca wektory styczne w wektory styczne. Własność tę 
+tracimy, gdy linia śwaita nie jest linią geodezyjną, czyli
+gdy $A = \frac{\D u}{\d s} = 0$. Transportem, który zachowuje styczność 
+wektorów do linii świata jest transport Fermiego-Walkera (FW).
+Doświadczenie wskazuje, że taki transport odpowiada 
+fizycznemu transportowi wektorów~\cite{Costa2015, Ashtekar20141}.
+Do jego zdefiniowania posłużą nam odwzorowania $P$ i $R$.
+Niech $u$ będzie jednostkowym
 wektorem stycznym do linii świata $y$. Dowolny wektor $v$ możemy w punkcie 
 $p\in y$ rozłożyć na składowe styczną $R(v)$ i prostopadłą $P(v)$ 
 do $y$~\eqref{vnaPR}. Przestrzeń wektorów $p$ rozpada się w ten sposób 
@@ -75,11 +83,11 @@ R \left( \frac{\D R(v)}{\d s} \right) =
 (A\cdot v) u - (u\cdot v) A.
 \end{align}
 \end{proof}
-Zauważmy, że w~przypadku zerowego przyspieszenia $(A\equiv 0)$
-pochodna Fermiego-Walkera sprowadza się do pochodnej absolutnej.
-Zatem dla linii świata będącej linią geodezyjną 
-transport~\eqref{FW} sprowadza się się do 
-transportu równoległego.
+W~przypadku zerowego przyspieszenia $(A\equiv 0)$ linia świata
+jest linią geodezyjną, pochodna~\eqref{FW} sprowadza się 
+do pochodnej absolutnej, a transport~\eqref{FW} sprowadza się 
+do transportu równoległego. 
+
 Dla dowonych wektorów $v_1$ i $v_2$ mamy $P(v_1)\perp R(v_2)$,
 a więc warunek transportu~\eqref{FW} 
 sprowadza się zerowania się każdego ze składników
@@ -149,48 +157,3 @@ spełnia prawo transportu~\eqref{FW}.
 Aby to pokazać wystarczy rozłożyć dany wektor w bazie 
 $E$ i skorzystać z definicji transportu~\eqref{FW}.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-\begin{comment}
-\begin{definition}Mówimy, że wektor $v$ spełnia prawo \textbf{transportu 
-Fermiego-Walkera} (FW) wzdłuż linii świata $y$ jeżeli
-\begin{align} 
-\frac{\widetilde{\D} v}{\d s}  : = \frac{\D v}{\d s} +
-(v\cdot A) u - (v\cdot u) A = 0, \tag{FW} \label{FW}
-\end{align}
-gdzie $u = \dot{y}$ oraz $A=\frac{\D u}{\d s}$ to odpowiednio czterowektory
-prędkości i przyspieszenia stoważyszone z~linią świata~$y$.
-Wyrażenie $ \frac{\widetilde{\D} }{\d s}$ nazywamy \textbf{pochodną
-Fermiego-Walkera}. Zauważmy, że w~przypadku zerowego przyspieszenia $(A=0)$
-pochodna Fermiego-Walkera sprowadza się do pochodnej absolutnej, więc 
-dla linii będące geodezyjną transport~\eqref{FW} sprowadza się się do 
-transportu równoległego.
-%Transport równoległy wektora wzdłuż linii świata jest realizowany przez
-%zerowanie się pochodnej absolutnej. 
-Niestety w ogólności transport równoległy
-nie przekształca wektorów stycznych w wektory styczne. Transport taki 
- realizuje się przez prawa transportu~\eqref{FW}. 
-%Z tego powodu jest on w niektórych sytuacjach bardziej użyteczny. 
-%Możemy więc myśleć o~pochodnej Fermiego-Walkera jako
-%o~uogólnieniu pochodnej absolutnej na ruchy z~niezerowym 
-%przyspieszeniem~[źródło]
-%Wprowadzając takie oznacznie dostajemy warunek 
-%transportu FW jako zerowanie się pochodnej Fermiego-Walkera.
-\end{definition}
-\end{comment}

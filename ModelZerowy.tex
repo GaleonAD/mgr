@@ -1,0 +1,78 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Model cząstki zerowej
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Model dla cząstki zerowej}
+W tej części będziemy rozważać układ w którym zakładamy
+więz postaci $\dot{x} \cdot \dot{x} = 0$.
+Motywacją do takich rozważań może być urządzenie 
+określane mianem "zegara świetlnego" (ang. light 
+clock)~\cite{Fletcher2013, West2007}.
+W najprostrzym wydaiu składa się on z ustawionych 
+naprzeciw siebie luster.
+Odbijający się między nimi promień świetlny 
+wyznacza częstość pracy zegara.
+Poprzez dobranie odpowiednio dobrych luster można taki zegar
+uczynić idealnym ze względu na mechanizm wewnętrzny.
+
+Rozważmy cząstkę poruszającą się po krzywej zerowej.
+Lagrangian postaci
+\begin{align}
+L = \sqrt{\dot{x} \cdot \dot{x} }
+\end{align}
+nie jest odpowiedni do opisu takiej cząstki, gdyż 
+wtedy pęd $P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}$ 
+nie jest skończony. 
+W zastępstwie możemy użyć 
+Lagrangianu postaci~\cite{}
+\begin{align}
+L = w\dot{x} \cdot \dot{x}.
+\end{align}
+Wtedy równanie Eulera-Lagrange dla zmiennej $w$ jest postaci
+\begin{align}
+0 = \frac{\partial L}{\partial w} =  \dot{x} \cdot \dot{x}
+\end{align}
+i zapewnia zerowość linii świata $x$. Wtedy pęd
+kanoniczny związany z $x$  jest zachowany podczas ruchu i równy
+\begin{align}
+P_\mu = 2 w \dot{x}_\mu, \quad P_\mu P^\mu = 0.
+\end{align}
+Wtedy w układzie odniesienia, w 
+którym $e$ jest wersorem czasowym
+takim, że 
+\begin{align}
+e\cdot \dot{x}=1
+\end{align} 
+mamy
+\begin{align}
+    p = U \dot{x},
+\end{align}
+gdzie $U$ jest energią.
+
+
+Uogólnienie biorące pod uwagę czątki poruszające się
+po krzywych zerowych możemy zapisać w 
+postaci~\cite{polchinski_1998}
+\begin{align}
+L =  \frac{1}{2} \left(  
+\eta \dot{x} \cdot \dot{x} +  \eta^{-1} f( \xi ) \right)  
++ \lambda ( k\cdot k )
+\end{align}
+Równanie Eulera-Lagranga dla $\eta$ daje dwie możliwości
+\begin{align}
+0 = \frac{\partial L }{\partial \eta} =  \frac{1}{2}
+\left( \dot{x} \cdot \dot{x} -
+\eta^{-2} f(\xi)  \right).
+\end{align}
+Zakładając, że $\eta$ jest zależna od prędkości 
+dostajemy więz
+\begin{align*}
+\eta = \frac{f(\xi)}{\sqrt{\dot{x} \cdot \dot{x}}}.
+\end{align*}
+Wtedy lagrangian sprowadza się do postaci ... 
+(z dokładnością do stałej).
+Gdy założymy, że $\eta$ jest niezależne otrzymujemy
+więzy 
+\begin{align}
+\dot{x} \cdot \dot{x} = 0, \quad f(\xi) = 0
+\end{align}
+
