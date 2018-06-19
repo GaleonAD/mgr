@@ -1,0 +1,374 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     13200,        366]
+NotebookOptionsPosition[     12731,        345]
+NotebookOutlinePosition[     13069,        360]
+CellTagsIndexPosition[     13026,        357]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p1", "=", 
+   RowBox[{"{", 
+    RowBox[{"0.2", ",", "0.4"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p2", "=", 
+   RowBox[{"{", 
+    RowBox[{"0.5", ",", "0.3"}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mc", "=", 
+   RowBox[{
+    RowBox[{"(", 
+     RowBox[{"p1", "+", 
+      RowBox[{"2", "*", "p2"}]}], ")"}], "/", "3"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"l", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Line", "[", 
+      RowBox[{"{", 
+       RowBox[{"p1", ",", "p2"}], "}"}], "]"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ms", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"PointSize", "\[Rule]", "0.03"}], ",", 
+      RowBox[{"Point", "[", "p1", "]"}], ",", 
+      RowBox[{"Point", "[", "p2", "]"}], ",", 
+      RowBox[{"Point", "[", 
+       RowBox[{"{", 
+        RowBox[{"0", ",", "0"}], "}"}], "]"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vec", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "mc"}], "}"}], "]"}], ",", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "p1"}], "}"}], "]"}], ",", 
+      RowBox[{"Arrow", "[", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0"}], "}"}], ",", "p2"}], "}"}], "]"}]}], "}"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"texts", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<R\>\"", ",", "18", ",", "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.16", ",", "0.17"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<\!\(\*SubscriptBox[\(r\), \(1\)]\)\>\"", ",", "18", ",", 
+          "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.07", ",", "0.2"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<O\>\"", ",", "18", ",", "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{
+          RowBox[{"-", "0.01"}], ",", "0.03"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<\!\(\*SubscriptBox[\(r\), \(1\)]\)\>\"", ",", "18", ",", 
+          "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.27", ",", "0.14"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(m\), \(1\)]\)\>\"", ",", "18"}], 
+         "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.2", ",", "0.43"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(m\), \(2\)]\)\>\"", ",", "18"}], 
+         "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.5", ",", "0.33"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\[ScriptL]\>\"", ",", "18", ",", "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.36", ",", "0.38"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "StandardForm"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"ms", ",", "l", ",", "vec", ",", "texts"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.738327688690304*^9, 3.738327700100854*^9}, {
+  3.73832798551122*^9, 3.738327985662361*^9}, {3.73832820672292*^9, 
+  3.73832821000877*^9}, {3.738328268056653*^9, 3.738328430604021*^9}, {
+  3.7383284615459137`*^9, 3.738328581681611*^9}, {3.738328613396937*^9, 
+  3.7383287235659113`*^9}, {3.7383287751717443`*^9, 3.738328802077133*^9}, {
+  3.738328862268512*^9, 3.738328918222722*^9}, {3.73832895491576*^9, 
+  3.738329094867734*^9}, {3.738329166753281*^9, 3.738329258453537*^9}, {
+  3.738329347100667*^9, 3.7383294001514473`*^9}, {3.738329482587183*^9, 
+  3.7383295149845667`*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {PointSize[0.03], PointBox[{0.2, 0.4}], PointBox[{0.5, 0.3}], 
+    PointBox[{0, 0}]}, 
+   LineBox[{{0.2, 0.4}, {0.5, 0.3}}], {
+    ArrowBox[{{0, 0}, {0.39999999999999997`, 0.3333333333333333}}], 
+    ArrowBox[{{0, 0}, {0.2, 0.4}}], ArrowBox[{{0, 0}, {0.5, 0.3}}]}, {InsetBox[
+     StyleBox["\<\"R\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {0.16, 0.17},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(r\\), \\(1\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {0.07, 0.2},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"O\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {-0.01, 0.03},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(r\\), \\(1\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {0.27, 0.14},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(m\\), \\(1\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18], {0.2, 0.43},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(m\\), \\(2\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18], {0.5, 0.33},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\[ScriptL]\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {0.36, 0.38},
+     FormatType->StandardForm]}}]], "Output",
+ CellChangeTimes->{{3.738328310314373*^9, 3.738328343694841*^9}, 
+   3.73832837386548*^9, 3.738328406951189*^9, {3.7383284666974993`*^9, 
+   3.738328558925839*^9}, {3.7383286148245573`*^9, 3.738328665899785*^9}, {
+   3.738328776327758*^9, 3.738328802693677*^9}, {3.7383288712558403`*^9, 
+   3.738328918710052*^9}, {3.7383289649742126`*^9, 3.738329061424947*^9}, 
+   3.738329095237999*^9, {3.7383291670585823`*^9, 3.738329193137548*^9}, {
+   3.738329225641024*^9, 3.738329259216061*^9}, {3.7383293587837057`*^9, 
+   3.7383294007767763`*^9}, {3.7383294933531837`*^9, 3.7383295154103403`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"p3", "=", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "0.33"}], ",", "0.1"}], "}"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"p4", "=", 
+   RowBox[{"{", 
+    RowBox[{"0.2", ",", 
+     RowBox[{"-", "0.1"}]}], "}"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"mc2", "=", 
+   RowBox[{
+    RowBox[{"0.6", " ", "p3"}], "+", 
+    RowBox[{"0.4", " ", "p4"}]}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"OverHat", "[", "r", "]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"l2", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Line", "[", 
+      RowBox[{"{", 
+       RowBox[{"p3", ",", "p4"}], "}"}], "]"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ms2", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"PointSize", "\[Rule]", "0.03"}], ",", 
+      RowBox[{"Point", "[", "p3", "]"}], ",", 
+      RowBox[{"Point", "[", "p4", "]"}], ",", 
+      RowBox[{"Point", "[", "mc2", "]"}]}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"vec", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", 
+     RowBox[{"Arrow", "[", 
+      RowBox[{"{", 
+       RowBox[{"p3", ",", "p4"}], "}"}], "]"}], "}"}], "]"}]}], 
+  ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"texts", "=", 
+   RowBox[{"Graphics", "[", 
+    RowBox[{"{", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<\!\(\*SubscriptBox[\(O\), \(mc\)]\)\>\"", ",", "18", ",", 
+          "Bold"}], "]"}], ",", 
+        RowBox[{"mc2", "+", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0.03"}], "}"}]}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(m\), \(1\)]\)\>\"", ",", "18"}], 
+         "]"}], ",", 
+        RowBox[{"p3", "+", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0.03"}], "}"}]}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{"\"\<\!\(\*SubscriptBox[\(m\), \(2\)]\)\>\"", ",", "18"}], 
+         "]"}], ",", 
+        RowBox[{"p4", "+", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "0.03"}], "}"}]}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "TraditionalForm"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Text", "[", 
+       RowBox[{
+        RowBox[{"Style", "[", 
+         RowBox[{
+         "\"\<r=\[ScriptL]\!\(\*OverscriptBox[\(r\), \(^\)]\)\>\"", ",", "18",
+           ",", "Bold"}], "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"0.07", ",", "0.0"}], "}"}], ",", 
+        RowBox[{"FormatType", "\[Rule]", "StandardForm"}]}], "]"}]}], 
+     "\[IndentingNewLine]", "}"}], "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{"ms2", ",", "l2", ",", "vec", ",", "texts"}], "]"}]}], "Input",
+ CellChangeTimes->{{3.738330141857067*^9, 3.7383305044808292`*^9}, {
+  3.738330550000682*^9, 3.73833056397213*^9}, {3.738330608351668*^9, 
+  3.73833063340536*^9}, {3.7383306666062813`*^9, 3.738330799904039*^9}, {
+  3.73833083316259*^9, 3.738330919620207*^9}, {3.7383309517667418`*^9, 
+  3.738331359005159*^9}}],
+
+Cell[BoxData[
+ OverscriptBox["r", "^"]], "Output",
+ CellChangeTimes->{{3.738331067575094*^9, 3.738331111214547*^9}, {
+  3.738331142260988*^9, 3.7383311610074778`*^9}, {3.738331192970105*^9, 
+  3.738331224757988*^9}, {3.7383312604578037`*^9, 3.738331359910215*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{
+   {PointSize[0.03], PointBox[{-0.33, 0.1}], PointBox[{0.2, -0.1}], 
+    PointBox[{-0.118, 0.01999999999999999}]}, 
+   LineBox[{{-0.33, 0.1}, {0.2, -0.1}}], 
+   ArrowBox[{{-0.33, 0.1}, {0.2, -0.1}}], {InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(O\\), \\(mc\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {-0.118, 0.04999999999999999},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(m\\), \\(1\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18], {-0.33, 0.13},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"\\!\\(\\*SubscriptBox[\\(m\\), \\(2\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18], {0.2, -0.07},
+     FormatType->TraditionalForm], InsetBox[
+     StyleBox["\<\"r=\[ScriptL]\\!\\(\\*OverscriptBox[\\(r\\), \
+\\(^\\)]\\)\"\>",
+      StripOnInput->False,
+      FontSize->18,
+      FontWeight->Bold], {0.07, 0.},
+     FormatType->StandardForm]}}]], "Output",
+ CellChangeTimes->{{3.738331067575094*^9, 3.738331111214547*^9}, {
+  3.738331142260988*^9, 3.7383311610074778`*^9}, {3.738331192970105*^9, 
+  3.738331224757988*^9}, {3.7383312604578037`*^9, 3.7383313599123363`*^9}}]
+}, Open  ]]
+},
+WindowSize->{1366, 741},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"11.0 for Linux x86 (64-bit) (September 21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 5021, 135, 378, "Input"],
+Cell[5604, 159, 2128, 47, 317, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[7769, 211, 3440, 96, 338, "Input"],
+Cell[11212, 309, 264, 4, 32, "Output"],
+Cell[11479, 315, 1236, 27, 211, "Output"]
+}, Open  ]]
+}
+]
+*)
+

@@ -1,0 +1,69 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% podstawowe definicje
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Podstawowe pojęcia}
+Modelem ogólnej teorii względności jest czterowymiarowa r
+ozmaitość różniczkowa $M$, którą 
+nazywamy czasoprzestrzenią.
+\begin{definition}
+Krzywą $y$ nazywamy dowolny ciągły obraz odcinka na $M$. 
+Funkcję $ (a,b) \ni s \to y(s) \in M$ której obrazem jest 
+krzywa $y$ nazywamy parametryzacją krzywej $y$.
+\end{definition}
+\begin{definition}
+Wektorem stycznym do krzywej $y$ w $p$ nazywamy wektor $u$ taki, że
+\begin{align*}
+u = \frac{\d y(s)}{\d s}_{\big|_p},
+\end{align*}
+\end{definition}
+Przyjmujemy konwencję iloczynu skalarnego $g$ z sygnaturą $(+,-,-,-)$.
+\begin{align}
+g(u,u) > 0& \implies u \text{ - wektor czasowy}\\
+g(u,u) = 0& \implies u \text{ - wektor zerowy}\\
+g(u,u) < 0& \implies u \text{ - wektor przestrzenny}
+\end{align}
+W ten sposób przestrzeń wektorów stycznych dzieli się na trzy 
+klasy. Ten podział wyróżnia trzy rodzaje krzywych. 
+\begin{definition}
+Krzywą $\gamma$ nazywamy krzywą czasową (zerową, przestrzenną)
+jeżeli każdy wektor styczny do $\gamma$ jest wektorem czasowym
+(zerowym, przestrzennym).
+\end{definition}
+\begin{definition}
+Linią świata cząstki nazywamy dowolną gładką krzywą czasową.
+\end{definition}
+Oczywiście dana krzywa może mieć różne parametryzacje.
+Model fizyczny powinien być niezmienniczy ze względu na 
+reparametryzację krzywej. Jeśli 
+dwa różne parametry $s,t$ opisujace krzywą $y$
+przez parametryzacje $s \to y_1(s)$ i $t\to y_2(t)$
+powiązane są zależnością $t = f(s)$ to
+$y_2(t) = y_1( f^{-1}(t) )$. Wtedy niezmienniczość 
+działania $S$ ze względu na reparametryzację 
+oznacza, że $S(y_1) = S(y_2)$.
+\begin{align}
+S(y_1) = \int L( y_1(s) , y'_1(s) ) \d s \\
+S(y_2) = \int L ( y_2(t), y_2'(t) )  \d t = 
+\int L ( y_2(f(s)), y_2'(f(s)) / f'(s) )  \d f(s) = 
+\int L ( y_1(s), y_1'(s) /f'(s) ) f'(s) \d s  
+\end{align} 
+\begin{align}
+ L( y, f \dot{y} ) = f L ( y, \dot{y}  ) 
+\end{align} 
+Inaczej można ten warunek zapisać, jako rządanie by
+podmiana $s \to f(s)$ nie zmieniała postaci Lagrangianu.
+\begin{definition}
+Pochodną kowariantną nazywamy ...
+transport wektora wzdłuż krzywej $\gamma$ dla którego 
+.... nazywamy transportem równoległym.
+\end{definition}
+\begin{definition}
+Pochodną absolutną nazywamy pochodną kowariantną w 
+kierunku wektora stycznego $u$ parametryzowanego 
+czasem własnym $s$
+transport wektora wzdłuż krzywej $\gamma$ dla którego 
+.... nazywamy transportem równoległym.
+\end{definition}
+
+
+
