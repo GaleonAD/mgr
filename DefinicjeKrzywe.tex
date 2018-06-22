@@ -1,0 +1,68 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% podstawowe definicje
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\subsection{Krzywe w czasoprzestrzeni.}
+\begin{definition}
+Krzywą sparametryzowaną (lub parametryzacją krzywej) nazywamy 
+odwzorowanie 
+% gładki homeomorfizm
+% homeomorfizm
+$ y_1 : I \ni \tau \to y_1(\tau) \in M$ klasy $c^\infty$, 
+gdzie $I \subset R$ 
+jest przedziałem otwartym (niekoniecznie skończonym).
+\end{definition}
+\begin{definition}
+Parametrem dla krzywej sparametryzowanej $y_1$ 
+nazywamy funkcję $ \tau_1: y_1(I) \ni p 
+\to \tau_1(p) = y_1^{-1}( p )\in I$. 
+Będziemy pisać
+$\tau_1$ zamiast $\tau_1(p)$, wszędzie gdzie punkt $p$ 
+wynika z kontekstu
+lub jest nieistotny. 
+\end{definition}
+\begin{definition}
+Niech $y_1: I \to M$ i $y_2:J\to M$ będą parametryzacjami.
+Reparametryzacją krzywej będziemy nazywać dyfeomorfizm $f : I \to J$
+klasy $C^\infty$
+taki, że $y_1 = y_2 \circ f$.
+\end{definition}
+Jeśli dla dwóch parametryzacji istnieje reparametryzacja to 
+mówimy, że są one równoważne. Można łatwo pokazać, że jest to
+relacja równoważności. 
+\begin{definition}
+Krzywą (lub krzywą niesparametryzowaną) nazywamy klasę równoważności
+parametryzacji ze wzgędu powyżej wprowadzoną relację równoważności.
+Jeżeli $y$ jest krzywą, $y_1$ jej parametryzacją z parametrem $\tau_1$
+to oznaczamy $y_1 =: y(\tau_1)$.
+\end{definition}
+\begin{definition}
+Niech $(U,\xi)$ będzie mapą w $M$ oraz $p\in U$.
+Wektorem stycznym do krzywej $y$ w punkcie $p$  
+(lub wektorem prędkości w 
+parametrze $\tau$) nazywamy wektor $y'(\tau)$ taki, że
+\begin{align*}
+y' (\tau )= \frac{\d (\xi \circ y_1 )(\tau)
+ }{\d \tau}\big|_{\tau(p)}
+\end{align*}
+\end{definition}
+Podział wektorów wprowadzony przez tensor metryczny $g$ 
+wyróżnia trzy rodzaje krzywych. 
+\begin{definition}
+Krzywą $y$ nazywamy krzywą czasową (zerową, przestrzenną)
+jeżeli w każdym punkcie $p \in y$ wektor $y'$ jest 
+wektorem czasowym
+(zerowym, przestrzennym). Linią świata cząstki
+jest krzywa czasowa. 
+\end{definition}
+Długość $S(y(\tau))$ krzywej czasowej $y$ liczymy 
+ze wzoru
+\begin{align}\label{dlugosc_krzywej}
+S( y(\tau) ) = \int_{\tau(p_0)}^{\tau(p_1)} \sqrt{g (
+y' (\tau), y' (\tau) )} \d \tau.
+\end{align}
+Długość krzywej nie powinna zależeć od wyboru parametryzacji.
+Istotnie, długość dana wzorem~\eqref{dlugosc_krzywej}
+jest niezmiennicza ze względu na reparametryzację.
+....
+Zauważmy, że długość krzywej zerowej jest zawsze równa $0$.
+
