@@ -68,10 +68,17 @@ jest niezmiennicze ze względu reparametryzację,
 Lorenzowsko niezmiennicze. Dodatkowo $k$ wzkazuje kierunek zerowy, a zatem
  układ fizyczny nie wmienia się
 po przeskalowaniu $k \to a k$. 
-....
+Oznaczamy przez $P_\mu$ i $\Pi_\mu$ pędy kanoniczne związane 
+odpowiednio z $x$ i $k$ oraz przez $M_{\mu\nu}$ całkowity moment pędu.
+\begin{align}
+P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}, \quad
+\Pi_\mu = \frac{\partial L}{\partial \dot{k}^\mu} \\
+M_{\mu\nu} = x_\mu P_\nu - P_\mu x_\nu + k_\mu \Pi_\nu - \Pi_\mu k_\nu.
+\end{align}
 
 Niezmiennikami Casimira będą w tym przypadku $P_\mu P^\mu$ oraz
-$W_\mu W^\mu$ gdzie 
+$W_\mu W^\mu$ gdzie $W$ jest pseudowektorem Pauliego-Lubańskiego 
+danym przez
 \begin{align}
 W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
 M^{\nu\rho} P^\sigma

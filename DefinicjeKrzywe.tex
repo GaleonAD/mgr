@@ -1,5 +1,5 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% podstawowe definicje
+% krzywe i długość krzywej (reparametryzacja)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Krzywe w czasoprzestrzeni.}
 \begin{definition}
@@ -41,8 +41,9 @@ Wektorem stycznym do krzywej $y$ w punkcie $p$
 (lub wektorem prędkości w 
 parametrze $\tau$) nazywamy wektor $y'(\tau)$ taki, że
 \begin{align*}
-y' (\tau )= \frac{\d (\xi \circ y_1 )(\tau)
- }{\d \tau}\big|_{\tau(p)}
+%y' (\tau )= \frac{\d (\xi \circ y_1 )(\tau)
+% }{\d \tau}\big|_{\tau(p)}
+y' (\tau )= \frac{\d y_1^\mu }{\d \tau}
 \end{align*}
 \end{definition}
 Podział wektorów wprowadzony przez tensor metryczny $g$ 
@@ -63,6 +64,23 @@ y' (\tau), y' (\tau) )} \d \tau.
 Długość krzywej nie powinna zależeć od wyboru parametryzacji.
 Istotnie, długość dana wzorem~\eqref{dlugosc_krzywej}
 jest niezmiennicza ze względu na reparametryzację.
-....
-Zauważmy, że długość krzywej zerowej jest zawsze równa $0$.
+Niech $\tau_1,\ \tau_2$ będą parametrami powiązanymi 
+reparametryzacją $\tau_2 = f(\tau_1)$, taką że 
+$f'(\tau_1) > 0$ (gdy $f'(\tau_1) <0$ rozumowanie 
+przebiega analogicznie).
+Wtedy stosując zmianę zmiennych całkowania dostajemy
+\begin{align}
+S(y(\tau_2)) = 
+\int_{\tau_2(p_0)}^{\tau_2(p_1)} \sqrt{g (
+y' (\tau_2), y' (\tau_2) )} \d \tau_2  = 
+\int_{\tau_1(p_0)}^{\tau_1(p_1)} \sqrt{g \left(
+\frac{ y' (\tau_1) }{ f'(\tau_1)}, 
+\frac{ y' (\tau_1) }{ f'(\tau_1)} \right)} 
+f'(\tau_1) \d \tau_1  = 
+\int_{\tau_1(p_0)}^{\tau_1(p_1)} \sqrt{g (
+y' (\tau_1), y' (\tau_1)  )} \d \tau_1  
+=S(y(\tau_1)).
+\end{align}
+Stosując ten sam wzór do krzywej zerowej otrzymujemy zerową
+długość.
 

@@ -5,11 +5,49 @@
 Modelem ogólnej teorii względności jest czterowymiarowa 
 rozmaitość różniczkowa. Rozmaitość tę budujemy na 
 zbiorze, nazywanym czasoprzestrzenią, punktów nazywanych zdarzeniami. 
-Zakładamy, że zbiór ten ma strukturę rozmaitości różniczkowej to znaczy, 
-że 
-Przyjmujemy konwencję iloczynu skalarnego $g$ z sygnaturą $(+,-,-,-)$.
+Zakładamy, że zbiór ten ma strukturę rozmaitości różniczkowej.
+Niech $M$ będzie niepustą przestrzenią Hausdorffa (czyli taką, że
+dla każdych dwóch punktów $p,q\in M$ 
+istnieją rozłączne otoczenia $U_p,U_q$ odpowiednio punktów $p,q$.) 
+Mapą w otoczeniu $U$ punktu $p\in M$ nazywamy parę $(U,\xi$, gdzie  
+$\xi : U \to R^n$ jest homeomorfizmem (ciągłą bijekcją, której 
+odwrotność jest ciągła). Homeomorfizm $\xi$ nazywamy układem współrzędnych 
+w otoczeniu $p$.
+Mówimy, że mapy dwie mapy są zgodne, jeżeli $\xi_1 \circ \xi_2$ (tam 
+gdzie ma sens)
+jest dyfeomorfizmem klasy $C^k$ (homeomorfizm z 
+ciągłymi pochodnymi stopnia $k$)
+Zbiór $A$ map parami zgodnych (o zgodności klasy $C^k$) 
+takich że pokrywają cały zbiór $M$ nazymamy 
+atlasem klasy $C^k$. Atlasem maksymalnym nazywamy atlas do którego
+nie można dodać kolejnej mapy bez złamania zgodności.
+Rozmaitością różniczkową klasy $C^k$ nazywamy 
+zbiór $M$ z atlasem maksymalnym klasy $C^k$.
+W szczególnej i ogólnej teorii względności przyjmujemy rozmaitość 
+
+Mając mapę w punkcie $p$ możemy określić bazę w danym punkcie
+za pomocą wektorów stycznych do linii układu współrzędnych.
+Taką bazę należy rozumieć jako bazę lokalną (w punkcie $p$).
+
+
+Będziemy stosować konwencję sumacyjną Einsteina.
+Wzór na element liniowy $\d s^2 = g_{ij} \d x^i \d x^j$ definiuje 
+tensor metryczny $g$.
+Przyjmujemy konwencję w której $g$ ma sygnaturę $(+,-,-,-)$.
 \begin{align}
 g(u,u) > 0& \implies u \text{ - wektor czasowy}\\
 g(u,u) = 0& \implies u \text{ - wektor zerowy}\\
 g(u,u) < 0& \implies u \text{ - wektor przestrzenny}
+\end{align}
+W bazie ortonormalnej współczynniki tensor metryczny przybiera postać 
+postać 
+\begin{align}
+( g_{\mu\nu} ) = \left(
+\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1 
+\end{array}
+\right)
 \end{align}
