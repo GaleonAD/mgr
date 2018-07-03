@@ -64,6 +64,10 @@ Możemy wtedy utworzyć Lagrangian postaci
 \begin{align}\label{rotatorStar}
 L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 \end{align}
+Więz $k\cdot k= 0$ możemy uwzględnić wprowadzając mnożnik Lagranga $\lambda$
+\begin{align}
+L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) + \lambda( k\cdot k ).
+\end{align}
 Działanie związane z powyższym Lagrangianem 
 jest niezmiennicze ze względu reparametryzację, 
 Lorenzowsko niezmiennicze. Dodatkowo $k$ wzkazuje kierunek zerowy, a zatem
@@ -72,9 +76,18 @@ po przeskalowaniu $k \to a k$.
 Oznaczamy przez $P_\mu$ i $\Pi_\mu$ pędy kanoniczne związane 
 odpowiednio z $x$ i $k$ oraz przez $M_{\mu\nu}$ całkowity moment pędu.
 \begin{align}
-P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}, \quad
+P_\mu &= \frac{\partial L}{\partial \dot{x}^\mu}, \qquad
 \Pi_\mu = \frac{\partial L}{\partial \dot{k}^\mu} \\
-M_{\mu\nu} = x_\mu P_\nu - P_\mu x_\nu + k_\mu \Pi_\nu - \Pi_\mu k_\nu.
+M_{\mu\nu} &= x_\mu P_\nu - P_\mu x_\nu + k_\mu \Pi_\nu - \Pi_\mu k_\nu.
+\end{align}
+
+Dla Lagrangianu~\ref{rotatorStar} mamy 
+\begin{align}
+P_\mu &=  \frac{m}{\sqrt{ \dot{x} \cdot \dot{x} }} f(\xi) \dot{x}_\mu 
+- 2 \frac{m}{k \cdot \dot{x}} \sqrt{ \dot{x} \cdot \dot{x} }
+f'(\xi) \xi k_\mu  \\
+\Pi_\mu &= 2 \frac{m}{\dot{k} \cdot \dot{k}} \sqrt{ \dot{x} \cdot \dot{x} }
+f'(\xi) \xi \dot{k}_\mu
 \end{align}
 
 Niezmiennikami Casimira będą w tym przypadku $P_\mu P^\mu$ oraz
@@ -85,7 +98,9 @@ W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
 M^{\nu\rho} P^\sigma
 \end{align}
 
-Korzystając z antysymetrii tensora $\varepsilon$ dostajemy
+Kontrakcja tensora antysymetrycznego $A_{\mu\nu}$ z 
+tensorem symetrycznym $S_{\mu\nu}$ jest równa zeru. 
+Korzystając z tego i antysymetrii tensora $\varepsilon$ dostajemy
 \begin{align}
 W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
 (x^\mu P^\nu - P^\mu x^\nu + k^\mu \Pi^\nu - \Pi^\mu k^\nu) P^\sigma = 
@@ -94,11 +109,46 @@ W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
   \varepsilon_{\mu\nu\rho\sigma}
  \Pi^\mu k^\nu P^\sigma
 \end{align}
-
-Dla Lagrangianu~\ref{rotatorStar} mamy 
+Dla Lagrangianu~\ref{rotatorStar} możemy zapisać $W_\mu$ w postaci
 \begin{align}
-P_\mu = \\
-\Pi_\mu = 
+W_\mu =  \varepsilon_{\mu\nu\rho\sigma}  \Pi^\mu k^\nu P^\sigma =
+2\frac{m^2}{ \dot{k} \cdot \dot{k}} 
+f(\xi) f'(\xi) \xi \varepsilon_{\mu\nu\rho\sigma} 
+ \dot{k}^\mu k^\nu \dot{x}^\sigma
+\end{align}
+Pozwala to zapisać $W_\mu W^\mu$ w postaci wyznacznika Gramma
+\begin{align}
+W_\mu W^\mu = 
+4 \frac{m^4}{ (\dot{k} \cdot \dot{k})^2} 
+f(\xi)^2 f'(\xi)^2 \xi^2 
+\left| 
+\begin{array}{ccc}
+\dot{k} \cdot \dot{k}& \dot{k} \cdot k& \dot{k} \cdot \dot{x}\\
+k \cdot \dot{k}& k \cdot k &k  \cdot \dot{x}\\
+\dot{x} \cdot \dot{k}& \dot{x} \cdot k &\dot{x} \cdot \dot{x}
+\end{array}
+\right|
+\end{align}
+Inwestując równości $k\cdot k=0$, $\dot{x}\cdot\dot{x}$ 
+oraz $\dot{k} \cdot k= 0$ dostajemy
+\begin{align}
+P_\mu P^\mu =  m^2( f(\xi)^2- 4 f(\xi) f'(\xi) \xi)
+W_\mu W^\mu = 
+ - 4 m^4\ell^2  f(\xi)^2 f'(\xi)^2 \xi
+\end{align}
+Zakładamy, że rotator jest fundamentalny, a więc niezmienniki
+Casimira powinny być parametrami, co można zapisać w postaci
+równości
+\begin{align} \label{casimir1}
+P_\mu P^\mu = m^2 \tag{C1}
+\end{align}
+\begin{align} \label{casimir2}
+W_\mu W^\mu = - \frac{1}{4} m^4 \ell^2\tag{C2}
+\end{align}
+\begin{align} 
+ f(\xi)^2- 4 f(\xi) f'(\xi) \xi
+\stackrel{\ref{casimir1}}{=} 1 \stackrel{\ref{casimir2}}{=}
+  16   f(\xi)^2 f'(\xi)^2 \xi
 \end{align}
 
 
