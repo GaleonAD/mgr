@@ -7,7 +7,8 @@ $m_1,\ m_2$ połączonych nieważkim
 prętem długości $\ell$ (rys. \ref{classic_rotator}). Lagrangian 
 takiego układu w układzie środka masy ma postać~\cite{landau1978krotki}
 \begin{align}
-L = \frac{m }{2} \left(\frac{\d r}{\d t}\right)^2, \quad m=m_1+m_2, r=r_2-r_1
+L = \frac{m }{2} \left(\frac{\d r}{\d t}\right)^2, 
+\quad m=m_1+m_2, r=r_2-r_1
 \end{align}
 gdzie $r_1,\ r_2$ to odpowiednio położenia mas $m_1$, $m_2$.
 Zauważmy, że $||r|| =\ell = const$, a zatem interesuje nas jedynie kierunek 
@@ -60,7 +61,7 @@ rotatora możemy utworzyć bezwymiarową wielkość
 \xi = - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 }.
 \end{align}
 Możemy wtedy utworzyć Lagrangian postaci
-\begin{align}
+\begin{align}\label{rotatorStar}
 L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 \end{align}
 Działanie związane z powyższym Lagrangianem 
@@ -83,5 +84,22 @@ danym przez
 W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
 M^{\nu\rho} P^\sigma
 \end{align}
+
+Korzystając z antysymetrii tensora $\varepsilon$ dostajemy
+\begin{align}
+W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
+(x^\mu P^\nu - P^\mu x^\nu + k^\mu \Pi^\nu - \Pi^\mu k^\nu) P^\sigma = 
+ - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
+( k^\mu \Pi^\nu - \Pi^\mu k^\nu) P^\sigma = 
+  \varepsilon_{\mu\nu\rho\sigma}
+ \Pi^\mu k^\nu P^\sigma
+\end{align}
+
+Dla Lagrangianu~\ref{rotatorStar} mamy 
+\begin{align}
+P_\mu = \\
+\Pi_\mu = 
+\end{align}
+
 
 
