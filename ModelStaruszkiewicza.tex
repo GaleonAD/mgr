@@ -41,7 +41,7 @@ połączonych nieważkim prętem długości $\ell$.}
 \label{classic_rotator}
 \end{figure}
 
-Przeniesienie układu na grunt relatywistyczny wprowadził 
+Przeniesienie tego układu na grunt relatywistyczny wprowadził 
 profesor Staruszkiewicz~\cite{star2008} proponując następujące 
 definicje:
 \begin{definition}
@@ -52,8 +52,10 @@ zerowy $k$ oraz dodatkowo dwa parametry: masę $m$ i długość $\ell$.
 \begin{definition}
 Układ dynamiczny  nazywamy fenomenologicznym jeżeli jego niezmienniki Casimira są 
 całkami ruchu. Układ dynamiczny nazywamy fundamentalnym jeżeli jego niezmienniki
-Casimira są parametrami - nie zależą od wartości początkowych.
+Casimira są parametrami (m. in. nie zależą od warunków początkowych).
 \end{definition}
+Powtórzymy teraz konstrukcję przedstawioną we wspomnianej pracy oraz w
+~\cite{Kassandrov2009, Bratek2009nonuniq}.
 W oparciu o powyższe definicje można skonstruować fundamentalny
 relatywistyczny rotator. Z wielkości zawartych w definicji relatywistycznego 
 rotatora możemy utworzyć bezwymiarową wielkość
@@ -64,15 +66,22 @@ Możemy wtedy utworzyć Lagrangian postaci
 \begin{align}\label{rotatorStar}
 L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 \end{align}
-Więz $k\cdot k= 0$ możemy uwzględnić wprowadzając mnożnik Lagranga $\lambda$
-\begin{align}
-L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) + \lambda( k\cdot k ).
-\end{align}
+%Więz $k\cdot k= 0$ możemy uwzględnić wprowadzając mnożnik Lagranga $\lambda$
+%\begin{align}
+%L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) + \lambda( k\cdot k ).
+%\end{align}a
+%Wtedy równanie Eulera-Lagranga dla $\lambda$ daje odpowiedni więz.
 Działanie związane z powyższym Lagrangianem 
 jest niezmiennicze ze względu reparametryzację, 
 Lorenzowsko niezmiennicze. Dodatkowo $k$ wzkazuje kierunek zerowy, a zatem
  układ fizyczny nie wmienia się
 po przeskalowaniu $k \to a k$. 
+Nie jest to najogólniejszy relatywistyczny 
+rotator jaki można wziąć pod uwagę, gdyż $\xi$ nie jest jedyną 
+możliwą bezwymiarową kombinacją wielkości charakterystycznych 
+dla relatywistycznego rotatora~\cite{Bratek2009nonuniq}.
+
+
 Oznaczamy przez $P_\mu$ i $\Pi_\mu$ pędy kanoniczne związane 
 odpowiednio z $x$ i $k$ oraz przez $M_{\mu\nu}$ całkowity moment pędu.
 \begin{align}
@@ -147,9 +156,21 @@ W_\mu W^\mu = - \frac{1}{4} m^4 \ell^2\tag{C2}
 \end{align}
 \begin{align} 
  f(\xi)^2- 4 f(\xi) f'(\xi) \xi
-\stackrel{\ref{casimir1}}{=} 1 \stackrel{\ref{casimir2}}{=}
+\stackrel{\text{\ref{casimir1}}}{=} 
+1 \stackrel{\text{\ref{casimir2}}}{=}
   16   f(\xi)^2 f'(\xi)^2 \xi
 \end{align}
+Powyższe rozwiązanie mają wspóle rozwiązanie 
+postaci (zobacz dod. A)
+\begin{align}
+f(\xi ) = \sqrt{ 1 \pm \sqrt{\xi} }
+\end{align}
 
+To że dwa równania różniczkowe miały wspólne rozwiązanie 
+wydaje się być szczęśliwym zbiegiem okoliczności. 
+Niestety otrzymany Lagrangian ma defekt i ruch takiego 
+rotatora nie jest deterministyczny~\cite{Bratek2012Spinorindeterm}.
+Przedstawimy teraz uogólnienie takiego rotatora,
+które możemy znaleźć w~\cite{Bratek2015wiele}.{Bratek2015wiele}.
 
 
