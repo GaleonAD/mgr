@@ -1,8 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % podstawowe definicje
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Czasoprzestrzeń w teorii względności}
-Modelem ogólnej teorii względności jest czterowymiarowa 
+\subsection{Wstępne pojęcia i konwencje}
+Będziemy stosować konwencję sumacyjną Einsteina. Indeksy 
+oznaczane literami greckimi zmieniają się w zakresie od 0 do 3, 
+natomiast indeksy oznaczane literami arabskimi 
+w zakresie od 1 do 3. Jednoski wybieramy tak, aby $c=1$.
+
+Modelem ogólnej teorii względności jest czterowymiarowa Lorenzowska 
 rozmaitość różniczkowa. Rozmaitość tę budujemy na 
 zbiorze, nazywanym czasoprzestrzenią, punktów nazywanych zdarzeniami. 
 Zakładamy, że zbiór ten ma strukturę rozmaitości różniczkowej.
@@ -23,24 +28,20 @@ atlasem klasy $C^k$. Atlasem maksymalnym nazywamy atlas do którego
 nie można dodać kolejnej mapy bez złamania zgodności.
 Rozmaitością różniczkową klasy $C^k$ nazywamy 
 zbiór $M$ z atlasem maksymalnym klasy $C^k$.
-W szczególnej i ogólnej teorii względności przyjmujemy rozmaitość 
+Wymiarem rozmaitości nazywamy wymiar przestrzeni $R^n$, na której 
+modelujemy rozmaitość. Od teraz przyjmujemy, że rozmaitość 
+jest klasy $C^\infty$ oraz $n=4$.
 
 Mając mapę w punkcie $p$ możemy określić bazę w danym punkcie
 za pomocą wektorów stycznych do linii układu współrzędnych.
-Taką bazę należy rozumieć jako bazę lokalną (w punkcie $p$).
+Taką bazę należy rozumieć jako bazę lokalną (bazę w punkcie $p$).
 
 
-Będziemy stosować konwencję sumacyjną Einsteina.
-Wzór na element liniowy $\d s^2 = g_{ij} \d x^i \d x^j$ definiuje 
-tensor metryczny $g$.
-Przyjmujemy konwencję w której $g$ ma sygnaturę $(+,-,-,-)$.
-\begin{align}
-g(u,u) > 0& \implies u \text{ - wektor czasowy}\\
-g(u,u) = 0& \implies u \text{ - wektor zerowy}\\
-g(u,u) < 0& \implies u \text{ - wektor przestrzenny}
-\end{align}
-W bazie ortonormalnej współczynniki tensor metryczny przybiera postać 
-postać 
+Rozmaitość jest Lorenzowska jeśli określona na niej tensor
+metryczny $g$
+ ma sygnaturę $(+,-,-,-)$.
+W bazie ortonormalnej macierz tensora metrycznego
+przybiera postać 
 \begin{align}
 ( g_{\mu\nu} ) = \left(
 \begin{array}{cccc}
@@ -51,3 +52,11 @@ postać
 \end{array}
 \right)
 \end{align}
+Tensor metryczny określa następujący podział wektorów
+\begin{align}
+g(u,u) > 0& \implies u \text{ - wektor czasowy}\\
+g(u,u) = 0& \implies u \text{ - wektor zerowy}\\
+g(u,u) < 0& \implies u \text{ - wektor przestrzenny}
+\end{align}
+
+

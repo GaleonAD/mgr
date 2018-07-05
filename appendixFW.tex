@@ -1,25 +1,69 @@
 \subsection{Równoważność warunków transportu 
 Fermiego-Walkera}
+\noindent
 Zakładamy, że $y$ - linia świata wzdłuż której 
-wykonujemy transport. Oznaczamy
-\begin{align}
-u = \frac{\d y}{\d s}, \quad A = \frac{\D u}{\d s} \\
-R(v) = (
-\end{align}
-Pokażemy, że następujące warunki są równoważne:
+wykonujemy transport oraz 
+\begin{align*}
+u = \frac{\d y}{\d s}, \quad A = \dot{u} = \frac{\D u}{\d s}, 
+\quad u\cdot A = 0,\\
+R(v) = (u\cdot v) u, \quad  P(v) = v - R(v).
+\end{align*}
+Niech $v$ będzie wektorem zdefiniowanym wzdłóż $y$. 
+Pokażemy, że następujące warunki transportu Fermiego-Walkera są 
+równoważne
 \begin{enumerate}
 \item
-\begin{align} 
+\begin{align*} 
 P \left(\frac{\D P(v)}{\d s} \right) +
-R \left( \frac{\D R(v)}{\d s} \right) = 0
-\end{align}
+R \left( \frac{\D R(v)}{\d s} \right) =0,
+\end{align*}
 \item
-\begin{align} 
- \frac{\D v}{\d s} +
-(v\cdot A) u - (v\cdot u) A = 0,
-\end{align}
+\begin{align*} 
+ \dot{v} +
+(v\cdot A) u - (v\cdot u) A =0 .
+\end{align*}
 \end{enumerate}
+\begin{proof}
+Obliczamy składniki lewej strony równości $1$.
+\begin{align*}
+ \frac{\D R(v)}{\d s} = 
+\frac{\D ((v\cdot u)u)}{\d s} =
+\frac{\d (v\cdot u)}{\d s} u + (v\cdot u) A =
+(\dot{v}\cdot u) u + (v\cdot A) u + (v\cdot u) A .
+\end{align*}
+\begin{align*}
+\frac{\D P(v)}{\d s}  = 
+ \dot{v} -(\dot{v}\cdot u) u - (v\cdot A) u - (v\cdot u) A .
+\end{align*}
+\begin{align*}
+R \left( \frac{\D R(v)}{\d s} \right) =
+(\dot{v}\cdot u) u + (v\cdot A) u .
+\end{align*}
+\begin{align*}
+P \left(\frac{\D P(v)}{\d s} \right) &= 
+ \dot{v} -
+(\dot{v}\cdot u) u - (v\cdot A) u - (v\cdot u) A -
+( \dot{v}\cdot u - (\dot{v}\cdot u)- (v\cdot A) )u = \\
+&=
+ \dot{v} -
+(\dot{v}\cdot u) u - (v\cdot A) u - (v\cdot u) A 
++ (v\cdot A) u = 
+ \dot{v} -
+(\dot{v}\cdot u) u  - (v\cdot u) A .
+\end{align*}
+Korzystając z powyższych obiczeń otrzymujemy ciąg równości 
+\begin{align*}
+P \left(\frac{\D P(v)}{\d s} \right) +
+R \left( \frac{\D R(v)}{\d s} \right) = 
+ \dot{v} -
+(\dot{v}\cdot u) u  - (v\cdot u) A 
+(\dot{v}\cdot u) u + (v\cdot A) u  = 
+ \dot{v} 
+ - (v\cdot u) A 
+ + (v\cdot A) u  .
+\end{align*}
 
+\end{proof}
 
 
 %poprzedni dowodzik nieco innego

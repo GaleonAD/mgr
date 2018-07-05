@@ -2,6 +2,7 @@
 % krzywe i długość krzywej (reparametryzacja)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Krzywe w czasoprzestrzeni.}
+W tej części wprowadzimy pojęcie krzywej w czasoprzestrzeni $M$.
 \begin{definition}
 Krzywą sparametryzowaną (lub parametryzacją krzywej) nazywamy 
 odwzorowanie 
@@ -17,8 +18,7 @@ nazywamy funkcję $ \tau_1: y_1(I) \ni p
 \to \tau_1(p) = y_1^{-1}( p )\in I$. 
 Będziemy pisać
 $\tau_1$ zamiast $\tau_1(p)$, wszędzie gdzie punkt $p$ 
-wynika z kontekstu
-lub jest nieistotny. 
+wynika z kontekstu.
 \end{definition}
 \begin{definition}
 Niech $y_1: I \to M$ i $y_2:J\to M$ będą parametryzacjami.
@@ -28,15 +28,23 @@ taki, że $y_1 = y_2 \circ f$.
 \end{definition}
 Jeśli dla dwóch parametryzacji istnieje reparametryzacja to 
 mówimy, że są one równoważne. Można łatwo pokazać, że jest to
-relacja równoważności. 
+relacja równoważności. Możliwość różnego parametryzowania tej 
+samej krzywej możemy rozumieć tak, że możemy podróżować wzdłuż
+krzywej w różny sposób.
 \begin{definition}
 Krzywą (lub krzywą niesparametryzowaną) nazywamy klasę równoważności
-parametryzacji ze wzgędu powyżej wprowadzoną relację równoważności.
+parametryzacji ze wzgędu powyższą relację równoważności.
 Jeżeli $y$ jest krzywą, $y_1$ jej parametryzacją z parametrem $\tau_1$
-to oznaczamy $y_1 =: y(\tau_1)$.
+to wprowadzamy oznaczenie $y_1 =: y(\tau_1)$.
 \end{definition}
+\begin{figure}
+\centering
+\includegraphics[scale=0.6]{curves.eps}
+\caption{Różne parametryzacje krzywej $y$.}
+\end{figure}
 \begin{definition}
-Niech $(U,\xi)$ będzie mapą w $M$ oraz $p\in U$.
+Niech $(U,\xi)$ będzie mapą w $M$ oraz $p\in U$. W tej mapie 
+przez $y^\mu$ oznaczamy współrzędne krzywej $y$.
 Wektorem stycznym do krzywej $y$ w punkcie $p$  
 (lub wektorem prędkości w 
 parametrze $\tau$) nazywamy wektor $y'(\tau)$ taki, że
@@ -56,12 +64,18 @@ wektorem czasowym
 jest krzywa czasowa. 
 \end{definition}
 Długość $S(y(\tau))$ krzywej czasowej $y$ liczymy 
-ze wzoru
+korzystając z tensora metrycznego $g$. 
+Kwadrat długości elementu liniowego wyraża się przez
+\begin{align}
+\d s^2 = g_{\mu\nu} \d x^\mu \d x^\nu.
+\end{align}
+Stąd długość krzywej liczymy wzorem
 \begin{align}\label{dlugosc_krzywej}
 S( y(\tau) ) = \int_{\tau(p_0)}^{\tau(p_1)} \sqrt{g (
 y' (\tau), y' (\tau) )} \d \tau.
 \end{align}
-Długość krzywej nie powinna zależeć od wyboru parametryzacji.
+Oczywiście 
+długość krzywej nie powinna zależeć od wyboru parametryzacji.
 Istotnie, długość dana wzorem~\eqref{dlugosc_krzywej}
 jest niezmiennicza ze względu na reparametryzację.
 Niech $\tau_1,\ \tau_2$ będą parametrami powiązanymi 
