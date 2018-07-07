@@ -1,0 +1,66 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% global includes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[a4paper; 11pt]{article}
+
+% językowe
+\usepackage[english,german,polish]{babel}
+\usepackage{polski}		    
+\usepackage[utf8]{inputenc}
+
+% matematyczne
+\usepackage{mathtools}
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amsthm}
+
+\usepackage[
+style=alphabetic,
+sorting=none,
+%
+% Zastosuj styl wpisu bibliograficznego właściwy językowi publikacji.
+language=autobib,
+autolang=other,
+% Zapisuj datę dostępu do strony WWW w formacie RRRR-MM-DD.
+urldate=iso8601,
+% Nie dodawaj numerów stron, na których występuje cytowanie.
+backref=false,
+% Podawaj ISBN.
+isbn=true,
+% Nie podawaj URL-i, o ile nie jest to konieczne.
+url=false,
+%
+% Ustawienia związane z polskimi normami dla bibliografii.
+maxbibnames=3,
+% Jeżeli używamy BibTeXa:
+backend=bibtex
+]{biblatex}
+
+\addbibresource{bib.bib}
+
+\usepackage{graphicx}		% for graphics/pictures
+\usepackage{geometry}		% for changing page layout
+\usepackage{indentfirst}	% do każdego akapitu dodawane jest wcięcie
+\usepackage{icomma}		    % inteligentne przecinki
+\usepackage{booktabs}		% enchanced tables
+\usepackage{float}		    % for pictures/graphics
+\usepackage[locale=FR]{siunitx} % ładne wpisywanie wielkości i jednostek
+\usepackage{verbatim}		% komentarze
+\usepackage{appendix}       % załączniki
+
+%\sisetup{per-mode=fraction}
+%\sisetup{per-mode=reciprocal}
+\sisetup{per-mode=symbol}
+\newgeometry{tmargin=2.3cm, lmargin=1.9cm, rmargin= 1.9cm, bmargin= 2.3cm}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% local includes
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\usepackage[fixlanguage]{babelbib}
+%\selectbiblanguage{polski}
+
+\usepackage{color}          % kolorowanie tekstu
+\usepackage{courier} 		% times, kurier
+\usepackage{hyperref}
+

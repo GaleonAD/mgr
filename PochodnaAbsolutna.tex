@@ -1,41 +1,70 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % podstawowe definicje
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Pochodna kowariantna i absolutna}
+\subsection{Pochodna absolutna i transport równoległy}
+W trójwymiarowej przestrzeni euklidesowej 
+z kartezjańskim układem współrzędnych $x^i$ 
+definiuje się transport równoległy wektora $v$ w kierunku wektora 
+$w$ za pomocą równania 
+\begin{align*}
+w^j \frac{\partial v^i}{\partial x^j} = 0
+\end{align*}
+To znaczy, że podczas przemieszczania wektora $v$ po krzywej, której
+wektorem prędkości w parametrze $\tau$ jest wektor $w$, spełniony jest 
+warunek
+\begin{align*}
+ \frac{\d v^i}{\d \tau} = 0
+\end{align*}
+Jendak w ogólności możemy mieć do czynienia z krzywoliniowym układem 
+współrzędnych lub z przestrzenią zakrzywioną. W takim przypadku uogólnia
+się pojęcie transportu równoledłego za pomocą pochodnej kowariantnej.
 \begin{definition}
-Pochodną kowariantną nazywamy ...
-transport wektora wzdłuż krzywej $\gamma$ dla którego 
-.... nazywamy transportem równoległym.
+Niech $x^i$ będzie układem współrzędnych. 
+Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
+\begin{align*}
+w^\rho \nabla_\rho v^\mu = w^\nu \frac{\partial v^\mu}{\partial x^\nu}
++ \Gamma^\mu_{\nu\sigma} w^\nu v^\sigma ,
+\end{align*}
+gdzie $\Gamma^\mu_{\nu\sigma} $ są symbolami Christoffela, które możemy
+wyznaczyć z tensora metrycznego poprzez zależność
+\begin{align*}
+\Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
+\left(\frac{g_{\rho\nu}}{\partial x^\sigma}+ 
+\frac{g_{\rho\sigma}}{\partial x^\nu}-
+\frac{g_{\nu\sigma}}{\partial x^\rho}\right)
+\end{align*}
+Odwzorowanie $\nabla_\rho$ nazywa się niekiedy koneksją afiniczną.
 \end{definition}
 \begin{definition}
-Pochodną absolutną wektora $v$ nazywamy pochodną kowariantną w 
-kierunku krzywej $y$ o wektorze stycznym $y'$ 
-parametryzowanym parametrem $\tau$ i oznaczamy przez
-\begin{align}
+Pochodną kowariantną wektora $v$ w kierunku wektora prędkości
+$y'$ krzywej $y$ w parametrze $\tau$ nazywamy
+pochodną absolutną wektora $v$ i oznaczamy 
+\begin{align*}
 \frac{\D v^\mu }{\d \tau } = \frac{\d v^\mu}{\d \tau}
 + \Gamma^\mu_{\nu\rho} v^\nu u^\rho.
-\end{align}
+\end{align*}
 \end{definition}
 Pochodną absolutną wektora $v$ wzdłuż krzywej $y$
 parametryzowanej czasem własnym $s$
-przez będziemy oznaczać przez $\dot{v}$. 
-\begin{align}
+przez będziemy oznaczać przez $\D v/\d s$ lub $\dot{v}$. 
+\begin{align*}
 0 = \frac{\d (\dot{y} \cdot \dot{y}) }{\d s} = 
 2 \frac{\D \dot{y}}{\d s} \cdot \dot{y}
-\end{align}
+\end{align*}
 \begin{definition}
-Linią geodezyjną (lub krzywą swobodnego spadku) nazywamy krzywą $y$, dla której
-\begin{align}
-\frac{\D y'}{\d \tau } = b y'
-\end{align} 
-Gdy $\tau$ jest parametrem afinicznym to $b=0$.
+Linią geodezyjną (lub krzywą swobodnego spadku) nazywamy 
+krzywą $y$, dla której
+\begin{align*}
+\frac{\D y'}{\d \tau } = b y',
+\end{align*} 
+gdzie $b=0$ gdy $\tau$ jest parametrem afinicznym.
 \end{definition}
-Będziemy w dalszej części pracy przez $u$ oraz $A$ będziemy rozumieć 
+Będziemy w dalszej części pracy przez $u$ oraz $A$ będziemy oznaczać
 prędkość oraz przyspieszenie definiowane jak następuje
-\begin{align}
+\begin{align*}
 u^\mu = \dot{y^\mu} = \frac{\d y^\mu}{\d s}, 
 \quad A = \dot{u^\mu} =  \frac{\D u^\mu}{\d s}.
-\end{align}
+\end{align*}
 
 
 

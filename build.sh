@@ -79,18 +79,18 @@ fi
 ################################################################################
 echo -n "Generating bibliography... "
 bibtex $texname.aux > /dev/null 
-bibtex $texname.aux > /dev/null 
 echo "OK"
 
-set -e
 
 ################################################################################
 # compile texfile two more times, to be sure
 ################################################################################
-echo -n "Second pass... "
+echo -n "Generating to more times to set up bibliography... "
 pdflatex -interaction=nonstopmode $texname.tex 1>/dev/null
 pdflatex -interaction=nonstopmode $texname.tex 1>/dev/null
 echo "OK"
+
+set -e
 
 ################################################################################
 # copy output name to main directory

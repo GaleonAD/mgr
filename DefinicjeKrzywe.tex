@@ -2,7 +2,11 @@
 % krzywe i długość krzywej (reparametryzacja)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Krzywe w czasoprzestrzeni.}
-W tej części wprowadzimy pojęcie krzywej w czasoprzestrzeni $M$.
+W tej części wprowadzimy pojęcie krzywej w czasoprzestrzeni. 
+%Jest to bardzo ważny obiekt matematyczny, gdyż służy do definiowania
+%wektora stycznego na rozmaitości różniczkowej~\cite{ganca1987}.
+%Większość ówczesnej fizyki formuuje się w postaci wariacyjnej,
+%gdzie całkowanie odbywa się po pewnej krzywej.
 \begin{definition}
 Krzywą sparametryzowaną (lub parametryzacją krzywej) nazywamy 
 odwzorowanie 
@@ -53,6 +57,27 @@ parametrze $\tau$) nazywamy wektor $y'(\tau)$ taki, że
 % }{\d \tau}\big|_{\tau(p)}
 y' (\tau )= \frac{\d y_1^\mu }{\d \tau}
 \end{align*}
+Mając mapę w punkcie $p$ możemy określić bazę w danym punkcie
+za pomocą wektorów stycznych do linii układu współrzędnych.
+Taką bazę należy rozumieć jako bazę lokalną (bazę w punkcie $p$).
+W bazie ortonormalnej macierz tensora metrycznego
+przybiera postać 
+\begin{align*}
+( g_{\mu\nu} ) = \left(
+\begin{array}{cccc}
+1 & 0 & 0 & 0\\
+0 & -1 & 0 & 0 \\
+0 & 0 & -1 & 0 \\
+0 & 0 & 0 & -1 
+\end{array}
+\right)
+\end{align*}
+Tensor metryczny określa następujący podział wektorów
+\begin{align*}
+g_{\mu\nu}u^\mu u^\nu > 0& \implies u \text{ - wektor czasowy}\\
+g_{\mu\nu}u^\mu u^\nu = 0& \implies u \text{ - wektor zerowy}\\
+g_{\mu\nu}u^\mu u^\nu < 0& \implies u \text{ - wektor przestrzenny}
+\end{align*}
 \end{definition}
 Podział wektorów wprowadzony przez tensor metryczny $g$ 
 wyróżnia trzy rodzaje krzywych. 
@@ -66,9 +91,9 @@ jest krzywa czasowa.
 Długość $S(y(\tau))$ krzywej czasowej $y$ liczymy 
 korzystając z tensora metrycznego $g$. 
 Kwadrat długości elementu liniowego wyraża się przez
-\begin{align}
+\begin{align*}
 \d s^2 = g_{\mu\nu} \d x^\mu \d x^\nu.
-\end{align}
+\end{align*}
 Stąd długość krzywej liczymy wzorem
 \begin{align}\label{dlugosc_krzywej}
 S( y(\tau) ) = \int_{\tau(p_0)}^{\tau(p_1)} \sqrt{g (
@@ -83,7 +108,7 @@ reparametryzacją $\tau_2 = f(\tau_1)$, taką że
 $f'(\tau_1) > 0$ (gdy $f'(\tau_1) <0$ rozumowanie 
 przebiega analogicznie).
 Wtedy stosując zmianę zmiennych całkowania dostajemy
-\begin{align}
+\begin{align*}
 S(y(\tau_2)) = 
 \int_{\tau_2(p_0)}^{\tau_2(p_1)} \sqrt{g (
 y' (\tau_2), y' (\tau_2) )} \d \tau_2  = 
@@ -94,7 +119,7 @@ f'(\tau_1) \d \tau_1  =
 \int_{\tau_1(p_0)}^{\tau_1(p_1)} \sqrt{g (
 y' (\tau_1), y' (\tau_1)  )} \d \tau_1  
 =S(y(\tau_1)).
-\end{align}
+\end{align*}
 Stosując ten sam wzór do krzywej zerowej otrzymujemy zerową
 długość.
 

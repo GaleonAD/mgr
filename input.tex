@@ -3,15 +3,16 @@
 % Główny plik
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\input{GlobalIncludes.tex}
-\input{LocalIncludes.tex}
+\input{Includes.tex}
 \input{Macros.tex}
 
 
 \begin{document}
 
-\maketitle
-\date
+\input{titlepage.tex}
+
+%\maketitle
+%\date
 \tableofcontents
 
 \input{Wstep.tex}
@@ -26,6 +27,9 @@
 \end{appendix}
 
 
-\bibliography{bib}
+\printbibliography
+
+
+%\bibliography{bib}
 
 \end{document}
