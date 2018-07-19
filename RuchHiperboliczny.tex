@@ -2,23 +2,27 @@
 % konstrukcja reperu poruszającego 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ruch hiperboliczny}
-Jako pierwszy chcemy zbadać relatywistyczny 
+Jako pierwszy przypadek chcemy zbadać relatywistyczny 
 odpowiednik ruchu jednostajnie 
 przyspieszonego.
-W układzie obserwatora inercjalnego $\mathcal{I}$ posługującego się 
+Poniższe wyprowadzenie kształtu linii 
+świata takiego ruchu można znaleźć 
+w~\cite{trau1984, Ashtekar20141}.
+W układzie obserwatora inercjalnego~$\mathcal{I}$~posługującego się 
 kartezjańskim układem współrzędnych rozważamy linię 
-świata~$y=y(s)$~obzerwatora~$\mathcal{Z}$~parametruzowaną 
+świata~$y=y(s)$~obserwatora~$\mathcal{Z}$~parametryzowaną 
 czasem własnym~$s$.
-Poniższe wyprowadzenie postaci $y$ można znaleźć 
-w~\cite{trau1984, Ashtekar20141}
-Ruch ten będzie odbywał się w jednym wymiarze przestrzennym. 
-W takim przypadku ogólna postać czteroprędkości, po uwzględnieniu warunku 
-unormowania, ma postać~\eqref{UHiper}.
+Ruch ten odbywa się w jednym wymiarze przestrzennym. 
+W takim przypadku ogólna postać wektora prędkości, 
+po uwzględnieniu warunku 
+unormowania, ma postać
 \begin{align}\label{UHiper}
 (u^\mu) = (\cosh \beta( s ),\ \sinh \beta( s ),\ 0,\   0),
 \end{align}
-gdzie $\beta( s)$ jest pewną funkcją parametryzowaną czasem własnym $s$.
-Rządamy, aby przyspieszenie właściwe było stałe.
+gdzie $\beta( s)$ jest pewną funkcją parametryzowaną czasem własnym~$s$.
+Żądamy teraz, 
+aby przyspieszenie właściwe $\alpha$ 
+było stałe ze względu w czasie $s$. 
 \begin{align}\nonumber
 (A^\mu) = ( \dot{\beta}( s ) \sinh \beta( s ),\ 
 \dot{\beta}( s ) \cosh \beta( s ),\ 0,\ 0 ).
@@ -26,8 +30,9 @@ Rządamy, aby przyspieszenie właściwe było stałe.
 \begin{align}\nonumber
 \alpha = \sqrt{ - A^\mu A_\mu } = \dot{\beta}( s )
 \end{align}
-Otrzymaliśmy równanie różniczkowe na funkcję $\beta(s)$. 
-Możemy bez straty ogólności przyjąć, że $\beta(0)  = 0$. Wtedy
+Otrzymujemy równanie różniczkowe na funkcję $\beta(s)$. 
+Możemy bez straty ogólności przyjąć, że $\beta(0)  = 0$. 
+Wtedy rozwiązanie jest postaci
 \begin{align}\nonumber
 \beta( s ) = \alpha s,
 \end{align}
@@ -41,21 +46,21 @@ A zatem odpowiednik ruchu jednostajnie przyspieszonego w
 czasoprzestrzeni Minkowskiego to ruch opisany przez hiperbolę.
 Łatwo sprawdzić, że dla małych prędkości ruch ten przechodzi 
 w ruch jednostajnie przyspieszony. Ciało w takim ruchu porusza
-się po linii świata~\eqref{YHiper}.
+się po linii świata
 \begin{align}\label{YHiper}
 (y^\mu) = \left( \frac{1}{\alpha} \sinh \alpha s,\ 
 \frac{1}{\alpha} \cosh \alpha s,\ 0,\ 0 \right).
 \end{align}
 \\
 Chcemy skonstruować reper współporuszający się z~$\mathcal{Z}$. 
-W tym celu wersor czasowy obieramy prędkość $e_0 = u$, 
+W tym celu za wersor czasowy obieramy prędkość $e_0 = u$, 
 a za pierwszy z wersorów przestrzennych unormowane 
 przyspieszenie $e_1 = A/\alpha$.
 Wersory te uzupełniamy do bazy za pomocą wersorów kanonicznych.
 Otrzymaną bazę możemy zapisać zgrabnie w postaci 
 macierzy~\eqref{EHiper}.
 Łatwo sprawdzić, że tak skonstruowany reper spełnia
-prawo transportu Fermiego-Walkera.
+prawo transportu~\eqref{FW}.
 
 \begin{align}\label{EHiper}
 \begin{pmatrix}
@@ -73,9 +78,9 @@ e_3
 \end{pmatrix}.
 \end{align}
 
-Możemy teraz podać równanie na kąt $\phi$ zegara 
+Możemy teraz podać równanie na fazę zegara $\phi$ 
 \begin{align*}
-\chi &= \pi, \quad \alpha = \text{const} \\
+\chi &= \pi, \quad \alpha = \text{const.} \\
 \dot{\varphi} &= \pm \frac{2}{\ell} + \alpha \sin ( \varphi - \pi )
  = \pm \frac{2}{\ell} -  \alpha \sin ( \varphi )
 \end{align*}

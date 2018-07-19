@@ -9,11 +9,14 @@ Interesującym nas parametrem jest przybliżenie właściwe, będące miarą
 przyspieszenia jakie działa na obiekt. 
 
 \subsection{Zegar w przypadku stałego przyspieszenia}
-Zakładamy stałe przspieszenie właściwe~$\alpha$. Wtedy czterowektor 
+Zakładamy stałe przyspieszenie właściwe~$\alpha$. Wtedy wektor 
 przyspieszenia określony jest przez parametr~$\chi$
 
 Załóżmy szczególną postać $\chi (s) = p s + q$, 
-gdzie $p,q = const(s)$. Do rozwiązania równania stosujemy wtedy 
+gdzie $p,q = const(s)$. {\color{red} Gdy $p=0$ 
+rozpatrujemy przypadek gdy wektor $A$ jest podczas ruchu
+transportowany za pomocą transportu~\eqref{FW}. } 
+W tym przypadku rozwiązanie uzyskujemy stosując  
 podstawienie~\eqref{analiza_podstawienie1}
 \begin{align} \label{analiza_podstawienie1}
 \Phi &= \varphi - \chi,\\
@@ -59,7 +62,7 @@ s_0 & = \frac{2}{BC} \text{arctg}
 \newpage
 \subsubsection{Rozwiązanie przybliżone}
 Interesuje nas jak rozwiązanie zachowuje się dla małych przyspieszeń. 
-Rozwiążemy równanie~\eqref{phi_equation} stosująć 
+Rozwiążemy równanie~\eqref{phi_equation} stosując 
 rachunek zaburzeń ze względu na 
 parametr~$\alpha$. W tym celu zapisujemy~$\phi$ oraz~$\chi$ w postaci
 szeregów~\eqref{phiszereg}~\eqref{chiszereg}. 
@@ -107,8 +110,8 @@ postać~\eqref{phi_szereg_rozwiazanie}.
 \end{align}
 Z rozwiązania przybliżonego~\eqref{phi_szereg_rozwiazanie} 
 wiemy, że dla małych przyspieszeń nasz model zegara dobrze 
-mierzy czas własny~$s$. Przyspieszenie charakterysytczne dla 
-którego efekto powinien mieć istotny wpływ to~\eqref{alpha_c}.
+mierzy czas własny~$s$. Przyspieszenie charakterystyczne dla 
+którego efekt powinien mieć istotny wpływ to~\eqref{alpha_c}.
 Wpływ zaburzenia~$\varphi_1$ na działanie zegara jest 
 rzędu~\eqref{rzadpoprawki}.
 \begin{align}\label{alpha_c}
@@ -195,7 +198,7 @@ wielkości przyspieszenia dla którego spodziewamy się
 obserwowalnych odstępstw od hipotezy zegara.
 Za $\ell$ możemy podstawić wielkość o wymiarze metra 
 charakterystyczną dla elektronu - długość 
-komptonowską~\eqref{compton_electron}. 
+Komptonowską fali~\eqref{compton_electron}. 
 Wtedy przyspieszenie charakterystyczne dla elektronu 
 wynosi~\eqref{ac_electron}.
 Dla porównania energie elektronów otrzymywane 
@@ -216,7 +219,7 @@ raczej nie będą obserwowalne.
 \alpha \approx 10^2 \si{\centi\metre^{-1}}
 \end{align}
 
-Komptonowska długość protonu wnosi~\eqref{compton_proton}. 
+Komptonowska długość fali protonu wnosi~\eqref{compton_proton}. 
 Przyspieszenie charakterystyczne dla protonu wynosi
 wynosi~\eqref{ac_proton}.
 %$\alpha_c \approx 1,36\cdot 10^{34} 
