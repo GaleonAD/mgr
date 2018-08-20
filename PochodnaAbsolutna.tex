@@ -18,6 +18,23 @@ warunek
 Jednak w ogólności możemy mieć do czynienia z krzywoliniowym układem 
 współrzędnych lub z przestrzenią zakrzywioną. W takim przypadku uogólnia
 się pojęcie transportu równoległego za pomocą pochodnej kowariantnej.
+%\begin{definition}
+%Niech $x^i$ będzie układem współrzędnych. 
+%Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
+%\begin{align*}
+%w^\rho \nabla_\rho v^\mu = w^\nu \frac{\partial v^\mu}{\partial x^\nu}
+%+ \Gamma^\mu_{\nu\sigma} w^\nu v^\sigma ,
+%\end{align*}
+%gdzie $\Gamma^\mu_{\nu\sigma} $ są symbolami Christoffela, które możemy
+%wyznaczyć z tensora metrycznego poprzez zależność
+%\begin{align*}
+%\Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
+%\left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
+%\frac{\partial g_{\rho\sigma}}{\partial x^\nu}-
+%\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right)
+%\end{align*}
+%Odwzorowanie $\nabla_\rho$ nazywa się niekiedy koneksją afiniczną.
+%\end{definition}
 \begin{definition}
 Niech $x^i$ będzie układem współrzędnych. 
 Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
@@ -25,15 +42,23 @@ Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
 w^\rho \nabla_\rho v^\mu = w^\nu \frac{\partial v^\mu}{\partial x^\nu}
 + \Gamma^\mu_{\nu\sigma} w^\nu v^\sigma ,
 \end{align*}
-gdzie $\Gamma^\mu_{\nu\sigma} $ są symbolami Christoffela, które możemy
-wyznaczyć z tensora metrycznego poprzez zależność
+gdzie $\nabla_\rho$ jest koneksją afiniczną, a $\Gamma^\mu_{\nu\sigma} $
+są współczynnikami koneksji afinicznej. W ogólnej teorii względności 
+zakłada się, że koneksja jest
+\begin{enumerate}
+    \item zgodna z metryką ($\nabla g =0$),
+    \item beztorsyjna ($\Gamma^\mu_{\nu\sigma} 
+        = \Gamma^\mu_{\sigma\nu}$).
+\end{enumerate} 
+Wtedy koneksja jest jednoznacznie określona i nazywamy ją
+ koneksją Leviego-Civity, a współczynniki 
+$\Gamma^\mu_{\nu\sigma}$ symbolami Christoffela danymi przez
 \begin{align*}
 \Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
-\left(\frac{g_{\rho\nu}}{\partial x^\sigma}+ 
-\frac{g_{\rho\sigma}}{\partial x^\nu}-
-\frac{g_{\nu\sigma}}{\partial x^\rho}\right)
+\left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
+\frac{\partial g_{\rho\sigma}}{\partial x^\nu}-
+\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right)
 \end{align*}
-Odwzorowanie $\nabla_\rho$ nazywa się niekiedy koneksją afiniczną.
 \end{definition}
 \begin{definition}
 Pochodną kowariantną wektora $v$ w kierunku wektora prędkości

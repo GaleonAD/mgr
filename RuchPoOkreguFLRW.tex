@@ -195,13 +195,36 @@ a R\omega\gamma \cos \psi & -\frac{1}{a} \cos\omega t \sin\psi -
 
 Mając znaleziony odpowiedni reper możemy obliczyć wielkości
 potrzebne do równania na fazę zegara~$\varphi$.
-\begin{align}\nonumber
+\begin{align*}\nonumber
 A\cdot e_1 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\sin\psi
- + a R \omega^2\gamma^2\cos\psi        \\
+ + a R \omega^2\gamma^2\cos\psi ,       \\
 A\cdot e_2 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\cos\psi
- - a R \omega^2 \gamma^2 \sin \psi      \nonumber  \\ \nonumber
-\alpha &= a R \omega \gamma \sqrt{a'^2 \left(\gamma ^2+1\right)^2
- +   \omega^2\gamma^2}
-\end{align}
+ - a R \omega^2 \gamma^2 \sin \psi  ,     \nonumber  \\
+\chi & = \text{arccos} \left( A\cdot e_1 / \alpha \right) ,
+\\
+\alpha & = 
+a R \omega \gamma \sqrt{a'^2 \left(\gamma ^2+1\right)^2
+ +   \omega^2\gamma^2} ,
+\\
+\dot{\varphi} &= \pm \frac{2}{\ell} + \alpha \sin (\varphi - \chi) .
+\end{align*}
+Rozwiniemy prawą stronę równania na $\varphi$ względem $R$ dla małych promieni 
+\begin{align*}
+\psi &= - \omega s + O(R^2), \quad 
+\alpha = a \omega  \sqrt{4 a'^2+\omega ^2} \ R +
+ O(R^3), \\
+\dot{\varphi} &= \pm \frac{2}{\ell} + 
+a \omega  \sqrt{4 a'^2+\omega ^2} R 
+\sin \left( \varphi - \text{arccos} \left( 
+\frac{a \omega \cos (\omega s) 
+- 2 a' \sin (\omega s)}{a\sqrt{4a'^2 + \omega^2}} 
+\right) \right) + O(R^3).
+\end{align*}
+Dla krótkich przedziałów czasowych możemy przyjąc $a' \to 0$, co daje
+\begin{align*}
+\dot{\varphi} &= \pm \frac{2}{\ell} + 
+a \omega ^2 R 
+\sin \left( \varphi - \omega s \right) + O(R^3).
+\end{align*}
 
 

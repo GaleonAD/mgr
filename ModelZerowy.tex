@@ -2,46 +2,112 @@
 % Model cząstki zerowej
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Model uogólniony}
-W tej części będziemy rozważać układ w którym zakładamy
-więz postaci $\dot{x} \cdot \dot{x} = 0$, to jest 
-cząstkę poruszającą się po krzywej zerowej.
-Lagrangian postaci
-\begin{align*}
-L = \sqrt{\dot{x} \cdot \dot{x} }
-\end{align*}
-nie jest odpowiedni do opisu takiej cząstki, gdyż 
-wtedy pęd $P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}$ 
-nie jest skończony. 
-W zastępstwie możemy użyć 
-Lagrangianu postaci
-\begin{align}~\label{nullparticlelagrangian}
-L = w( \dot{x} \cdot \dot{x}).
+W tej części przedstawimy pokrótce uogólnioną konstrukcję 
+Lagrangianu zegara motywowaną przedstawionym
+ modelem Staruszkiewicza i zawartą w~\cite{Bratek2015wiele}.
+Lagrangian opisujący relatywistyczny rotator powinien być 
+niezmienniczy ze względu na lokalne skalowanie 
+$\delta k =\epsilon k$. Aby wariacja 
+$\delta L $ znikała dla dla dowolnego $\epsilon$ musimy założyć, że
+ $k \cdot \Pi = 0$. Pamiętając, że $k$ jest kierunkiem zerowym 
+mamy dwa więzy wynikające ze struktury rotatora
+\begin{align}\label{W1}
+k \cdot \Pi = 0, \quad k \cdot k = 0. \tag{W1}
 \end{align}
-Wtedy równanie Eulera-Lagrange dla zmiennej $w$ jest postaci
+Następnie, zakładając że rotator ma być fundamentalny, 
+mamy dwa więzy nakładane na niezmienniki Casimira 
+grupy Poincarego~\ref{casimir1},\ref{casimir2}.
+
+ 
+Mamy więc cztery więzy będące punktem wyjścia
+do konstrukcji Lagrangianu zegara.
+
+Dirac, w jednej ze swoich najważniejszych prac: 
+"Generalized Hamiltonian Dynamics"~\cite{DiracHam}, podał
+jak konstruować Lagrangiany z więzami dla prędkości.
+Zgodnie z metodą Diraca postać Lagrangianu dla zegara wynika 
+z postaci Hamiltonianiu zegara Staruszkiewicza. Hamiltonian
+ten jest liniową kombinacją więzów pierwszego rodzaju (t.j. 
+takich, że parami zerują nawiasy Poissona) ze współczynnikami będącymi 
+funkcjami $u_i$. 
 \begin{align*}
-0 = \frac{\partial L}{\partial w} =  \dot{x} \cdot \dot{x}
+H = \frac{u_1}{2m} \left(P\cdot P -m^2 \right) 
++ \frac{u_2}{2m } \left( P\cdot P + \frac{4}{\ell^2 m^2} (k\cdot P)^2 
+(\Pi \cdot \Pi) \right)
++ u_3 (k \cdot \Pi ) + u_4 (k \cdot k)
 \end{align*}
-i zapewnia zerowość linii świata $x$. Wtedy pęd
-kanoniczny związany z $x$  jest zachowany podczas ruchu i równy
-\begin{align*}
-P_\mu = 2 w \dot{x}_\mu, \quad P_\mu P^\mu = 0.
-\end{align*}
-Wtedy w układzie odniesienia, w 
-którym $e$ jest wersorem czasowym
-takim, że 
-\begin{align*}
-e\cdot \dot{x}=1
-\end{align*} 
-mamy
-\begin{align*}
-    p = U \dot{x},
-\end{align*}
-gdzie $U$ jest energią fotonu.
+Z równań $\frac{\partial H}{\partial u_i} = 0 $ dostajemy wyjściowy
+układ więzów. 
+Transformacją
+prowadzącą od Hamiltonianu do Lagrangianu jest 
+przekształcenie odwrotne Legendre'a. 
+W tym przypadku ma ono maksymalny rząd, gdy $\dot{x} \cdot \dot{x}$ 
+jest normalizowalne. Jednak powstały Lagrangian
+ma defekt i nie determinuje ruchu~\cite{Bratek2015wiele}.
+W przypadku $\dot{x} \cdot \dot{x} = 0$  rząd się obniża. Założenie 
+$u_1 = u_2 \neq 0$ daje dodatkowe więzy 
+Ta osobliwość  odwrotnej transformacji Legendre'a 
+wyróżnia zegar idealny, który ma własność
+Zitterbewegung, będącą klasycznym odpowiednikiem 
+odkrytego przez Schroedingera zjawiska dla elektronu Diraca. 
+Z Hamiltonianu Diraca dla elektronu swobodnego wynika, że 
+wartości własne operatora prędkości dla kwantowej cząstki
+relatywistycznej są równe $\pm c$. 
+Dirac w swej książce "The principles of
+quantum mechanics" wyjaśnia poglądowo dlaczego tak musi być dla kwantowych
+cząstek relatywistycznych: a mianowicie, wartości pędu relatywistycznego
+są nieograniczone, dlatego wartość oczekiwana pędu jest nieskończona, co
+daje ze zwykłego związku relatywistycznego pęd-prędkość wartość $c$.
 
 
-Uogólnienie biorące pod uwagę cząstki poruszające się
-po krzywych zerowych możemy zapisać w 
-postaci~\cite{polchinski_1998}
+%W tej części będza
+%
+%
+%\begin{align*}
+%H = u_1 ( P \cdot P  -  m^2 ) + 
+%u_2 (W \cdot W + m^4\ell^2 /4) +
+%+ u_3 (k \cdot \Pi)  + u_4(k \cdot k)
+%\end{align*}
+%
+%
+%układ w którym zakładamy
+%więz postaci $\dot{x} \cdot \dot{x} = 0$, to jest 
+%cząstkę poruszającą się po krzywej zerowej.
+%Lagrangian postaci
+%\begin{align*}
+%L = \sqrt{\dot{x} \cdot \dot{x} }
+%\end{align*}
+%nie jest odpowiedni do opisu takiej cząstki, gdyż 
+%wtedy pęd $P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}$ 
+%nie jest skończony. 
+%W zastępstwie możemy użyć 
+%Lagrangianu postaci
+%\begin{align}~\label{nullparticlelagrangian}
+%L = w( \dot{x} \cdot \dot{x}).
+%\end{align}
+%Wtedy równanie Eulera-Lagrange dla zmiennej $w$ jest postaci
+%\begin{align*}
+%0 = \frac{\partial L}{\partial w} =  \dot{x} \cdot \dot{x}
+%\end{align*}
+%i zapewnia zerowość linii świata $x$. Wtedy pęd
+%kanoniczny związany z $x$  jest zachowany podczas ruchu i równy
+%\begin{align*}
+%P_\mu = 2 w \dot{x}_\mu, \quad P_\mu P^\mu = 0.
+%\end{align*}
+%Wtedy w układzie odniesienia, w 
+%którym $e$ jest wersorem czasowym
+%takim, że 
+%\begin{align*}
+%e\cdot \dot{x}=1
+%\end{align*} 
+%mamy
+%\begin{align*}
+%    p = U \dot{x},
+%\end{align*}
+%gdzie $U$ jest energią fotonu.
+
+\begin{comment}
+
 \begin{align*}
 L =  \frac{1}{2} \left(  
 \eta^{-1} \dot{x} \cdot \dot{x} +  \eta m^2 f( \xi ) \right)  
@@ -108,7 +174,7 @@ f(\xi) = 0, \ f'(\xi) =- \frac{1}{2},\ \xi = 1.
 \begin{align} \label{wiez}
  - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 } = 1.
 \end{align}
-
+\end{comment}
 Więzy te pozwolą nam określić ruch zegara. 
 Będziemy go opisywać w reperze który porusza się 
 wraz z posiadaczem zegara.  

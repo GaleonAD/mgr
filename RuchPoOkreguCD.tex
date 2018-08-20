@@ -83,15 +83,17 @@ gdzie $\gamma = \d t/\d s$. Z danego elementu liniowego~\eqref{CDlin},
 po uwzględnieniu~\eqref{y_CD}, możemy odczytać 
 \begin{align}\nonumber
 \gamma = \frac{\d t}{\d s} = 
-\sqrt{ 1 - \frac{2 M}{R} - R^2\omega^2 }
+ \left(1 - \frac{2 M}{R} - R^2\omega^2 \right)^{-1/2}.
 \end{align}
 Wyznaczamy przyspieszenie oraz przyspieszenie właściwe
 \begin{align}\nonumber
-(A^\mu) = \left(0,\ -\frac{R\omega^2}{1-R^2\omega^2},\ 0,\ 0 \right)
+(A^\mu) = \left(0,\ -\gamma^2 \left( R\omega^2 - \frac{M}{R^2} \right) 
+\left(1-\frac{2M}{R}\right),\ 0,\ 0 \right)
 \end{align}
 \begin{align}\nonumber
-\alpha = \sqrt{-A\cdot A} = \frac{R\omega^2}{1-R^2\omega^2} 
-\left( 1-\frac{2M}{R} \right)^{-1/2}
+\alpha = \sqrt{-A\cdot A} = \gamma^2 
+\left| R\omega^2 - \frac{M}{R^2} \right|
+\left( 1-\frac{2M}{R} \right)^{1/2}
 \end{align}
 
 Ponownie skorzystamy z bazy wyznaczonej wcześniej dla przypadku
@@ -161,23 +163,36 @@ fazę zegara~\eqref{PhiCD}
 \begin{align}\nonumber
 \chi &= - \psi =\omega \gamma^2 s \left( 1-\frac{3M}{R} \right)
  , \quad 
-\alpha =  \frac{R\omega^2}{1-R^2\omega^2} 
-\left( 1-\frac{2M}{R} \right)^{-1/2}
+\alpha =  \gamma^2 
+\left| R\omega^2 - \frac{M}{R^2} \right|
+\left( 1-\frac{2M}{R} \right)^{1/2}
 \\
 \dot{\varphi} &= \pm \frac{2}{\ell} + \label{PsiCD}
-\frac{R\omega^2}{1-R^2\omega^2} 
-\left( 1-\frac{2M}{R} \right)^{-1/2}\sin \left(\varphi - 
+\gamma^2 
+\left| R\omega^2 - \frac{M}{R^2} \right|
+\left( 1-\frac{2M}{R} \right)^{1/2}
+\sin \left(\varphi - 
 \omega \gamma^2 s \left( 1-\frac{3M}{R} \right)
  \right)
 \end{align}
 
+
 Zauważmy, że uzyskane równanie różni się od rozwiązania 
 otrzymanego w ruchu po okręgu w 
 płaskiej metryce Minkowskiego czynnikami
-$\left( 1-2M/R \right)^{-1/2}$ i 
-$ \left( 1-3M/R \right)$. Na wykresie~\ref{CD1plot} wykreślamy
- ich wartości w zależności od $R$. Dla $R$ dużych w porównaniu z 
-$2M$ wpływ masy $M$ na działanie zegara jest niewielki, 
+$\left( 1-2M/R \right)^{1/2}$,
+$ \left( 1-3M/R \right)$, $-M/R^2$ oraz czynnikiem w $\gamma$. 
+Ze wzrostem promienia najszybciej można zaniedbać czynnik 
+proporcjonalny do $1/R^2$. 
+Porównanie wagi każdego z czynników
+w zależności od $R$ 
+przedstawiamy na wykresie~\ref{CD1plot}.
+Dla uproszczenia porównania oraz lepszego oddania kreślimy 
+wykres $1-M/R^2$ zamiast $M/R^2$. Pomijamy w analizie 
+czynnik $\gamma$,
+ gdyż zbiega on do odpowiednika w metryce Minkowskiego
+podobnie jak $\left( 1-2M/R \right)^{1/2}$.
+Dla odpowiednio dużych $R$ wpływ masy $M$ na działanie zegara jest niewielki, 
 przy czym silniej wpływa na $\chi$ niż na $\alpha$.  
 \begin{figure}
 \centering
@@ -186,3 +201,20 @@ przy czym silniej wpływa na $\chi$ niż na $\alpha$.
 pochodzących od $M$ w zależności od $R$.}{\label{CD1plot}}
 \end{figure}
 
+Jeśli zamiast ruchu po okręgu rozważymy zegar spoczywający w 
+polu grawitacyjnym odpowiednie rachunki przebiegają podobnie i 
+wystarczy w powyższych rozważaniach położyć $\omega=0$.
+Otrzymujemy wtedy 
+\begin{align*}
+\gamma &= \left( 1 - \frac{M}{R^2} \right)^{-1/2},\\
+\alpha &= \frac{M}{R^2} \left( 1 - \frac{M}{R^2} \right)^{1/2},\\
+\chi &= 0,\\
+\dot{\varphi} &= \pm \frac{2}{\ell} +
+\gamma^2  \frac{M}{R^2} 
+\left( 1-\frac{2M}{R} \right)^{1/2}
+\sin \left(\varphi  \right).
+\end{align*}
+W przypadku zegara spoczywającego w polu grawitacyjnym 
+struktura równania na fazę przypomina równanie uzyskane 
+dla ruchu hiperbolicznego, co sugeruje, że działanie 
+zegara w tych przypadkach może być podobne.  
