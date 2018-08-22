@@ -1,7 +1,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % reper w ruchu po okręgu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ruch po okręgu}
+\subsection{Ruch po okręgu.}
 W układzie obserwatora inercjalnego $\mathcal{I}$ z~kartezjańskim 
 układem współrzędnych rozważamy linię świata 
 obserwatora $\mathcal{Z}$ w ruchu jednostajnym po okręgu.
@@ -25,25 +25,22 @@ Wtedy wektory prędkości i przyspieszenia mają postać
 \begin{align*}
 (A^\mu) = \left( \frac{\D u^\mu}{\d s}\right) 
 = (0,\ -R\omega^2\gamma^2\cos\omega s
-,\ -R\omega^2\gamma^2\sin\omega\gamma s,\ 0).
+,\ -R\omega^2\gamma^2\sin\omega\gamma s,\ 0),
 \end{align*}
-Właściwe przyspieszenie jest wtedy zachowane podczas ruchu
+a podczas ruchu zachowane jest przyspieszenie właściwe 
 \begin{align*}
 \alpha =\sqrt{ - A\cdot A} =  R\omega^2\gamma^2 .
 \end{align*}
-\\
-%
-%\textbf{Konstrukcja lokalnie nierotującej bazy} \\
-%\\
+
 Teraz zajmiemy się znalezieniem reperu lokalnie nierotującego
 poruszającego się po rozpatrywanej linii świata.
 Jako wersor czasowy $e$ wybieramy prędkość $u$. 
 Pierwszy z wersorów przestrzennych $e_1'$ wybieramy 
-wersor przeciwny do przyspieszenia.
+przeciwny do przyspieszenia.
 Jako wersor $e_3$ wybieramy unormowany wektor 
 prostopadły do płaszczyzny ruchu.
 Wersor $e_2'$ wybieramy tak, aby był ortogonalny do pozostałych. 
-Uzyskaną bazę zapisujemy w postaci macierzowej~\eqref{Esimplepirm}.
+Uzyskaną bazę zapisujemy w postaci macierzowej
 \begin{align}\label{Esimpleprim}
 E'=
 \begin{pmatrix}
@@ -65,17 +62,15 @@ R\omega\gamma  & -\gamma\sin\omega\gamma    s
 \end{pmatrix}.
 \end{align}
 Chcemy, aby obrana baza spełniała prawo transportu~\eqref{FW}. 
-%Z racji ortonormalności wersory tej bazy spełniają warunek~\eqref{FW1}.
-%Łatwo sprawdzić, że wersory $e$ i $e_3$ spełniają również 
-%warunek~\eqref{FW2}, w przeciwieństwie do 
-%wersorów $e_1'$ oraz $e_2'$. Aby tę drobną usterkę naprawić 
 Łatwo sprawdzić, że wersor $e_3$ spełnia prawo 
-transportu~\eqref{FW} natomiast wersory $e_1'$ i $e_2'$ nie.
+transportu~\eqref{FW}, natomiast wersory $e_1'$ i $e_2'$ nie.
 Aby to naprawić
 dokonamy obrotu bazy o kąt $\psi=\psi(s)$ w płaszczyźnie wyznaczonej 
-przez wersory $e_1'$ i $e_2'$. Odpowiedni obrót w bazie kanonicznej jest
-dany przez~\eqref{canonicalRotate}~\cite{star1993algebra}.
-Właściwie obrócone wersory obliczamy za pomocą~\eqref{e1e2Rotate}.
+przez wersory $e_1'$ i $e_2'$. Odpowiedni obrót w bazie kanonicznej 
+ma w reprezentacji macierzowej 
+postać~\eqref{canonicalRotate}~\cite{star1993algebra}.
+Właściwie obrócone wersory obliczamy za pomocą 
+równości~\eqref{e1e2Rotate}.
 \begin{align}\label{canonicalRotate}
 ( \mathcal{O}^\mu_\nu )
 =
@@ -90,14 +85,14 @@ Właściwie obrócone wersory obliczamy za pomocą~\eqref{e1e2Rotate}.
 e_1 =  \mathcal{O}^\mu_1 E_\mu ', \\
 e_2 =  \mathcal{O}^\mu_2 E_\mu ' .\nonumber
 \end{align}
-Wstawiając obrócone wersory to warunku~\eqref{FW} otrzymujemy 
+Wstawiając obrócone wersory do warunku~\eqref{FW} otrzymujemy 
 równania  różniczkowe na kąt~$\psi$, które 
 (przyjmując bez straty ogólności
-$\psi(0)=0$) mają wspólne rozwiązane postaci~\eqref{PsiSimple}.
+$\psi(0)=0$) mają wspólne rozwiązanie postaci
+$\psi (s) = -\omega \gamma^2 s$.
 Otrzymana ortonormalna baza~\eqref{Esimple} spełnia 
 prawo transportu~\eqref{FW}.
 \begin{align}\label{PsiSimple}
-\psi (s) = -\omega \gamma^2 s
 \end{align}
 \begin{align}\label{Esimple}
 E&=
@@ -142,12 +137,11 @@ R\omega\gamma \cos\omega\gamma^2 s       &
 0 & 0 & 0 & 1 \\
 \end{pmatrix}.
 \end{align}
-
 Mając odpowiedni reper możemy podać równanie na kąt $\varphi$
 \begin{align*}\nonumber
-\chi &= \omega \gamma^2 s = - \psi, \quad \alpha = R \omega \gamma^2 \\
+\chi &= \omega \gamma^2 s = - \psi, \quad \alpha = R \omega \gamma^2, \\
 \dot{\varphi} &= \pm \frac{2}{\ell} + \label{phiSimple}
 R \omega^2 \gamma^2\sin (\varphi - \omega\gamma^2 s )
-= \pm \frac{2}{\ell} +\alpha \sin (\varphi - \alpha s / R\omega ) 
+= \pm \frac{2}{\ell} +\alpha \sin (\varphi - \alpha s / R\omega ) .
 \end{align*}
 

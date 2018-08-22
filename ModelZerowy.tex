@@ -1,64 +1,110 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Model cząstki zerowej
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Model uogólniony}
+\subsection{Model uogólniony.}
 W tej części przedstawimy pokrótce uogólnioną konstrukcję 
 Lagrangianu zegara motywowaną przedstawionym
- modelem Staruszkiewicza i zawartą w~\cite{Bratek2015wiele}.
+ modelem Staruszkiewicza i zawartą w~pracy~\cite{Bratek2015wiele}.
 Lagrangian opisujący relatywistyczny rotator powinien być 
 niezmienniczy ze względu na lokalne skalowanie 
 $\delta k =\epsilon k$. Aby wariacja 
-$\delta L $ znikała dla dla dowolnego $\epsilon$ musimy założyć, że
+$\delta L $ znikała dla dowolnego $\epsilon$ musimy założyć, że
  $k \cdot \Pi = 0$. Pamiętając, że $k$ jest kierunkiem zerowym 
 mamy dwa więzy wynikające ze struktury rotatora
 \begin{align}\label{W1}
 k \cdot \Pi = 0, \quad k \cdot k = 0. \tag{W1}
 \end{align}
-Następnie, zakładając że rotator ma być fundamentalny, 
+Następnie zakładając, że rotator ma być fundamentalny, 
 mamy dwa więzy nakładane na niezmienniki Casimira 
-grupy Poincarego~\ref{casimir1},\ref{casimir2}.
-
- 
-Mamy więc cztery więzy będące punktem wyjścia
+grupy Poincarego~\ref{casimir1},\ \ref{casimir2}.
+Otrzymujemy w ten sposób 
+cztery więzy będące punktem wyjścia
 do konstrukcji Lagrangianu zegara.
+Więzy~\eqref{W1} pozwalają zapisać kwadrat pseudowektora $W$ w postaci
+\begin{align*}
+W_\mu  W^\mu = 
+-\left| 
+\begin{array}{ccc}
+P\cdot P& P \cdot k& P \cdot \Pi\\
+k\cdot P& k \cdot k& k \cdot \Pi\\
+\Pi \cdot P& \Pi \cdot k& \Pi \cdot \Pi\\
+\end{array}
+\right| = 
+(P \cdot k)^2  (\Pi \cdot \Pi). \\
+\end{align*}
 
 Dirac, w jednej ze swoich najważniejszych prac: 
 "Generalized Hamiltonian Dynamics"~\cite{DiracHam}, podał
 jak konstruować Lagrangiany z więzami dla prędkości.
 Zgodnie z metodą Diraca postać Lagrangianu dla zegara wynika 
-z postaci Hamiltonianiu zegara Staruszkiewicza. Hamiltonian
-ten jest liniową kombinacją więzów pierwszego rodzaju (t.j. 
+z~postaci Hamiltonianiu zegara Staruszkiewicza. Hamiltonian
+ten jest liniową kombinacją więzów pierwszego rodzaju (tj. 
 takich, że parami zerują nawiasy Poissona) ze współczynnikami będącymi 
-funkcjami $u_i$. 
+funkcjami $u_i$
 \begin{align*}
 H = \frac{u_1}{2m} \left(P\cdot P -m^2 \right) 
 + \frac{u_2}{2m } \left( P\cdot P + \frac{4}{\ell^2 m^2} (k\cdot P)^2 
 (\Pi \cdot \Pi) \right)
-+ u_3 (k \cdot \Pi ) + u_4 (k \cdot k)
++ u_3 (k \cdot \Pi ) + u_4 (k \cdot k).
 \end{align*}
-Z równań $\frac{\partial H}{\partial u_i} = 0 $ dostajemy wyjściowy
-układ więzów. 
+Z równań $\frac{\partial H}{\partial u_i} = 0 ,\ i=1,2,3,4$ 
+dostajemy wyjściowy
+układ więzów, natomiast prędkości dane są przez
+\begin{align*}
+\dot{x} &= \frac{\partial H}{\partial P} = 
+(u_1 + u_2 )\frac{P}{m} - u_2 \frac{m}{k\cdot P} k,\\
+\dot{k} &= \frac{\partial H}{\partial \Pi} =  
+u_2\frac{4 (k\cdot p)^2}{\ell^2m^3}\Pi +u_3 k .
+\end{align*}
 Transformacją
 prowadzącą od Hamiltonianu do Lagrangianu jest 
 przekształcenie odwrotne Legendre'a. 
 W tym przypadku ma ono maksymalny rząd, gdy $\dot{x} \cdot \dot{x}$ 
-jest normalizowalne. Jednak powstały Lagrangian
+jest normalizowalne. Jednak powstały w ten sposób Lagrangian
 ma defekt i nie determinuje ruchu~\cite{Bratek2015wiele}.
-W przypadku $\dot{x} \cdot \dot{x} = 0$  rząd się obniża. Założenie 
-$u_1 = u_2 \neq 0$ daje dodatkowe więzy 
-Ta osobliwość  odwrotnej transformacji Legendre'a 
-wyróżnia zegar idealny, który ma własność
-Zitterbewegung, będącą klasycznym odpowiednikiem 
-odkrytego przez Schroedingera zjawiska dla elektronu Diraca. 
+Natomiast w przypadku $\dot{x} \cdot \dot{x} = 0$  rząd transformacji
+ się obniża. 
+Ta osobliwość odwrotnej transformacji Legendre'a 
+wyróżnia zegar idealny, który ma własność, będącą klasycznym 
+odpowiednikiem zjawiska Zitterbewegung
+odkrytego przez Schrödingera dla elektronu Diraca. 
 Z Hamiltonianu Diraca dla elektronu swobodnego wynika, że 
 wartości własne operatora prędkości dla kwantowej cząstki
 relatywistycznej są równe $\pm c$. 
-Dirac w swej książce "The principles of
-quantum mechanics" wyjaśnia poglądowo dlaczego tak musi być dla kwantowych
-cząstek relatywistycznych: a mianowicie, wartości pędu relatywistycznego
-są nieograniczone, dlatego wartość oczekiwana pędu jest nieskończona, co
-daje ze zwykłego związku relatywistycznego pęd-prędkość wartość $c$.
+Dirac zawarł w swojej książce "The Principles of
+Quantum Mechanics"~\cite{principia} 
+wyjaśnienie tego fenomenu dla kwantowych
+cząstek relatywistycznych. Mianowicie że, wartości pędu relatywistycznego
+są nieograniczone, a co za tym idzie 
+wartość oczekiwana pędu jest nieskończona. Więc 
+z relatywistycznego związku pęd-prędkość otrzymujemy wartość $c$.
 
+Założenie 
+$u_1 = u_2 \neq 0$ obniża rząd transformacji 
+odwrotnej Lagendre'a i daje dodatkowe więzy 
+\begin{align}\boxed{
+\label{wiezD}
+\frac{\dot{x}\cdot\dot{x}}{\dot{x}\cdot k}=0, 
+}
+\end{align}
+\begin{align} 
+\boxed{
+\label{wiez}
+ - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 } = 1 .
+}
+\end{align}
+Otrzymujemy Lagrangian postaci
+\begin{align*}\boxed{
+L  = \frac{m \kappa}{2} \frac{\dot{x}\cdot\dot{x}}{k\cdot\dot{x}}
++ \frac{m }{4 \kappa} 
+ \left( \ell^2 \frac{\dot{k} \cdot \dot{k}}{  k \cdot \dot{x} } + 
+k\cdot\dot{x} \right) + \lambda (k\cdot k),}
+\end{align*}
+gdzie $\kappa$ jest zmienną niezależną, a $\lambda$ 
+mnożnikiem Lagrange'a~\cite{Bratek2015wiele}.
+Więz~\eqref{wiez} daje ograniczenie na częstość pracy zegara. 
+W dalszej części pracy określimy przy jego pomocy równanie na 
+fazę zegara.
 
 %W tej części będza
 %
@@ -175,6 +221,3 @@ f(\xi) = 0, \ f'(\xi) =- \frac{1}{2},\ \xi = 1.
  - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 } = 1.
 \end{align}
 \end{comment}
-Więzy te pozwolą nam określić ruch zegara. 
-Będziemy go opisywać w reperze który porusza się 
-wraz z posiadaczem zegara.  

@@ -3,88 +3,78 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Analiza równania fazy zegara}
-W tej części przeprowadzimy analizę równania na fazę zegara
-wyprowadzonego w poprzedniej części.
-Interesującym nas parametrem jest przybliżenie właściwe, będące miarą 
-przyspieszenia jakie działa na obiekt. 
+W tym rozdziale przeprowadzimy analizę równania na fazę zegara.
+Najbardziej interesującym nas parametrem jest przyspieszenie właściwe.
 
-\subsection{Zegar w przypadku stałego przyspieszenia}
-Zakładamy stałe przyspieszenie właściwe~$\alpha$. Wtedy wektor 
-przyspieszenia określony jest przez parametr~$\chi$
-
-Załóżmy szczególną postać $\chi (s) = p s + q$, 
-gdzie $p,q = const(s)$.  Gdy $p=0$ 
-rozpatrujemy przypadek gdy wektor $A$ jest podczas ruchu
+\subsection{Zegar w przypadku stałego przyspieszenia.}
+Jeśli założymy stałe przyspieszenie właściwe~$\alpha$, to wektor 
+przyspieszenia $A$ będzie zależeć od parametru~$\chi$.
+Załóżmy dodatkowo szczególną postać $\chi (s) = p s + q$, 
+gdzie $p,\ q = const(s)$.  Gdy $p=0$, to wektor $A$ jest podczas ruchu
 transportowany za pomocą transportu~\eqref{FW}.  
 W tym przypadku rozwiązanie uzyskujemy stosując  
-podstawienie~\eqref{analiza_podstawienie1}
+podstawienie
 \begin{align} \label{analiza_podstawienie1}
 \Phi &= \varphi - \chi,\\
-\frac{\d \Phi}{\d s} &= \frac{\d \varphi }{\d s} - p
-\end{align}
-\begin{align*}
+\frac{\d \Phi}{\d s} &= \frac{\d \varphi }{\d s} - p,  \nonumber \\
 \frac{\d \Phi}{\d s} &= \pm \frac{2}{\ell} - p  + 
-\alpha \sin (\Phi ) 
-\end{align*}
-\begin{align*}
+\alpha \sin (\Phi ) ,  \nonumber \\
 \d s & = \frac{\d \Phi}{ \pm \frac{2}{\ell} - p  + 
-\alpha \sin (\Phi ) }
-\end{align*}
+\alpha \sin (\Phi ) } . \nonumber
+\end{align}
 Całkując prawą stronę powyższej równości stosujemy podstawienie
- $ x = \text{tg} (\Phi/2)$. Dla uproszczenia stosujemy oznaczenia
+ $ x = \text{tg} (\Phi/2)$. Dla uproszczenia wprowadzamy oznaczenia
 $B = \pm \frac{2}{\ell} - p $,
-$C =  \sqrt{ 1 - \frac{\alpha^2}{B^2}}$
+$C =  \sqrt{ 1 - \frac{\alpha^2}{B^2}}$. 
 \begin{align*}
 s +s_0 & = \frac{2}{BC} \text{arctg}  
-\left( \frac{ \text{tg} (\Phi/2)}{C} +\frac{\alpha}{BC} \right),
+\left( \frac{ \text{tg} (\Phi/2)}{C} +\frac{\alpha}{BC} \right).
 \end{align*}
+Po oczywistych przekształceniach otrzymujemy 
 \begin{align*}
 \varphi = ps + q + 
 2\text{arctg} \left( 
 C \text{tg} \left( BC(s + s_0)/2\right)  - \frac{\alpha}{B}
-\right)
+\right) .
 \end{align*}
 
 Zauważmy, że dla $\alpha \to 0$ rozwiązanie jest 
-postaci~\eqref{analityczne_graniczne}. To znaczy, że w przypadku ruchu
-bez przyspieszeń nasz model zegara mierzy czas własny~$s$.
-\begin{align}\label{analityczne_graniczne}
+postaci
+\begin{align}\nonumber
 \varphi = \pm \frac{2}{\ell} s + const.
 \end{align}
 
-Zakładając warunek początkowy postaci $\varphi(0) = -\pi/2$, 
-czyli $\Phi(0) = -\pi/2 - q$ możemy wyznaczyć stałą całkowania~$s_0$.
+Zakładając warunek początkowy $\varphi(0) = -\pi/2$
+ możemy wyznaczyć stałą całkowania~$s_0$.
 \begin{align*}
 s_0 & = \frac{2}{BC} \text{arctg}  
-\left( - \frac{1}{C}\text{tg} (q/2 + \pi/4) +\frac{\alpha}{BC} \right),
+\left( - \frac{1}{C}\text{tg} (q/2 + \pi/4) +\frac{\alpha}{BC} \right).
 \end{align*}
 
 \newpage
-\subsection{Rozwiązanie przybliżone}
-Interesuje nas jak rozwiązanie zachowuje się dla małych przyspieszeń. 
-Rozwiążemy równanie~\eqref{phi_equation} stosując 
+\subsection{Rozwiązanie przybliżone.}
+Interesuje nas jak zegar zachowuje się dla małych przyspieszeń. 
+W tym celu rozwiążemy równanie~\eqref{phi_equation} stosując 
 rachunek zaburzeń ze względu na 
-parametr~$\alpha$. W tym celu zapisujemy~$\phi$ oraz~$\chi$ w postaci
+parametr~$\alpha$. Zapisujemy~$\phi$ oraz~$\chi$ w postaci
 szeregów~\eqref{phiszereg}~\eqref{chiszereg}. 
-W równaniu~\eqref{phi_equation} zapisujemy sinus w postaci 
-szeregu~\eqref{phi_equation_sin_szereg}. Następnie wstawiamy 
-rozwinięcia~$\phi$~i~$\chi$ do uzyskanego równania i porządkujemy wyrazy
-ze względu na~$\alpha$, odrzucając wyrazy $O(\alpha^2)$. 
-Separujemy równanie ze względu na~$\alpha$ dostając 
-równania~\eqref{phi_szereg_rownania}, 
-których rozwiązania wyglądają 
-następująco~\eqref{phi_szereg_rozwiazania}.
-Ostatecznie szukane przez nas rozwiązanie ma 
-postać~\eqref{phi_szereg_rozwiazanie}.
+Następnie w~równaniu~\eqref{phi_equation} rozwijamy sinus 
+w szereg~\eqref{phi_equation_sin_szereg}. 
 \begin{align}\label{phiszereg}
 \varphi = \sum_{n=0}^{\infty} \alpha^n \varphi_n, \\
-\chi = \sum_{n=0}^{\infty} \alpha^n \chi_n  \label{chiszereg}
+\chi = \sum_{n=0}^{\infty} \alpha^n \chi_n , \label{chiszereg}
 \end{align}
 \begin{align}\label{phi_equation_sin_szereg}
 \dot{\varphi} \mp \frac{2}{\ell} - \alpha
 \sum_{n=0}^{\infty} (-1)^n 
-\frac{(\varphi-\chi)^{2n+1}}{(2n+1)!} =0
+\frac{(\varphi-\chi)^{2n+1}}{(2n+1)!} =0.
 \end{align}
+Wstawiamy 
+rozwinięcia~$\varphi$~i~$\chi$ do uzyskanego równania i porządkujemy wyrazy
+ze względu na~$\alpha$ z dokładnością do $O(\alpha^2)$.
+ Otrzymujemy równania~\eqref{phi_szereg_rownania}, których 
+rozwiązania są postaci~\eqref{phi_szereg_rozwiazania}.
+
 \begin{align}\label{phi_szereg_rownania}
 \left\{ 
 \begin{aligned}
@@ -104,21 +94,17 @@ postać~\eqref{phi_szereg_rozwiazanie}.
 \end{aligned}
 \right.
 \end{align}
+Ostatecznie szukane przez nas rozwiązanie przybliżone ma 
+postać
 \begin{align}\label{phi_szereg_rozwiazanie}
 \varphi =  \pm \frac{2}{\ell}s - \frac{\pi}{2} 
 -\alpha  \int_0^s \cos (\pm 2 s_1 / \ell  - \chi_0(s_1)  ) \d s_1 
 +O(\alpha^2).
 \end{align}
-Z rozwiązania przybliżonego~\eqref{phi_szereg_rozwiazanie} 
-wiemy, że dla małych przyspieszeń nasz model zegara dobrze 
+Z rozwiązania przybliżonego wiemy, 
+że dla małych przyspieszeń nasz model zegara dobrze 
 mierzy czas własny~$s$. Przyspieszenie charakterystyczne dla 
-którego efekt powinien mieć istotny wpływ to~\eqref{alpha_c}.
+którego efekt powinien mieć istotny wpływ to
+$\alpha_c = \frac{2}{\ell}$.
 Wpływ zaburzenia~$\varphi_1$ na działanie zegara jest 
-rzędu~\eqref{rzadpoprawki}.
-\begin{align}\label{alpha_c}
-\alpha_c = \frac{2}{\ell}
-\end{align}
-\begin{align}\label{rzadpoprawki}
-\epsilon = \frac{\alpha}{\alpha_c}
-\end{align}
-
+rzędu~$\epsilon = \frac{\alpha}{\alpha_c}.$

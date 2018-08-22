@@ -1,8 +1,8 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % reper w ruchu po okręgu
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ruch po okręgu wokół czarnej dziury}
-W układzie obserwatora inercjalnego $\mathcal{I}$ z~sferycznym układem
+\subsection{Ruch po okręgu wokół czarnej dziury.}
+W układzie obserwatora inercjalnego $\mathcal{I}$ ze~sferycznym układem
 współrzędnych $(t,r,\phi,\theta)$ rozważamy linię świata 
 obserwatora $\mathcal{Z}$ w ruchu jednostajnym po okręgu wokół czarnej dziury.
 Będziemy używać metryki Schwarzschilda, która odpowiada 
@@ -14,9 +14,9 @@ Element liniowy oraz macierz tensora metrycznego mają postać
  \left(1-\frac{2 M}{r}\right) \d t^2 
  -\left(1-\frac{2 M}{r}\right)^{-1} \d r^2 
  -r^2 \sin ^2\theta\d \phi^2 
- -r^2 \d \theta^2.
+ -r^2 \d \theta^2,
 \end{align}
-\begin{align}\label{CDmetric}
+\begin{align}\nonumber
 (g_{\mu\nu}) = \left(
 \begin{array}{cccc}
  1-\frac{2 M}{r} & 0 & 0 & 0 \\
@@ -26,8 +26,8 @@ Element liniowy oraz macierz tensora metrycznego mają postać
 \end{array}
 \right).
 \end{align}
-Dla metryki~\eqref{CDmetric} symbole Christoffela $\Gamma^k _{ij}$ 
-przedstawiam poniżej w tablicach odpowiednio dla $k=0,1,2,3$
+Dla metryki~\eqref{CDlin} symbole Christoffela $\Gamma^k _{ij}$ 
+przedstawiamy poniżej w tablicach odpowiednio dla $k=0,1,2,3$.
 $$
 \left(
 \begin{array}{cccc}
@@ -60,10 +60,10 @@ $$
  0 & 0 & -\cos \theta\sin \theta  & 0 \\
  0 & \frac{1}{r} & 0 & 0 \\
 \end{array}
-\right)
+\right) .
 $$
 Jak poprzednio rozważamy ruch po okręgu o promieniu $R$ i częstości $\omega$.
-W rozważanym układzie współrzędnych linię świata można zapisać następująco
+Linię świata w tym przypadku można zapisać następująco
 %W tym układzie punkt
 %poruszający się po okręgu o promieniu $R$ i częstości $\omega$ w układzie
 %obserwatora inercjalnego $\mathcal{I}$ porusza się po 
@@ -78,30 +78,30 @@ Wtedy wektor prędkości ma postać
 \begin{equation}\nonumber
 (u^\mu) = \left( \frac{\d y^\mu}{\d s} \right) 
 = (\gamma,\ 0,\ \omega\gamma,\ 0),
+\quad \text{gdzie } \gamma = \d t/\d s. 
 \end{equation}
-gdzie $\gamma = \d t/\d s$. Z danego elementu liniowego~\eqref{CDlin}, 
-po uwzględnieniu~\eqref{y_CD}, możemy odczytać 
+Z danego elementu liniowego~\eqref{CDlin}, 
+po uwzględnieniu~\eqref{y_CD}, wyznaczamy
 \begin{align}\nonumber
 \gamma = \frac{\d t}{\d s} = 
  \left(1 - \frac{2 M}{R} - R^2\omega^2 \right)^{-1/2}.
 \end{align}
-Wyznaczamy przyspieszenie oraz przyspieszenie właściwe
+Następnie obliczamy przyspieszenie oraz przyspieszenie właściwe
 \begin{align}\nonumber
 (A^\mu) = \left(0,\ -\gamma^2 \left( R\omega^2 - \frac{M}{R^2} \right) 
-\left(1-\frac{2M}{R}\right),\ 0,\ 0 \right)
+\left(1-\frac{2M}{R}\right),\ 0,\ 0 \right) ,
 \end{align}
 \begin{align}\nonumber
 \alpha = \sqrt{-A\cdot A} = \gamma^2 
 \left| R\omega^2 - \frac{M}{R^2} \right|
-\left( 1-\frac{2M}{R} \right)^{1/2}
+\left( 1-\frac{2M}{R} \right)^{1/2} .
 \end{align}
 
 Ponownie skorzystamy z bazy wyznaczonej wcześniej dla przypadku
-czasoprzestrzeni Minkowskiego i uogólnimy ją w ten sposób, 
+czasoprzestrzeni Minkowskiego i uogólnimy ją w taki sposób, 
 aby była unormowana i spełniała prawo transportu~\eqref{FW}.
-Takie postępowanie daje nam łatwy sposób sprawdzania poprawności
-obliczeń, gdyż dla $M=0$ wyniki powinny przechodzić w przypadek 
-bez grawitacji, czyli czasoprzestrzeń Minkowskiego.
+%Dla $M=0$ wyniki powinny pokrywać się z przypadkiem
+%bez pola grawitacyjnego.
 W pierwszym kroku musimy przetransformować wektory bazy~\eqref{Esimple}
 do współrzędnych sferycznych.  Na potrzeby tej transformacji
 współrzędne kartezjańskie oznaczymy przez $x^i$, natomiast współrzędne 
@@ -111,12 +111,12 @@ się kontrawariantnie~\cite{inga1980} co można zapisać jako
 \tilde{v}^i = \frac{\partial \tilde{v}^i}{\partial v^j} v^j.
 \end{align}
 Współczynniki tej transformacji obliczamy w punkcie należącym do 
-rozważanej tu linii świata. Baza~\eqref{Esimple} we współrzędnych sferycznych
+rozważanej linii świata. Baza~\eqref{Esimple} we współrzędnych sferycznych
 ma zatem postać 
 \begin{align}\nonumber
 \widetilde{E}=
 \begin{pmatrix}
-e_0\\
+e\\
 e_1\\
 e_2\\
 e_3
@@ -129,13 +129,12 @@ R\omega\gamma \cos \psi & -\sin\psi & \frac{\gamma}{R} \cos\psi & 0\\
 0 & 0 & 0 & -\frac{1}{R} \\
 \end{pmatrix}.
 \end{align}
-Powyższa baza, rozważana w czasoprzestrzeni z metryką
-Schwarzschilda, nie jest ortonormalna. Można jednak stosunkowo łatwo
-uogólnić ją w ten sposób aby ortonormalna była
+Powyższa baza nie jest ortonormalna w metryce Schwarzschilda, jednak można 
+ten defekt stosunkowo łatwo naprawić w poniższy sposób 
 \begin{align}\nonumber
 \widetilde{E}=
 \begin{pmatrix}
-e_0\\
+e\\
 e_1\\
 e_2\\
 e_3
@@ -152,28 +151,28 @@ R\omega\gamma \cos \psi\left(1-\frac{2 M}{R} \right)^{-1/2}
 0 & 0 & 0 & -\frac{1}{R} \\
 \end{pmatrix}.
 \end{align}
-Odpowiedni kąt obrotu~$\psi$ znajdujemy za pomocą prawa transportu~\eqref{FW}.
-Dają one równania różniczkowe (jak poprzednio zakładamy $\psi(0)=0$), 
-które mają wspólne rozwiązanie dane przez~\eqref{PsiCD}.
-\begin{align}\label{PsiCD}
+Z prawa transportu~\eqref{FW} otrzymujemy równania różniczkowe 
+na kąt obrotu~$\psi$. Jak poprzednio zakładamy warunek 
+początkowy $\psi(0)=0$ i otrzymujemy rozwiązanie
+\begin{align*}
 \psi = - \omega \gamma^2 s \left( 1-\frac{3M}{R} \right).
-\end{align}
+\end{align*}
 Mając odpowiedni reper ruchomy znajdujemy równanie na 
-fazę zegara~\eqref{PhiCD}
+fazę zegara
 \begin{align}\nonumber
 \chi &= - \psi =\omega \gamma^2 s \left( 1-\frac{3M}{R} \right)
  , \quad 
 \alpha =  \gamma^2 
 \left| R\omega^2 - \frac{M}{R^2} \right|
-\left( 1-\frac{2M}{R} \right)^{1/2}
-\\
-\dot{\varphi} &= \pm \frac{2}{\ell} + \label{PsiCD}
+\left( 1-\frac{2M}{R} \right)^{1/2} ,
+\\ \nonumber
+\dot{\varphi} &= \pm \frac{2}{\ell} + 
 \gamma^2 
 \left| R\omega^2 - \frac{M}{R^2} \right|
 \left( 1-\frac{2M}{R} \right)^{1/2}
 \sin \left(\varphi - 
 \omega \gamma^2 s \left( 1-\frac{3M}{R} \right)
- \right)
+ \right) .
 \end{align}
 
 
@@ -181,26 +180,24 @@ Zauważmy, że uzyskane równanie różni się od rozwiązania
 otrzymanego w ruchu po okręgu w 
 płaskiej metryce Minkowskiego czynnikami
 $\left( 1-2M/R \right)^{1/2}$,
-$ \left( 1-3M/R \right)$, $-M/R^2$ oraz czynnikiem w $\gamma$. 
-Ze wzrostem promienia najszybciej można zaniedbać czynnik 
-proporcjonalny do $1/R^2$. 
-Porównanie wagi każdego z czynników
-w zależności od $R$ 
+$ \left( 1-3M/R \right)$, $-M/R^2$ oraz czynnikiem  $\gamma$. 
+Porównanie wagi każdego z~czynników
+w~zależności od $R$ 
 przedstawiamy na wykresie~\ref{CD1plot}.
 Dla uproszczenia porównania oraz lepszego oddania kreślimy 
 wykres $1-M/R^2$ zamiast $M/R^2$. Pomijamy w analizie 
 czynnik $\gamma$,
- gdyż zbiega on do odpowiednika w metryce Minkowskiego
-podobnie jak $\left( 1-2M/R \right)^{1/2}$.
+ gdyż zbiega on do swojego odpowiednika w metryce Minkowskiego
+podobnie jak $\left( 1-2M/R \right)^{1/2}$ do jedności.
 Dla odpowiednio dużych $R$ wpływ masy $M$ na działanie zegara jest niewielki, 
-przy czym silniej wpływa na $\chi$ niż na $\alpha$.  
-\begin{figure}
+przy czym silniej wpływa na kąt $\chi$ niż na przyspieszenie $\alpha$.  
+\begin{figure}[h]
 \centering
 \includegraphics[scale=0.6]{CD1.eps}
 \caption{Wykres czynników wpływających na działanie zegara 
 pochodzących od $M$ w zależności od $R$.}{\label{CD1plot}}
 \end{figure}
-
+\newpage
 Jeśli zamiast ruchu po okręgu rozważymy zegar spoczywający w 
 polu grawitacyjnym odpowiednie rachunki przebiegają podobnie i 
 wystarczy w powyższych rozważaniach położyć $\omega=0$.

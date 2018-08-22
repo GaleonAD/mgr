@@ -1,23 +1,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % reper w ruchu po okręgu w metryce FLRW
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Ruch po okręgu względem galaktyk}
+\subsection{Ruch po okręgu względem galaktyk.}
 Rozważymy teraz ponownie ruch po okręgu z tą różnicą, że 
-wiążemy obserwatora~$\mathcal{I}$ z pyłem (galaktykami) w 
-ekspandującym wszechświecie. 
-Sytuacji tej odpowiada metryka 
+wiążemy obserwatora~$\mathcal{I}$ z~odległymi galaktykami w~ekspandującym 
+wszechświecie. Sytuacji tej odpowiada metryka 
 Friedmana-Lemaître’a-Robertsona-Walkera~(FLRW).
-Dla uproszczenia zakładamy zerową krzywizną przestrzenną.
-Tensor metryczny dany jest przez~\eqref{FLRWmetric}
+Dla uproszczenia zakładamy zerową krzywiznę przestrzenną.
+Tensor metryczny dany jest przez
 \begin{equation}\label{FLRWmetric}
 (g_{\mu\nu}) = \text{diag} (1,\ -a(t)^2,\ -a(t)^2,\ -a(t)^2).
 \end{equation}
 Warto zauważyć, że dla $a(t) \equiv 1$ metryka ta przechodzi
 w zwykłą metrykę czasoprzestrzeni Minkowskiego, a zatem 
-można łatwo weryfikować poprawność wyników sprawdzając, czy
-dla przy przejściu $a(t)\to 1$ pokrywają się one~z otrzymanymi 
-w poprzednim podrozdziale.
-W dalszej części przyjmujemy następujące oznaczenia 
+można łatwo zweryfikować poprawność wyników.
+W dalszej części tego rozdziału przyjmujemy następujące oznaczenia 
 \begin{align}\nonumber
 a:=a(t),\quad a':=\frac{\d a(t)}{ \d t}.
 \end{align}
@@ -28,8 +25,8 @@ a:=a(t),\quad a':=\frac{\d a(t)}{ \d t}.
 %\begin{align}
 %(g^{\mu\nu}) = \text{diag} (1,\ -1/a^2,\ -1/a^2,\ -1/a^2).
 %\end{align}
-Dla tej metryki symbole Chrostofella $\Gamma^k _{ij}$ 
-przedstawiam poniżej w tablicach odpowiednio dla $k=0,1,2,3$
+Dla tej metryki symbole Chrostofella $\Gamma^k _{ij}$ przedstawiamy
+ poniżej w tablicach odpowiednio dla $k=0,1,2,3$.
 $$
 \begin{array}{cccc}
 \left(
@@ -67,7 +64,7 @@ $$
 \end{array}
  $$ 
  \\
-Rozważamy więc linie świata cząstki w ruchu po okręgu 
+Rozważamy linie świata cząstki w ruchu po okręgu 
 \begin{align}\nonumber
 y^\mu(s) = (t,x,y,z)= (t(s),\ R\cos\omega t(s),\ R\sin\omega t(s),\ 0),
 \end{align}  
@@ -92,15 +89,13 @@ u^\mu = \dot{y}^\mu = \frac{\d y}{\d s} =
 \sin \omega t -R\omega^2\gamma^2\cos\omega t
 ,\ \frac{a'}{a}R\omega \gamma^2(\gamma^2+1) 
 \cos \omega t -R\omega^2\gamma^2\sin\omega t
-,\ 0)
+,\ 0).
 \end{flalign}
 Właściwe przyspieszenie wynosi
 \begin{align}\nonumber
-\alpha =\sqrt{ -A_\mu A^\mu},
-\end{align}
-\begin{align}\nonumber
+\alpha =\sqrt{ -A_\mu A^\mu}, \quad \text{gdzie } 
 A^{\mu } A_{\mu }=-\left(\frac{a' }{a}\right)^2\left(\gamma ^2-1\right) 
-\left(\gamma ^2+1\right)^2-a^2 R^2 \omega^4\gamma^4
+\left(\gamma ^2+1\right)^2-a^2 R^2 \omega^4\gamma^4 . 
 \end{align}
 
 %Oznaczając 
@@ -118,28 +113,13 @@ A^{\mu } A_{\mu }=-\left(\frac{a' }{a}\right)^2\left(\gamma ^2-1\right)
 %A^\mu A_\mu =  (\alpha_0)^2 -a^2\left((\alpha_1)^2 
 %+(\alpha_2)^2\right) = -\alpha^2 
 %\end{align}
-
-Konstruując w tym przypadku reper $E$ którego wersory będą spełniać
-prawo transportu~\eqref{FW} można konstrukcję przeprowadzić 
-analogicznie do przedstawionej w poprzednim przypadku 
-- czasoprzestrzeni Minkowskiego. Jednakże rachunki można znacząco uprościć 
-wykonując konstrukcję w inny sposób. Mianowicie można stosunkowo łatwo 
-uogólnić wersory uzyskanej wcześniej bazy~\eqref{Esimple}, tak aby 
+Konstrukcję reperu lokalnie nierotującego $E$ można przeprowadzić 
+analogicznie do przedstawionej w poprzednim rozdziale.
+ Jednakże rachunki uprościmy wykonując konstrukcję w inny sposób. 
+Mianowicie stosunkowo łatwo jest 
+uogólnić wersory uzyskanej wcześniej bazy~\eqref{Esimple} tak, aby 
 tworzyły bazę ortonormalną w metryce~\eqref{FLRWmetric}.
-Odpowiednia baza jest postaci~\eqref{EFLRW}.
-Jak poprzednio wersory $e$ i $e_3$ są transportowane wzdłuż linii świata 
-zgodnie z prawem~\eqref{FW}. Wersory $e_1$ i $e_2$ 
-zależą od kąta obrotu $\psi$. Jak metryka FLRW przy $a\to 1$ przechodzi~w 
-metrykę Minkowskiego tak szukany 
-kąt obrotu $\psi$ powinien w granicy $a\to 1$ przechodzić w kąt znaleziony 
-dla ciała poruszającego się po okręgu w czasoprzestrzeni Minkowskiego.
-Traktujemy tę granicę jako test poprawności wyników. 
-Wartość $\psi$ można znaleźć 
-żądając, aby wersory $e_1$ i $e_2$ spełniały prawo transportu~\eqref{FW}. 
-Wspólne rozwiązanie dla otrzymanych równań różniczkowych 
-można wyrazić przez~\eqref{PsiFLRW}.
-
-
+Odpowiednia baza jest postaci
 %Wtedy wystarczy, analogicznie jak poprzednio, 
 %rozważyć obrót wersorów $e_1$ i $e_2$ w płaszczyźnie przez nie tworzonej, 
 %aby uzyskać bazę $E$, której wersory spełniają prawo transportu~\eqref{FW}.
@@ -165,7 +145,7 @@ można wyrazić przez~\eqref{PsiFLRW}.
 %\end{pmatrix}.
 %\end{align}
 %Po obrocie otrzymujemy następującą bazę 
-\begin{align}\label{EFLRW}
+\begin{align}\nonumber
 E_{FLRW} = 
 \begin{pmatrix}
 e\\
@@ -188,12 +168,21 @@ a R\omega\gamma \cos \psi & -\frac{1}{a} \cos\omega t \sin\psi -
 0&	0	& 0	& \frac{1}{a} \\
 \end{pmatrix}.
 \end{align}
-\begin{align}\label{PsiFLRW}
+Jak poprzednio wersory $e$ i $e_3$ są transportowane wzdłuż linii świata 
+zgodnie z prawem~\eqref{FW}. Wersory $e_1$ i $e_2$ 
+zależą od kąta obrotu $\psi$. Kąt $\psi$ powinien w granicy $a\to 1$ 
+przechodzić w kąt znaleziony 
+dla ciała poruszającego się po okręgu w czasoprzestrzeni Minkowskiego.
+Traktujemy tę granicę jako test poprawności wyników. 
+Wartość $\psi$ można znaleźć 
+żądając, aby wersory $e_1$ i $e_2$ spełniały prawo transportu~\eqref{FW}. 
+Wspólne rozwiązanie dla otrzymanych równań różniczkowych 
+można wyrazić przez
+\begin{align}\nonumber
 \psi(s) =\int_0^s -\omega \gamma(s_1)^2  \d s_1 , \quad 
 \text{gdzie } \gamma(s) = (1-a(t(s))^2R^2\omega^2)^{-1/2}.
 \end{align}
-
-Mając znaleziony odpowiedni reper możemy obliczyć wielkości
+Mając znaleziony odpowiedni reper możemy obliczamy wielkości
 potrzebne do równania na fazę zegara~$\varphi$.
 \begin{align*}\nonumber
 A\cdot e_1 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\sin\psi
@@ -208,7 +197,7 @@ a R \omega \gamma \sqrt{a'^2 \left(\gamma ^2+1\right)^2
 \\
 \dot{\varphi} &= \pm \frac{2}{\ell} + \alpha \sin (\varphi - \chi) .
 \end{align*}
-Rozwiniemy prawą stronę równania na $\varphi$ względem $R$ dla małych promieni 
+Rozwijamy prawą stronę równania na $\varphi$ względem $R$ dla małych promieni 
 \begin{align*}
 \psi &= - \omega s + O(R^2), \quad 
 \alpha = a \omega  \sqrt{4 a'^2+\omega ^2} \ R +
@@ -220,7 +209,7 @@ a \omega  \sqrt{4 a'^2+\omega ^2} R
 - 2 a' \sin (\omega s)}{a\sqrt{4a'^2 + \omega^2}} 
 \right) \right) + O(R^3).
 \end{align*}
-Dla krótkich przedziałów czasowych możemy przyjąc $a' \to 0$, co daje
+Dla krótkich przedziałów czasowych możemy przyjąć $a' \to 0$, co daje
 \begin{align*}
 \dot{\varphi} &= \pm \frac{2}{\ell} + 
 a \omega ^2 R 

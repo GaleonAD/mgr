@@ -2,48 +2,44 @@
 % Rownanie na faze
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
-\subsection{Ruch jednostajnie przyspieszony}
+\subsection{Ruch jednostajnie przyspieszony.}
 W przypadku relatywistycznego odpowiednika ruchu jednostajnie 
 przyspieszonego mamy $\chi = \pi$ oraz $\alpha = const$.
-W takim przypadku faza $\varphi$ jest 
-równa~\eqref{phi_wynik_jednostajnie}, a 
-przybliżenie dla małych przyspieszeń dane 
-przez~\eqref{phi_szereg_jednostajnie}.
-Na wykresach~\ref{fig:2a1}-\ref{fig:2n3} porównano rozwiązanie
-przybliżone z rozwiązaniem pełnym dla różnych przyspieszeń. 
-Widzimy, że przybliżenie jest dobre dla odpowiednio małych 
-wartości $\epsilon = 
-\epsilon = \alpha / \alpha_c$.
-Rozwiązania dla $\ell=0.01$ oraz $\alpha=100$ 
-zostały przedstawione na wykresach~\ref{fig:1a}-\ref{fig:1d}.
-Wykres rozwiązania pełnego ukazuje, 
-że niezależnie od kierunku działania zegara to jest 
-obranego znaku w równaniu~\eqref{phi_equation}, przy dużych 
-przyspieszeniach zegar będzie opóźniony w stosunku do
-czasu własnego. Zauważmy, że 
-tego efektu nie widać w rozwiązaniu przybliżonym.
-
-\begin{align}\label{phi_wynik_jednostajnie}
+W tym przypadku analitycznie rozwiązanie 
+równania na fazę zegara jest postaci
+\begin{align*}
 \varphi = \pi + 
 2\text{arctg} \left( 
 \sqrt{1-\frac{\alpha^2\ell^2}{4}} 
 \text{tg} \left( \pm 
 \sqrt{1-\frac{\alpha^2\ell^2}{4}} 
 (s + s_0)/\ell\right)  \mp \frac{\alpha \ell}{2}
-\right)
-\end{align}
+\right),
+\end{align*}
 \begin{align*}
 s_0 & = \pm \ell \text{arctg}  
 \left( \left(1 \pm\frac{\alpha\ell}{2}\right) \Big / 
 \sqrt{1-\frac{\alpha^2\ell^2}{4}}  \right)
-\Big /\sqrt{1-\frac{\alpha^2\ell^2}{4}}
+\Big /\sqrt{1-\frac{\alpha^2\ell^2}{4}} ,
 \end{align*}
-\begin{align}\label{phi_szereg_jednostajnie}
+natomiast rozwiązanie przybliżone 
+\begin{align*}
 \varphi =  \pm \frac{2}{\ell}s - \frac{\pi}{2} 
 + \frac{\alpha \ell}{2}  \sin (2 s / \ell  )  
 +O(\alpha^2).
-\end{align}
-\begin{figure}
+\end{align*}
+Rozwiązania dla $\ell=0.01$ oraz $\alpha=100$ przy różnych 
+kierunkach działania zegara 
+zostały przedstawione na wykresach~\ref{fig:1a}-\ref{fig:1d}.
+Wykres rozwiązania pełnego ukazuje, 
+że niezależnie od kierunku działania zegara przy dużych 
+przyspieszeniach zegar będzie opóźniony w stosunku do
+czasu własnego. Tego efektu nie widać w rozwiązaniu przybliżonym.
+Na wykresach~\ref{fig:2a1}-\ref{fig:2n3} porównano rozwiązanie
+przybliżone z rozwiązaniem pełnym dla różnych przyspieszeń. 
+Widzimy, że przybliżenie jest zadowalające dla odpowiednio małych 
+wartości $\epsilon = \alpha / \alpha_c$.
+\begin{figure}[h]
 \begin{minipage}[b]{.5\linewidth}
 \centering
 \includegraphics[scale=0.52]{HiperAppA100L2.eps}
@@ -107,16 +103,13 @@ $\varphi_0$ w układzie bez przyspieszeń. }\label{fig:2}
 \end{figure}
 
 
-\subsection{Ruch po okręgu}
+\subsection{Ruch po okręgu.}
 W przypadku ruchu po okręgu o promieniu $R$ z 
 częstością $\omega$ mamy
 $\chi = \omega \gamma^2 s$ oraz 
 $\alpha = R\omega^2\gamma^2 $.
-W takim przypadku faza $\varphi$ jest 
-równa~\eqref{phi_wynik_okrag}, a 
-przybliżenie dla małych przyspieszeń dane 
-przez~\eqref{phi_szereg_okrag}.
-\begin{align}\label{phi_wynik_okrag}
+W takim przypadku rozwiązanie równania na fazę zegara dane jest przez
+\begin{align}\nonumber
 \varphi = \omega\gamma^2 s +  
 2\text{arctg} \left( 
 \sqrt{ 1-\frac{R^2\omega^4\gamma^4}{\left( \pm \frac{2}{\ell} 
@@ -127,7 +120,7 @@ przez~\eqref{phi_szereg_okrag}.
 -\omega\gamma^2 \right)^2 } }(s + s_0)/2
 \right)  
 - \frac{R \omega^2 \gamma^2}{\pm \frac{2}{\ell} -\omega\gamma^2}
-\right)
+\right),
 \end{align}
 \begin{align*}
 s_0 & = \frac{2}{\pm \frac{2}{\ell} -\omega\gamma^2} 
@@ -138,16 +131,26 @@ s_0 & = \frac{2}{\pm \frac{2}{\ell} -\omega\gamma^2}
 -\omega\gamma^2 \right)^2 } }
 \right)\Big /   
 \sqrt{ 1-\frac{R^2\omega^4\gamma^4}{\left( \pm \frac{2}{\ell} 
--\omega\gamma^2 \right)^2 } },
+-\omega\gamma^2 \right)^2 } } ,
 \end{align*}
-\begin{align}\label{phi_szereg_okrag}
+a przybliżenie dla małych przyspieszeń ma postać 
+\begin{align}\nonumber
 \varphi =  \pm \frac{2}{\ell}s - \frac{\pi}{2} 
 +
 \frac{R \omega^2 \gamma^2}{\pm 2/\ell - \omega\gamma^2}
 \sin ( (\pm 2/\ell - \omega\gamma^2) s )  
 +O(\alpha^2).
 \end{align}
-\begin{figure}
+Na rysunkach~\ref{fig:3a1}-\ref{fig:3n2} przedstawiono 
+wykres fazy zegara $\varphi$ od czasu włąsnego $s$ 
+w~ruchu po okręgu przy parametrach
+$\ell=0.01$ i $R=1$ dla różnych prędkości kątowych $\omega$. 
+Widzimy, że mimo różnic pomiędzy ruchem hiperbolicznym, a 
+ruchem po okręgu charakter zaburzeń wprowadzanych przez 
+obecność przyspieszenia jest bardzo zbliżony.
+Rozwiązanie przybliżone przestaje być dobre dopiero dla 
+ogromnych prędkości kątowych.
+\begin{figure}[h]
 \begin{minipage}[b]{.5\linewidth}
 \centering
 \includegraphics[scale=0.52]{RAppW98R1L2.eps}
@@ -168,16 +171,16 @@ s_0 & = \frac{2}{\pm \frac{2}{\ell} -\omega\gamma^2}
 \includegraphics[scale=0.52]{RNumW99R1L2.eps}
 \subcaption{Rozwiązanie pełne dla $\omega=0,99$}\label{fig:3n2}
 \end{minipage}
-\begin{minipage}[b]{.5\linewidth}
-\centering
-\includegraphics[scale=0.52]{RAppW993R1L2.eps}
-\subcaption{Rozwiązanie przybliżone dla $\omega=0,993$}\label{fig:3a3}
-\end{minipage}%
-\begin{minipage}[b]{.5\linewidth}
-\centering
-\includegraphics[scale=0.52]{RNumW993R1L2.eps}
-\subcaption{Rozwiązanie pełne dla $\omega=0,993$}\label{fig:3n3}
-\end{minipage}
+%\begin{minipage}[b]{.5\linewidth}
+%\centering
+%\includegraphics[scale=0.52]{RAppW993R1L2.eps}
+%\subcaption{Rozwiązanie przybliżone dla $\omega=0,993$}\label{fig:3a3}
+%\end{minipage}%
+%\begin{minipage}[b]{.5\linewidth}
+%\centering
+%\includegraphics[scale=0.52]{RNumW993R1L2.eps}
+%\subcaption{Rozwiązanie pełne dla $\omega=0,993$}\label{fig:3n3}
+%\end{minipage}
 \caption{Porównanie rozwiązania przybliżonego z rozwiązaniem pełnym
 dla faza zegara $\varphi$ w ruchu po okręgu przy
 $\ell=0.01$ i $R=1$ dla różnych prędkości $\omega$. 
@@ -185,11 +188,10 @@ Linią przerywaną zaznaczono fazę
 $\varphi_0$ w układzie bez przyspieszeń.}\label{fig:3}
 \end{figure}
 \newpage
-\subsection{Analiza modelu pod kątem pomiaru}
+\subsection{Analiza modelu pod kątem pomiaru.}
 Najprostszym obiektem, dla którego można użyć tego modelu wydaje się
-być elektron. Wiemy, że dla małych przyspieszeń hipoteza zegara
-wydaje się być spełniona~\cite{}. W tej części oszacujemy rząd 
-wielkości przyspieszenia dla którego spodziewamy się 
+być elektron. 
+Oszacujemy rząd wielkości przyspieszenia, dla którego spodziewamy się 
 obserwowalnych odstępstw od hipotezy zegara.
 Za $\ell$ możemy podstawić wielkość o wymiarze metra 
 charakterystyczną dla elektronu - długość 
@@ -205,13 +207,13 @@ szacujemy jako~\eqref{acceleration_electron_nowadays}.
 Porównując rzędy wielkości stwierdzamy, że efekty 
 raczej nie będą obserwowalne.
 \begin{align}\label{compton_electron}
-\lambda_e = \approx 2,426 \cdot 10^{-10} \si{\centi\metre}
+\lambda_e = \approx 2,426 \cdot 10^{-10} \si{\centi\metre} ,
 \end{align}
 \begin{align}\label{ac_electron}
-\alpha_c \approx 8,244\cdot 10^{9} \si{ \centi\metre^{-1}}
+\alpha_c \approx 8,244\cdot 10^{9} \si{ \centi\metre^{-1}} ,
 \end{align}
 \begin{align}~\label{acceleration_electron_nowadays}
-\alpha \approx 10^2 \si{\centi\metre^{-1}}
+\alpha \approx 10^2 \si{\centi\metre^{-1}} .
 \end{align}
 
 Komptonowska długość fali protonu wnosi~\eqref{compton_proton}. 
@@ -224,13 +226,14 @@ $7 \si{\tera\electronvolt}$~\cite{CERN}.
 proton doświadczy wtedy przyspieszenia
 rzędu~\eqref{proton_acceleration}.
 Porównując rzędy wielkości przyspieszeń stwierdzamy, 
-że jesteśmy daleko od możliwych obserwacji
+że osiągalne w tej chwili przyspieszenia nie są wystarczające 
+do sprawdzenia hipotezy.
 \begin{align}\label{compton_proton}
-\lambda_p = \approx 1,321 \cdot 10^{-13} \si{\centi\metre}
+\lambda_p = \approx 1,321 \cdot 10^{-13} \si{\centi\metre} ,
 \end{align}
 \begin{align}\label{ac_proton}
-\alpha_c \approx 7,57 \cdot 10^{12} \si{ \centi\metre^{-1}}
+\alpha_c \approx 7,57 \cdot 10^{12} \si{ \centi\metre^{-1}} ,
 \end{align}
 \begin{align}~\label{proton_acceleration}
-\alpha \approx 124  \si{\centi\metre^{-1}}
+\alpha \approx 124  \si{\centi\metre^{-1}} .
 \end{align}

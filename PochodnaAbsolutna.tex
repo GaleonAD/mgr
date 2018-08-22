@@ -1,22 +1,22 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % podstawowe definicje
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Pochodna absolutna i transport równoległy}
+\subsection{Pochodna absolutna i transport równoległy.}
 W trójwymiarowej przestrzeni euklidesowej 
-z kartezjańskim układem współrzędnych $x^i$ 
-definiuje się transport równoległy wektora $v$ w kierunku wektora 
+z kartezjańskim układem współrzędnych $x^i$
+definiujemy transport równoległy wektora $v$ w kierunku wektora 
 $w$ za pomocą równania 
 \begin{align*}
-w^j \frac{\partial v^i}{\partial x^j} = 0
+w^j \frac{\partial v^i}{\partial x^j} = 0.
 \end{align*}
 To znaczy, że podczas przemieszczania wektora $v$ po krzywej, której
-wektorem prędkości w parametrze $\tau$ jest wektor $w$, spełniony jest 
+wektorem prędkości w parametrze $\tau$ jest wektor~$w$, spełniony jest 
 warunek
 \begin{align*}
- \frac{\d v^i}{\d \tau} = 0
+ \frac{\d v^i}{\d \tau} = 0.
 \end{align*}
 Jednak w ogólności możemy mieć do czynienia z krzywoliniowym układem 
-współrzędnych lub z przestrzenią zakrzywioną. W takim przypadku uogólnia
+współrzędnych lub przestrzenią zakrzywioną. W takim przypadku uogólnia
 się pojęcie transportu równoległego za pomocą pochodnej kowariantnej.
 %\begin{definition}
 %Niech $x^i$ będzie układem współrzędnych. 
@@ -36,14 +36,28 @@ się pojęcie transportu równoległego za pomocą pochodnej kowariantnej.
 %Odwzorowanie $\nabla_\rho$ nazywa się niekiedy koneksją afiniczną.
 %\end{definition}
 \begin{definition}
-Niech $x^i$ będzie układem współrzędnych. 
+Niech $x^\mu$ będzie układem współrzędnych. 
 Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
 \begin{align*}
 w^\rho \nabla_\rho v^\mu = w^\nu \frac{\partial v^\mu}{\partial x^\nu}
 + \Gamma^\mu_{\nu\sigma} w^\nu v^\sigma ,
 \end{align*}
-gdzie $\nabla_\rho$ jest koneksją afiniczną, a $\Gamma^\mu_{\nu\sigma} $
-są współczynnikami koneksji afinicznej. W ogólnej teorii względności 
+gdzie $\nabla$ nazywamy koneksją afiniczną, a przez $\Gamma^\mu_{\nu\sigma} $
+są współczynnikami koneksji afinicznej w układzie $x^\mu$. 
+Współczynniki $\Gamma^\mu_{\nu\sigma}$ przy zmianie układu współrzędnych z $x^\mu$
+na $\tilde{x}^\mu$
+transformują się według reguły
+\begin{align*}
+\tilde{\Gamma}^\mu_{\nu\sigma} = \Gamma^\alpha_{\beta\gamma}
+\frac{\partial \tilde{x}^\mu}{\partial x^\alpha }
+\frac{\partial x^\beta}{\partial \tilde{x}^\nu }
+\frac{\partial x^\gamma}{\partial \tilde{x}^\sigma }
++
+\frac{\partial^2 x^\alpha}{\partial \tilde{x}^\nu \partial \tilde{x}^\sigma }
+\frac{\partial \tilde{x}^\mu}{\partial x^\alpha }
+\end{align*} 
+oraz określają one całkowicie koneksję afiniczną.
+W ogólnej teorii względności 
 zakłada się, że koneksja jest
 \begin{enumerate}
     \item zgodna z metryką ($\nabla g =0$),
@@ -57,7 +71,7 @@ $\Gamma^\mu_{\nu\sigma}$ symbolami Christoffela danymi przez
 \Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
 \left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
 \frac{\partial g_{\rho\sigma}}{\partial x^\nu}-
-\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right)
+\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right).
 \end{align*}
 \end{definition}
 \begin{definition}
@@ -71,26 +85,25 @@ pochodną absolutną wektora $v$ i oznaczamy
 \end{definition}
 Pochodną absolutną wektora $v$ wzdłuż krzywej $y$
 parametryzowanej czasem własnym $s$
-przez będziemy oznaczać przez $\D v/\d s$ lub $\dot{v}$. 
-\begin{align*}
-0 = \frac{\d (\dot{y} \cdot \dot{y}) }{\d s} = 
-2 \frac{\D \dot{y}}{\d s} \cdot \dot{y}
-\end{align*}
+będziemy oznaczać przez $\D v/\d s$ lub $\dot{v}$. 
+Pochodna absolutna wektora o stałej długości 
+jest prostopadła do niego samego.
+%\begin{align*}
+%0 = \frac{\d (\dot{y} \cdot \dot{y}) }{\d s} = 
+%2 \frac{\D \dot{y}}{\d s} \cdot \dot{y}
+%\end{align*}
 \begin{definition}
 Linią geodezyjną (lub krzywą swobodnego spadku) nazywamy 
 krzywą $y$, dla której
 \begin{align*}
 \frac{\D y'}{\d \tau } = b y',
 \end{align*} 
-gdzie $b=0$ gdy $\tau$ jest parametrem afinicznym.
+gdzie $b=0$, gdy $\tau$ jest parametrem afinicznym.
 \end{definition}
-Będziemy w dalszej części pracy przez $u$ oraz $A$ będziemy oznaczać
+W dalszej części pracy przez $u$ oraz $A$ będziemy oznaczać
 prędkość oraz przyspieszenie definiowane jak następuje
 \begin{align*}
 u^\mu = \dot{y^\mu} = \frac{\d y^\mu}{\d s}, 
 \quad A = \dot{u^\mu} =  \frac{\D u^\mu}{\d s}.
 \end{align*}
-
-
-
 
