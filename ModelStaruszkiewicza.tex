@@ -8,7 +8,7 @@ prętem długości $\ell$ (rys. \ref{classic_rotator}). Lagrangian
 takiego układu w układzie środka masy ma postać~\cite{landau1978krotki}
 \begin{align*}
 L = \frac{m }{2} \left(\frac{\d r}{\d t}\right)^2, 
-\quad m=m_1+m_2,\ r=r_2-r_1,
+\quad m=m_1 m_2/(m_1+m_2),\ r=r_2-r_1,
 \end{align*}
 gdzie $r_1$ i $r_2$ to odpowiednio położenia mas $m_1$ i $m_2$.
 Zauważmy, że $||r|| =\ell = const$, a zatem interesuje nas jedynie kierunek 
@@ -69,7 +69,7 @@ rotatora tworzymy bezwymiarową wielkość
 \begin{align*}
 \xi = - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 }.
 \end{align*}
-Możemy wtedy utworzyć Lagrangian postaci
+Możemy utworzyć Lagrangian postaci
 \begin{align}\label{rotatorStar}
 L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 \end{align}
@@ -80,12 +80,25 @@ L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 %Wtedy równanie Eulera-Lagranga dla $\lambda$ daje odpowiedni więz.
 Działanie związane z powyższym Lagrangianem 
 jest niezmiennicze ze względu transformację Lorentza oraz reparametryzację.
- Dodatkowo z racji, że $k$ jest kierunkiem zerowym postać Lagrangianu 
-nie zmienia się po przeskalowaniu $k \to a k$. 
-Nie jest to najogólniejszy relatywistyczny 
-rotator jaki można wziąć pod uwagę, gdyż $\xi$ nie jest jedyną 
-możliwą bezwymiarową kombinacją wielkości charakterystycznych 
-dla relatywistycznego rotatora~\cite{Bratek2009nonuniq}.
+% Dodatkowo z racji, że $k$ jest kierunkiem zerowym postać Lagrangianu 
+%nie zmienia się po przeskalowaniu $k \to a k$. 
+Zmienna $\xi$ nie zmienia postaci po transformacji $k \to f k$, gdzie $f$ 
+jest dowolną funkcją $s$. Wynika z tego, że $\xi$ (a co za tym 
+stan fizyczny układu)
+zależy jedynie 
+od kierunku zerowego, a nie zależy od skalowania wektora $k$.
+Pociąga to za sobą również, że 
+$\frac{\partial L}{\partial \dot{k}^\mu} k^\mu = 0$.
+Zatem Lagrangian zaproponowany przez Staruszkiewicza jest jedyną 
+możliwą jednorodną postacią
+rotatora relatywistycznego pierwszego stopnia względem prędkości.  
+Domyślnie zakładamy, że 
+$\dot{x}\cdot \dot{x}$ nie zeruje się tożsamościowo.
+
+%Nie jest to najogólniejszy relatywistyczny 
+%rotator jaki można wziąć pod uwagę, gdyż $\xi$ nie jest jedyną 
+%możliwą bezwymiarową kombinacją wielkości charakterystycznych 
+%dla relatywistycznego rotatora~\cite{Bratek2009nonuniq}.
 
 Oznaczmy przez $P$ i $\Pi$ pędy kanoniczne związane 
 odpowiednio z $x$ i $k$ oraz przez $M$ całkowity moment pędu.
@@ -142,10 +155,10 @@ k \cdot \dot{k}& k \cdot k &k  \cdot \dot{x}\\
 \end{array}
 \right|.
 \end{align*}
-Inwestując równości $k\cdot k=0$, $\dot{x}\cdot\dot{x}=1$ 
+Inwestując równości $k\cdot k=0$ 
 oraz $\dot{k} \cdot k= 0$ dostajemy
 \begin{align*}
-P_\mu P^\mu =  m^2( f(\xi)^2- 4 f(\xi) f'(\xi) \xi)
+P_\mu P^\mu =  m^2( f(\xi)^2- 4 f(\xi) f'(\xi) \xi) \\
 W_\mu W^\mu = 
  - 4 m^4\ell^2  f(\xi)^2 f'(\xi)^2 \xi .
 \end{align*}
@@ -158,14 +171,14 @@ P_\mu P^\mu = m^2, \tag{C1}
 \begin{align} \label{casimir2}
 W_\mu W^\mu = - \frac{1}{4} m^4 \ell^2 , \tag{C2}
 \end{align}
-\begin{align*} 
+\begin{align}\label{costam2} 
  f(\xi)^2- 4 f(\xi) f'(\xi) \xi
 \stackrel{\text{\ref{casimir1}}}{=} 
 1 \stackrel{\text{\ref{casimir2}}}{=}
   16   f(\xi)^2 f'(\xi)^2 \xi .
-\end{align*}
-Powyższe równania mają wspólne rozwiązanie 
-postaci (zobacz dod. A)
+\end{align}
+Równania~\eqref{costam2} mają wspólne rozwiązanie (zobacz dodatek A)
+postaci 
 \begin{align*}
 f(\xi ) = \pm \sqrt{ 1 \pm \sqrt{\xi} }.
 \end{align*}

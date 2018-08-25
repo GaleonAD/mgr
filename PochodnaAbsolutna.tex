@@ -37,13 +37,17 @@ się pojęcie transportu równoległego za pomocą pochodnej kowariantnej.
 %\end{definition}
 \begin{definition}
 Niech $x^\mu$ będzie układem współrzędnych. 
-Pochodną kowariantną wektora $v$ w kierunku wektora $w$ nazywamy
+Pochodną kowariantną wektora $v$ w kierunku wektora 
+$w$~$=$~$\frac{\d x(\tau)}{\d \tau}$ nazywamy
 \begin{align*}
-w^\rho \nabla_\rho v^\mu = w^\nu \frac{\partial v^\mu}{\partial x^\nu}
+w^\rho \nabla_\rho v^\mu = \frac{\d v^\mu}{\d \tau}
 + \Gamma^\mu_{\nu\sigma} w^\nu v^\sigma ,
 \end{align*}
-gdzie $\nabla$ nazywamy koneksją afiniczną, a przez $\Gamma^\mu_{\nu\sigma} $
-są współczynnikami koneksji afinicznej w układzie $x^\mu$. 
+gdzie $v$ jest określony na krzywej dla której $w$ 
+jest wektorem prędkości w parametrze $\tau$. Odwzorowanie 
+$\nabla$ nazywamy koneksją afiniczną, a 
+przez $\Gamma^\mu_{\nu\sigma} $
+rozumiemy współczynniki koneksji afinicznej w układzie $x^\mu$. 
 Współczynniki $\Gamma^\mu_{\nu\sigma}$ przy zmianie układu współrzędnych z $x^\mu$
 na $\tilde{x}^\mu$
 transformują się według reguły
@@ -65,8 +69,12 @@ zakłada się, że koneksja jest
         = \Gamma^\mu_{\sigma\nu}$).
 \end{enumerate} 
 Wtedy koneksja jest jednoznacznie określona i nazywamy ją
- koneksją Leviego-Civity, a współczynniki 
-$\Gamma^\mu_{\nu\sigma}$ symbolami Christoffela danymi przez
+ koneksją Leviego-Civity. Wówczas możemy utożsamić pojęcie 
+ geodezyjnej powstałej z transportu równoległego wektora stycznego 
+ oraz ekstremalnej krzywej łączącej dwa różne punkty.
+ Współczynniki koneksji 
+$\Gamma^\mu_{\nu\sigma}$ nazywamy są symbolami Christoffela
+i możemy wyznaczyć z równości
 \begin{align*}
 \Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
 \left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
