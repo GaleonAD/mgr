@@ -1,23 +1,23 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Model cząstki zerowej
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Model uogólniony.}
+\subsection{Model singularny.}
 W tej części przedstawimy pokrótce uogólnioną konstrukcję 
 Lagrangianu zegara motywowaną przedstawionym
  modelem Staruszkiewicza i zawartą w~pracy~\cite{Bratek2015wiele}.
 Lagrangian opisujący relatywistyczny rotator powinien być 
 niezmienniczy ze względu na lokalne skalowanie 
 $\delta k =\epsilon k$. Aby wariacja 
-$\delta L $ znikała dla dowolnego $\epsilon$ musimy założyć, że
- $k \cdot \Pi = 0$. Pamiętając, że $k$ jest kierunkiem zerowym 
+$\delta L $ znikała dla dowolnego $\epsilon$, musimy założyć, że
+ $k \cdot \Pi = 0$. Pamiętając, że $k$ jest kierunkiem zerowym, 
 mamy dwa więzy wynikające ze struktury rotatora
 \begin{align}\label{W1}
 k \cdot \Pi = 0, \quad k \cdot k = 0. \tag{W1}
 \end{align}
 Następnie zakładając, że rotator ma być fundamentalny, 
 mamy dwa więzy nakładane na niezmienniki Casimira 
-grupy Poincarego~\ref{casimir1},\ \ref{casimir2}.
-Otrzymujemy w ten sposób 
+grupy Poincarégo~\ref{casimir1},\ \ref{casimir2}.
+W ten sposób otrzymujemy
 cztery więzy będące punktem wyjścia
 do konstrukcji Lagrangianu zegara.
 Więzy~\eqref{W1} pozwalają zapisać kwadrat pseudowektora $W$ w postaci
@@ -35,51 +35,58 @@ k\cdot P& k \cdot k& k \cdot \Pi\\
 
 Dirac, w jednej ze swoich najważniejszych prac: 
 "Generalized Hamiltonian Dynamics"~\cite{DiracHam}, podał
-jak konstruować Lagrangiany z więzami dla prędkości.
-Zgodnie z metodą Diraca postać Lagrangianu dla zegara wynika 
-z~postaci Hamiltonianiu zegara Staruszkiewicza. Hamiltonian
-ten jest liniową kombinacją więzów pierwszego rodzaju (tj. 
-takich, że parami zerują nawiasy Poissona) ze współczynnikami będącymi 
-funkcjami $u_i$
+jak kon- struować Lagrangiany z więzami dla prędkości.
+Zgodnie z metodą Diraca, postać Lagrangianu dla zegara wynika 
+z~postaci Hamiltonianu zegara Staruszkiewicza. Ten Hamiltonian
+jest liniową kombinacją więzów pierwszego rodzaju (tj. 
+takich, że parami zerują nawiasy Poissona) ze współczynnikami $u_i$ 
+(dla $ i=1,\ 2,\ 3,\ 4$), będącymi dowolnymi
+funkcjami zmiennej niezależnej $\tau$ 
 \begin{align*}
 H = \frac{u_1}{2m} \left(P\cdot P -m^2 \right) 
 + \frac{u_2}{2m } \left( P\cdot P + \frac{4}{\ell^2 m^2} (k\cdot P)^2 
 (\Pi \cdot \Pi) \right)
 + u_3 (k \cdot \Pi ) + u_4 (k \cdot k).
 \end{align*}
-Z równań $\frac{\partial H}{\partial u_i} = 0 ,\ i=1,2,3,4$ 
+Z równań $\frac{\partial H}{\partial u_i} = 0 ,\ i=1,\ 2 ,\ 3,\ 4$ 
 dostajemy wyjściowy
 układ więzów, natomiast prędkości dane są przez
 \begin{align*}
 \dot{x} &= \frac{\partial H}{\partial P} = 
-(u_1 + u_2 )\frac{P}{m} - u_2 \frac{m}{k\cdot P} k,\\
+\frac{u_1 + u_2}{m}P - u_2 \frac{m}{k\cdot P} k,\\
 \dot{k} &= \frac{\partial H}{\partial \Pi} =  
 u_2\frac{4 (k\cdot p)^2}{\ell^2m^3}\Pi +u_3 k .
 \end{align*}
+
 Transformacją
 prowadzącą od Hamiltonianu do Lagrangianu jest 
 przekształcenie odwrotne Legendre'a. 
 W tym przypadku ma ono maksymalny rząd, gdy $\dot{x} \cdot \dot{x}$ 
-jest normalizowalne. Jednak powstały w ten sposób Lagrangian
-ma defekt i nie determinuje ruchu. Założenie 
-normalizowalności $\dot{x} \cdot \dot{x}$ prowadzi ~\cite{Bratek2015wiele}.
+jest normalizowalne. Jednak powstały w ten sposób Lagrangian, taki 
+jak~\eqref{rotatorStar},
+ma~defekt, bo zastosowana do niego zasada Hamiltona nie determinuje ruchu. 
 Natomiast w przypadku $\dot{x} \cdot \dot{x} = 0$  rząd transformacji
  się obniża. 
 Ta osobliwość odwrotnej transformacji Legendre'a 
 wyróżnia zegar idealny, który ma własność, będącą klasycznym 
 odpowiednikiem zjawiska Zitterbewegung
-odkrytego przez Schrödingera dla elektronu Diraca. 
-Z Hamiltonianu Diraca dla elektronu swobodnego wynika, że 
+odkrytego przez Schrödingera dla elektronu Diraca
+(w naszym przypadku jest to ruch kołowy z prędkością światła). 
+Zastanówmy się, dlaczego ruch z prędkością światła występuje w modelu,
+pomimo że mamy do czynienia z cząstką masywną.
+Otóż z Hamiltonianu Diraca dla elektronu swobodnego wynika, że 
 wartości własne operatora prędkości dla kwantowej cząstki
 relatywistycznej są równe $\pm c$. 
-Dirac zawarł w swojej książce "The Principles of
+Dirac zawarł w~swojej książce "The Principles of
 Quantum Mechanics"~\cite{principia} 
 wyjaśnienie tego fenomenu dla kwantowych
-cząstek relatywistycznych. Mianowicie że, wartości pędu relatywistycznego
+cząstek relatywistycznych. Mianowicie, że wartości pędu relatywistycznego
 są nieograniczone, a co za tym idzie 
 wartość oczekiwana pędu jest nieskończona. Więc 
 z relatywistycznego związku pęd-prędkość otrzymujemy wartość $c$.
-
+Pomimo tego, ruch środka masy odbywa się z prędkością mniejszą niż 
+prędkość światła $c$, co też zachodzi 
+dla naszego zegara.
 
 Założenie 
 $u_1 = u_2 \neq 0$ obniża rząd transformacji 
@@ -104,145 +111,35 @@ k\cdot\dot{x} \right) + \lambda (k\cdot k),}
 \end{align*}
 gdzie $\kappa $ jest zmienną niezależną, a $\lambda$ 
 mnożnikiem Lagrange'a~\cite{Bratek2015wiele}.
-Z powyższego Lagrangianu i z więzów dostajemy
+Z powyższego Lagrangianu i z więzów mamy
 \begin{align*}
 P = m \left( \frac{\kappa}{k\cdot \dot{x}} \dot{x}+ \frac{1}{2\kappa} k\right).
 \end{align*}
 Zatem pęd $P$ dany jest kombinacją liniową wektorów $k$ i $\dot{x}$. Przyjmując
-$e=P/m$ otrzymujemy
+$e=P/m$ dostajemy
 \begin{align}\label{r123}
-\dot{x} / (e\cdot \dot{x}) = 
-2 e - k / (e\cdot k).
+\frac{\dot{x}}{e\cdot \dot{x}} = 
+2 e - \frac{k}{e\cdot k}.
 \end{align}
-Otrzymujemy związek określający zależność między wektorem 
+Powyższa równość określa zależność między wektorem 
 stycznym do linii świata środka masy, a wektorami~$k$~i~$\dot{x}$.
 Przyjęcie $\dot{x} \cdot \dot{x} = f$, gdzie $f$ jest pewną 
-funkcją $s$, nie ustala prędkości 
+funkcją $s$, nie ustala prędkości, 
 i trzeba w tym celu wspomóc się jakimś konkretnym obserwatorem.
 Wybór obserwatora jest równoważny z arbitralnym ustaleniem 
 kąta hiperbolicznego między wektorami $\dot{x}$ 
-i $e$. W jednorodnej przestrzeni każdy obserwator jest 
-równouprawniony, co przekłada się na arbitralność
-wyboru fazy zegara. 
+i $e$. 
+%W jednorodnej przestrzeni każdy obserwator jest 
+%równouprawniony, co przekłada się na arbitralność
+%wyboru fazy zegara~\cite{Bratek2015wiele}.
+W jednorodnej przestrzeni czteroprędkości (Łobaczewskiego) 
+każdy punkt
+(określający czterowektor czasowy, a więc reprezentujący konkretnego
+obserwatora) jest równouprawniony, co przekłada się na arbitralność wyboru
+fazy zegara~\cite{Bratek2015wiele}.
 Warunek $\dot{x} \cdot \dot{x} = 0$ determinuje ruch wewnętrzny zegara 
 w przestrzeni Minkowskiego w sposób niezmienniczy wyłącznie na 
 podstawie struktury stożkowej. 
 Więz~\eqref{wiez} daje ograniczenie na częstość pracy zegara. 
-W dalszej części pracy określimy przy jego pomocy równanie na 
-fazę zegara determinujące rozważaną tu krzywą chronometryczną.
-
-%W tej części będza
-%
-%
-%\begin{align*}
-%H = u_1 ( P \cdot P  -  m^2 ) + 
-%u_2 (W \cdot W + m^4\ell^2 /4) +
-%+ u_3 (k \cdot \Pi)  + u_4(k \cdot k)
-%\end{align*}
-%
-%
-%układ w którym zakładamy
-%więz postaci $\dot{x} \cdot \dot{x} = 0$, to jest 
-%cząstkę poruszającą się po krzywej zerowej.
-%Lagrangian postaci
-%\begin{align*}
-%L = \sqrt{\dot{x} \cdot \dot{x} }
-%\end{align*}
-%nie jest odpowiedni do opisu takiej cząstki, gdyż 
-%wtedy pęd $P_\mu = \frac{\partial L}{\partial \dot{x}^\mu}$ 
-%nie jest skończony. 
-%W zastępstwie możemy użyć 
-%Lagrangianu postaci
-%\begin{align}~\label{nullparticlelagrangian}
-%L = w( \dot{x} \cdot \dot{x}).
-%\end{align}
-%Wtedy równanie Eulera-Lagrange dla zmiennej $w$ jest postaci
-%\begin{align*}
-%0 = \frac{\partial L}{\partial w} =  \dot{x} \cdot \dot{x}
-%\end{align*}
-%i zapewnia zerowość linii świata $x$. Wtedy pęd
-%kanoniczny związany z $x$  jest zachowany podczas ruchu i równy
-%\begin{align*}
-%P_\mu = 2 w \dot{x}_\mu, \quad P_\mu P^\mu = 0.
-%\end{align*}
-%Wtedy w układzie odniesienia, w 
-%którym $e$ jest wersorem czasowym
-%takim, że 
-%\begin{align*}
-%e\cdot \dot{x}=1
-%\end{align*} 
-%mamy
-%\begin{align*}
-%    p = U \dot{x},
-%\end{align*}
-%gdzie $U$ jest energią fotonu.
-
-\begin{comment}
-
-\begin{align*}
-L =  \frac{1}{2} \left(  
-\eta^{-1} \dot{x} \cdot \dot{x} +  \eta m^2 f( \xi ) \right)  
-+ \lambda ( k\cdot k )
-\end{align*}
-Równanie Eulera-Lagrange'a dla $\eta$ daje dwie możliwości
-\begin{align*}
-0 = \frac{\partial L }{\partial \eta} =  \frac{1}{2}
-\left(m f(\xi) - \eta^{-2} ( \dot{x} \cdot \dot{x} )
-  \right).
-\end{align*}
-Zakładając, że $\eta$ jest zależna od prędkości 
-dostajemy więz
-\begin{align*}
-\eta = \frac{\sqrt{\dot{x} \cdot \dot{x}}}{m f(\xi)}.
-\end{align*}
-Wtedy lagrangian sprowadza się do postaci wyjściowej 
-dla rotatora relatywistycznego~\ref{rotatorStar}.
-Gdy założymy, że $\eta$ jest niezależne otrzymujemy
-więzy 
-\begin{align*}
-\dot{x} \cdot \dot{x} = 0, \quad f(\xi) = 0
-\end{align*}
-Przyjęcie $m =0$ daje automatycznie spełnione warunki 
-$P_\mu P^\mu =0$ oraz $W_\mu W^\mu = 0$ i sprowadza 
-Lagrangian do postaci~\ref{nullparticlelagrangian}, 
-czyli dla swobodnej cząstki 
-poruszającej się po krzywej zerowej.
-Będziemy zatem traktować $m$ jako parametr w ogólności
-niezerowy, co implikuje więz $f(\xi)=0$.
-Obliczamy $P_\mu$ oraz $W_\mu$
-\begin{align*}
-P_\mu &= \eta^{-1} \dot{x}_\mu - 
-\frac{\eta m^2}{k\cdot \dot{x}} \xi f'(\xi) k_\mu,\\
-\Pi_\mu &= \frac{\eta m^2}{\dot{k}\cdot \dot{k}}
-\xi f'(\xi) \dot{k}_\mu, \\
-\end{align*}
-\begin{align*}
-P_\mu &= -2 m^2 \xi f'(\xi),\\
-W_\mu W^\mu &= \frac{m^4}{(\dot{k}\cdot \dot{k})^2}
-f'(\xi)^2 \xi^2 
-\left| 
-\begin{array}{ccc}
-\dot{k} \cdot \dot{k}& \dot{k} \cdot k& \dot{k} \cdot \dot{x}\\
-k \cdot \dot{k}& k \cdot k &k  \cdot \dot{x}\\
-\dot{x} \cdot \dot{k}& \dot{x} \cdot k &\dot{x} \cdot \dot{x}
-\end{array}
-\right|= 
-- m^4 \ell^2 \xi f'(\xi)^2
-\end{align*}
-Ponownie zakładamy
-że niezmienniki Casimira $P_\mu P^\mu$ i $W_\mu W^\mu$ 
-są parametrami. Daje się 
-je zapisać w postaci~\ref{casimir1}~i~\ref{casimir2}.
-\begin{align*} 
- -2 \xi f'(\xi)
-\stackrel{\ref{casimir1}}{=} 1 \stackrel{\ref{casimir2}}{=}
-  4  \xi f'(\xi)^2
-\end{align*}
-Uzyskaliśmy w ten sposób odpowiednie więzy 
-\begin{align*}
-f(\xi) = 0, \ f'(\xi) =- \frac{1}{2},\ \xi = 1.
-\end{align*}
-\begin{align} \label{wiez}
- - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 } = 1.
-\end{align}
-\end{comment}
+W dalszej części pracy przy jego pomocy oraz związku~\eqref{r123} 
+określimy pojęcie krzywej chronometrycznej.

@@ -2,7 +2,7 @@
 % reper w ruchu po okręgu w metryce FLRW
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Ruch po okręgu względem galaktyk.}
-Rozważymy teraz ponownie ruch po okręgu z tą różnicą, że 
+Rozważymy teraz ponownie ruch po okręgu, z tą różnicą, że 
 wiążemy obserwatora~$\mathcal{I}$ z~odległymi galaktykami w~ekspandującym 
 wszechświecie. Sytuacji tej odpowiada metryka 
 Friedmana-Lemaître’a-Robertsona-Walkera~(FLRW).
@@ -11,7 +11,7 @@ Tensor metryczny dany jest przez
 \begin{equation}\label{FLRWmetric}
 (g_{\mu\nu}) = \text{diag} (1,\ -a(t)^2,\ -a(t)^2,\ -a(t)^2).
 \end{equation}
-Warto zauważyć, że dla $a(t) \equiv 1$ metryka ta przechodzi
+Warto zauważyć, że dla $a(t) \equiv 1$ ta metryka przechodzi
 w zwykłą metrykę czasoprzestrzeni Minkowskiego, a zatem 
 można łatwo zweryfikować poprawność wyników.
 W dalszej części tego rozdziału przyjmujemy następujące oznaczenia 
@@ -26,7 +26,7 @@ a:=a(t),\quad a':=\frac{\d a(t)}{ \d t}.
 %(g^{\mu\nu}) = \text{diag} (1,\ -1/a^2,\ -1/a^2,\ -1/a^2).
 %\end{align}
 Dla tej metryki symbole Chrostofella $\Gamma^k _{ij}$ przedstawiamy
- poniżej w tablicach odpowiednio dla $k=0,1,2,3$.
+ poniżej w tablicach odpowiednio dla $k=0,\ 1,\ 2,\ 3$.
 $$
 \begin{array}{cccc}
 \left(
@@ -65,36 +65,27 @@ $$
  $$ 
  \\
 Rozważamy linie świata cząstki w ruchu po okręgu 
+%$y^\mu(s) = (t(s),\ R\cos\omega t(s),\ R\sin\omega t(s),\ 0)$.
 \begin{align}\nonumber
-y^\mu(s) = (t,x,y,z)= (t(s),\ R\cos\omega t(s),\ R\sin\omega t(s),\ 0),
+(y^\mu)= (t(s),\ R\cos\omega t(s),\ R\sin\omega t(s),\ 0).
 \end{align}  
-gdzie $\d t/\d s=\gamma= (1-a^2R^2\omega^2)^{-1/2}$.
 Wtedy wektory prędkości i przyspieszenia mają postać 
-\begin{align}\nonumber
-u^\mu = \dot{y}^\mu = \frac{\d y}{\d s} = 
+\begin{gather*}
+(u^\mu) = 
 (\gamma,\ -R\omega\gamma\sin\omega t,
-\ R\omega\gamma\cos\omega t,\ 0),
-\end{align}
-%Pochodną kowariantną wzdłuż linii świata $y$ (w kierunku wektora $\dot{y}$) 
-%definiujemy
-%\begin{align}
-%\frac{\D v^\mu}{\d s} =  \frac{\d v^\mu}{\d s} + \Gamma^\mu _{ij}  v^i u^j
-%\end{align}
-%Czterowektor przyspieszenia cząstki dany jest przez pochodną kowariantną 
-%wektora prędkości
-\begin{flalign}\nonumber
-( A^\mu ) =& \left( \frac{\D u^\mu}{\d s} \right) = \nonumber \\
-& =(a'a R^2\omega^2 \gamma^2(\gamma^2+1)
+\ R\omega\gamma\cos\omega t,\ 0),\\
+( A^\mu )  =\left( a'a R^2\omega^2 \gamma^2(\gamma^2+1)
 ,\ -\frac{a'}{a}R\omega \gamma^2(\gamma^2+1) 
 \sin \omega t -R\omega^2\gamma^2\cos\omega t
 ,\ \frac{a'}{a}R\omega \gamma^2(\gamma^2+1) 
 \cos \omega t -R\omega^2\gamma^2\sin\omega t
-,\ 0).
-\end{flalign}
-Właściwe przyspieszenie wynosi
+,\ 0\right),
+\end{gather*}
+gdzie $\gamma= \d t/\d s=(1-a^2R^2\omega^2)^{-1/2}$.
+Przyspieszenie właściwe wynosi
 \begin{align}\nonumber
 \alpha =\sqrt{ -A_\mu A^\mu}, \quad \text{gdzie } 
-A^{\mu } A_{\mu }=-\left(\frac{a' }{a}\right)^2\left(\gamma ^2-1\right) 
+A_{\mu } A^{\mu }=-\left(\frac{a' }{a}\right)^2\left(\gamma ^2-1\right) 
 \left(\gamma ^2+1\right)^2-a^2 R^2 \omega^4\gamma^4 . 
 \end{align}
 
@@ -168,21 +159,21 @@ a R\omega\gamma \cos \psi & -\frac{1}{a} \cos\omega t \sin\psi -
 0&	0	& 0	& \frac{1}{a} \\
 \end{pmatrix}.
 \end{align}
-Jak poprzednio wersory $e$ i $e_3$ są transportowane wzdłuż linii świata 
+Wersory $e$ i $e_3$ są transportowane wzdłuż linii świata 
 zgodnie z prawem~\eqref{FW}. Wersory $e_1$ i $e_2$ 
 zależą od kąta obrotu $\psi$. Kąt $\psi$ powinien w granicy $a\to 1$ 
 przechodzić w kąt znaleziony 
 dla ciała poruszającego się po~okręgu w czasoprzestrzeni Minkowskiego.
 Traktujemy tę granicę jako test poprawności wyników. 
-Wartość $\psi$ można znaleźć 
-żądając, aby wersory $e_1$ i $e_2$ spełniały prawo transportu~\eqref{FW}. 
+Wartość kąta $\psi$ znajdujemy 
+żądając, aby wersory~$e_1$~i~$e_2$ spełniały prawo transportu~\eqref{FW}. 
 Wspólne rozwiązanie dla otrzymanych równań różniczkowych 
-można wyrazić przez
+wyrażamy przez
 \begin{align}\nonumber
 \psi(s) =\int_0^s -\omega \gamma(s_1)^2  \d s_1 , \quad 
 \text{gdzie } \gamma(s) = (1-a(t(s))^2R^2\omega^2)^{-1/2}.
 \end{align}
-Mając znaleziony odpowiedni reper możemy obliczamy wielkości
+Mając znaleziony odpowiedni reper, obliczamy wielkości
 potrzebne do równania na fazę zegara~$\varphi$.
 \begin{align*}\nonumber
 A\cdot e_1 &= -a'R\omega \gamma \left( \gamma^2+1 \right)\sin\psi

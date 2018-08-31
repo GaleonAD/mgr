@@ -2,7 +2,8 @@
 % krzywe i długość krzywej (reparametryzacja) + wstep :)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Wstępne pojęcia i konwencje.}
-Modelem ogólnej teorii względności jest czterowymiarowa Lorenzowska 
+Modelem czasoprzestrzeni w 
+ogólnej teorii względności jest czterowymiarowa Lorentzowska 
 rozmaitość różniczkowa. 
 Czasoprzestrzeń jest zbiorem elementów, które nazywamy 
 zdarzeniami~\cite{trau1984} i będziemy oznaczali przez $M$.
@@ -17,31 +18,36 @@ odwrotność jest ciągła).
 Homeomorfizm $\xi$ nazywamy układem współrzędnych 
 w otoczeniu $p$.
 Mówimy, że dwie mapy są zgodne, jeżeli $\xi_1 \circ \xi_2$ (tam 
+gdzie 
 \begin{wrapfigure}[29]{r}{4cm}
 \centering
 \includegraphics[height=0.6\paperheight]{curves.eps}
 \caption{Różne parametryzacje krzywej $y$.}
 \end{wrapfigure}
-gdzie ma sens)
+ma 
+sens)
 jest dyfeomorfizmem klasy $C^k$ (homeomorfizm z 
 ciągłymi pochodnymi stopnia $k$). 
 Zbiór $A$ map
  parami zgodnych (o zgodności klasy $C^k$) 
 takich, że pokrywają cały zbiór $M$ nazywamy 
-atlasem klasy $C^k$. Atlasem maksymalnym nazywamy atlas, do~którego
+atlasem (klasy $C^k$). Atlasem maksymalnym nazywamy atlas, do~którego
 nie można dodać kolejnej mapy bez złamania zgodności.
-Rozmaitością różniczkową klasy $C^k$ nazywamy 
-zbiór $M$ z atlasem maksymalnym klasy $C^k$~\cite{ganca1987}.
+Rozmaitością różniczkową (klasy $C^k$) nazywamy 
+zbiór $M$ z atlasem maksymalnym (klasy $C^k$)~\cite{ganca1987}.
 Wymiarem rozmaitości nazywamy wymiar przestrzeni $R^n$, na której 
 modelujemy rozmaitość. Od teraz przyjmujemy, że rozmaitość 
 jest klasy $C^\infty$ oraz $n=4$.
-Rozmaitość nazywamy Lorenzowską, jeśli określony na niej tensor
+Rozmaitość nazywamy Lorentzowską, jeśli określony na niej tensor
 metryczny $g$ ma sygnaturę $(+,-,\dots ,-)$.
 
-Będziemy stosować konwencję sumacyjną Einsteina. Ustalamy, że 
+W niniejszej pracy stosujemy konwencję sumacyjną Einsteina. Ustalamy, że 
 indeksy oznaczane literami greckimi zmieniają się w zakresie od 0 do 3, 
 natomiast indeksy oznaczane literami arabskimi 
 w zakresie od 1 do 3. Jednostki ustalamy tak, że $c=1$.
+Przyjmujemy $\epsilon^{0123}=1$ dla 
+pseudotensora całkowicie 
+antysymetrycznego (wówczas $\epsilon_{0123}=-1$).
 \subsection{Krzywe w czasoprzestrzeni.}
 W tej części pracy wprowadzimy pojęcie krzywej w czasoprzestrzeni. 
 Jest to bardzo ważny obiekt matematyczny, gdyż służy do definiowania
@@ -59,42 +65,45 @@ jest przedziałem otwartym (niekoniecznie skończonym).
 \end{definition}
 \begin{definition}
 Parametrem krzywej sparametryzowanej $y_1$ 
-nazywamy funkcję $\tau_1$ taką, że $ y_1(I) \ni p 
+nazywamy funkcję $\tau_1$, taką że $ y_1(I) \ni p 
 \to \tau_1(p) = y_1^{-1}( p )\in I$. 
 Będziemy pisać
-$\tau_1$ zamiast $\tau_1(p)$, wszędzie gdzie punkt~$p$ 
+$\tau_1$ zamiast $\tau_1(p)$, tam gdzie punkt~$p$ 
 wynika z kontekstu.
 \end{definition}
 \begin{definition}
 Niech $y_1: I \to M$ i $y_2:J\to M$ będą parametryzacjami.
 Reparametryzacją krzywej będziemy nazywać dyfeomorfizm $f : I \to J$
-klasy $C^\infty$
-taki, że $y_1 = y_2 \circ f$.
+klasy $C^\infty$,
+taki że $y_1 = y_2 \circ f$.
 \end{definition}
-Jeśli dla dwóch parametryzacji istnieje reparametryzacja to 
-mówimy, że są one równoważne. Można łatwo pokazać, że jest to
-relacja równoważności. Możliwość różnego parametryzowania tej 
-samej krzywej możemy rozumieć tak, że możemy podróżować wzdłuż
-krzywej w różny sposób.
+Jeśli dla dwóch parametryzacji istnieje reparametryzacja, to  
+są one w relacji. Można łatwo pokazać, że jest to
+relacja równoważności. Różne parametryzacje tej samej krzywej 
+możemy rozumieć jako podróżowanie wzdłuż tej krzywej w różny sposób.
+%Możliwość różnego parametryzowania tej 
+%samej krzywej możemy rozumieć tak, że możemy podróżować wzdłuż
+%krzywej w różny sposób.
 \begin{definition}
 Krzywą (lub krzywą niesparametryzowaną) nazywamy klasę równoważności
 parametryzacji ze względu na powyższą relację równoważności.
-Jeżeli $y$ jest krzywą, $y_1$ jej parametryzacją z parametrem $\tau_1$
-to wprowadzamy oznaczenie $y_1 := y(\tau_1)$.
+Jeżeli $y$ jest krzywą, a $y_1$ jej parametryzacją z parametrem $\tau_1$,
+to wprowadzamy oznaczenie $y(\tau_1) := y_1$.
 \end{definition}
 \begin{definition}
 Niech $(U,\ \xi)$ będzie mapą punktu $p\in U \subset M$. W tej mapie 
 przez $y^\mu$ oznaczamy współrzędne krzywej~$y$.
 Wektorem stycznym do krzywej $y$ w punkcie $p$  
 (lub wektorem prędkości w 
-parametrze $\tau$) nazywamy wektor $y'(\tau)$ taki, że
+parametrze $\tau$) nazywamy wektor $y'(\tau)$, taki że
 \begin{align*}
-y' (\tau )= \frac{\d y^\mu (\tau) }{\d \tau}.
+y'^\mu (\tau )= \frac{\d y^\mu (\tau) }{\d \tau}.
 \end{align*}
-Mając mapę w punkcie $p$ możemy określić bazę w danym punkcie
+Mając mapę w punkcie $p$, możemy określić bazę w danym punkcie
 za pomocą wektorów stycznych do linii układu współrzędnych.
-Taką bazę należy rozumieć jako bazę lokalną (bazę w punkcie $p$).
-W bazie ortonormalnej macierz tensora metrycznego
+Taką bazę należy rozumieć jako bazę lokalną (bazę w punkcie $p$), 
+zwaną bazą współrzędnościową.
+W~bazie ortonormalnej macierz tensora metrycznego
 przybiera postać 
 \begin{align*}
 ( g_{\mu\nu} ) = \left(
@@ -125,13 +134,13 @@ jest krzywa czasowa lub, dla cząstek
 poruszających się z prędkością światła, 
 krzywa zerowa.
 \end{definition}
-Długość $S(y(\tau))$ krzywej czasowej $y$ liczymy 
+Długość $S(y(\tau))$ krzywej czasowej $y$ obliczamy 
 korzystając z tensora metrycznego $g$. 
 Kwadrat długości elementu liniowego wyraża się przez
 \begin{align*}
 \d s^2 = g_{\mu\nu} \d x^\mu \d x^\nu.
 \end{align*}
-Stąd długość krzywej liczymy wzorem
+Stąd długość krzywej obliczamy ze wzoru
 \begin{align}\label{dlugosc_krzywej}
 S( y(\tau) ) = \int_{\tau(p_0)}^{\tau(p_1)} \sqrt{g (
 y' (\tau), y' (\tau) )} \d \tau.
@@ -142,8 +151,9 @@ Istotnie, długość dana wzorem~\eqref{dlugosc_krzywej}
 jest niezmiennicza ze względu na reparametryzację.
 Niech $\tau_1,\ \tau_2$ będą parametrami powiązanymi 
 reparametryzacją  $\tau_2$~$=$~$f(\tau_1)$, taką że 
-$f'(\tau_1) > 0$ (gdy $f'(\tau_1) <0$ rozumowanie 
-przebiega analogicznie).
+$f'(\tau_1) > 0$. %(gdy $f'(\tau_1) <0$ rozumowanie 
+%przebiega analogicznie).
+%(zachowuje kierunek upływu czasu).
 Stosując zmianę zmiennych całkowania dostajemy
 \begin{align*}
 S(y(\tau_2)) &= 
@@ -158,7 +168,7 @@ f'(\tau_1) \d \tau_1 = \\
 y' (\tau_1), y' (\tau_1)  )} \d \tau_1  
 =S(y(\tau_1)).
 \end{align*}
-Stosując ten sam wzór do krzywej zerowej otrzymujemy zerową
-długość. Od tej pory będziemy stosowali 
+Stosując ten sam wzór do krzywej zerowej, otrzymujemy zerową
+długość. Od tej pory będziemy stosować
 oznaczenie $ x\cdot y := g(x,y)$.
 

@@ -1,14 +1,14 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Model Staruszkiewicza
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\subsection{Fundametalny relatywistyczny rotator.}
+\subsection{Fundamentalny rotator relatywistyczny.}
 Przez nierelatywistyczny rotator rozumiemy układ dwóch mas punktowych
 $m_1$ i $m_2$ połączonych nieważkim
-prętem długości $\ell$ (rys. \ref{classic_rotator}). Lagrangian 
+prętem o stałej długości $\ell$ (rys. \ref{classic_rotator}). Lagrangian 
 takiego układu w układzie środka masy ma postać~\cite{landau1978krotki}
 \begin{align*}
 L = \frac{m }{2} \left(\frac{\d r}{\d t}\right)^2, 
-\quad m=m_1 m_2/(m_1+m_2),\ r=r_2-r_1,
+\quad m=\frac{m_1 m_2}{m_1+m_2},\ r=r_2-r_1,
 \end{align*}
 gdzie $r_1$ i $r_2$ to odpowiednio położenia mas $m_1$ i $m_2$.
 Zauważmy, że $||r|| =\ell = const$, a zatem interesuje nas jedynie kierunek 
@@ -16,9 +16,12 @@ wyznaczony przez $r$.
 Z niezmienniczości powyższego Lagrangianu ze względu na obroty wiemy, że
  zachowany jest pseudowektor całkowitego
 momentu pędu (w tym jego kierunek). Ruch
-odbywa się w płaszczyźnie wyznaczonej przez 
-wersor równoległy do kierunku wyznaczonego 
-przez całkowity moment pędu.
+odbywa się w płaszczyźnie 
+prostopadłej do kierunku (pseudowektora) całkowitego 
+momentu pędu.
+%wyznaczonej przez 
+%wersor równoległy do kierunku wyznaczonego 
+%przez całkowity moment pędu.
  Za pomocą  współrzędnych sferycznych $(r,\ \phi,\ \theta)$ 
 możemy wersor $ \hat{r} = r / \ell$  przedstawić w postaci
  $\hat{r} = ( \cos \phi \sin\theta, \ \sin\phi\sin\theta,\ \cos\theta )$.
@@ -34,8 +37,7 @@ Obracamy układ
 \end{wrapfigure}
 odniesienia tak, aby ruch odbywał się w
  płaszczyźnie $\theta = \pi/2$. 
-Lagrangian 
-przyjmuje wtedy postać
+Dla takiego ruchu wystarczy rozważyć Lagrangian 
 \begin{align*}
 L = \frac{m\ell^2 }{2} \left(\frac{\d \phi}{\d t}\right)^2.
 \end{align*}
@@ -47,7 +49,6 @@ absolutny $t$. Skłania nas to do refleksji nad możliwością
 wykorzystania relatywistycznego rotatora 
 do~mierzenia czasu. Prostota układu sugeruje, że 
 może on być odpowiedni do testowania hipotezy zegara.
-
 Przeniesienie tego układu na grunt relatywistyczny wprowadził 
 profesor Staruszkiewicz~\cite{star2008} proponując następujące 
 definicje:
@@ -56,50 +57,49 @@ Relatywistyczny rotator to układ dynamiczny
  opisany przez położenie $x$ i kierunek
 zerowy $k$ oraz dodatkowo dwa parametry: masę $m$ i długość $\ell$.
 \end{definition}
+W powyższej definicji kierunek zerowy $k$ jest 
+określony wzdłuż linii świata $x$. 
+Dla każdego układu relatywistycznego 
+istnieje swoboda w wyborze parametryzacji linii świata, a ponadto
+kierunek zerowy nie zmienia się przy skalowaniu $k\to \lambda k$ 
+dla dowolnej funkcji $\lambda$ określonej na tej linii świata.
+Odpowiedni Lagrangian musi tę niezmienniczość zapewnić.
+Zatem zdefiniowany tak rotator ma $5$ stopni swobody.
 \begin{definition}
 Układ dynamiczny  nazywamy fenomenologicznym, 
 jeżeli jego niezmienniki Casimira są 
 całkami ruchu. Układ dynamiczny nazywamy 
 fundamentalnym, jeżeli jego niezmienniki
-Casimira są parametrami (m. in. nie zależą od warunków początkowych).
+Casimira są parametrami (m. in. nie zależą od warunków początkowych
+dla prędkości i położeń).
 \end{definition}
-W oparciu o powyższe definicje można skonstruować fundamentalny
-relatywistyczny rotator. Z wielkości zawartych w definicji relatywistycznego 
-rotatora tworzymy bezwymiarową wielkość
+W oparciu o powyższe definicje można skonstruować fundamentalny rotator
+relatywistyczny. Z wielkości zawartych w definicji relatywistycznego 
+rotatora tworzymy bezwymiarowy skalar
 \begin{align*}
 \xi = - \ell^2 \frac{\dot{k} \cdot \dot{k}}{ ( k \cdot \dot{x})^2 }.
 \end{align*}
-Możemy utworzyć Lagrangian postaci
+Możemy utworzyć Lagrangian postaci~\footnote{
+W zapisie Lagrangianu~\eqref{rotatorStar} 
+domyślnie zakładamy więz $k\cdot k=0$, 
+co poprawnie robimy
+uwzględniając w Lagrangianie dodatkowy człon addytywny 
+z mnożnikiem Lagrange'a: $\lambda k \cdot k$, przy 
+czym mnożnik $\lambda$
+jest funkcją zależną od parametryzacji $\tau$, którą wyznaczamy 
+z~równań ruchu. Nawiasem mówiąc, wynikający 
+z $k\cdot k=0$ dodatkowy więz dla prędkości:
+$k\cdot \dot{k}=0$, który też można by uwzględnić, 
+jest niepotrzebny, bo można go 
+sprowadzić do członu postaci $\lambda k\cdot k $
+z dokładnością do pochodnej zupełnej, która
+nie zmienia równań ruchu (jedynie składową pędu kanonicznego $\Pi$ 
+wzdłuż wektora $k$, co nie jest obserwablą, 
+bo zależy od dowolnej skali wektora k).
+}
 \begin{align}\label{rotatorStar}
 L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) .
 \end{align}
-%Więz $k\cdot k= 0$ możemy uwzględnić wprowadzając mnożnik Lagranga $\lambda$
-%\begin{align}
-%L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) + \lambda( k\cdot k ).
-%\end{align}a
-%Wtedy równanie Eulera-Lagranga dla $\lambda$ daje odpowiedni więz.
-Działanie związane z powyższym Lagrangianem 
-jest niezmiennicze ze względu transformację Lorentza oraz reparametryzację.
-% Dodatkowo z racji, że $k$ jest kierunkiem zerowym postać Lagrangianu 
-%nie zmienia się po przeskalowaniu $k \to a k$. 
-Zmienna $\xi$ nie zmienia postaci po transformacji $k \to f k$, gdzie $f$ 
-jest dowolną funkcją $s$. Wynika z tego, że $\xi$ (a co za tym 
-stan fizyczny układu)
-zależy jedynie 
-od kierunku zerowego, a nie zależy od skalowania wektora $k$.
-Pociąga to za sobą również, że 
-$\frac{\partial L}{\partial \dot{k}^\mu} k^\mu = 0$.
-Zatem Lagrangian zaproponowany przez Staruszkiewicza jest jedyną 
-możliwą jednorodną postacią
-rotatora relatywistycznego pierwszego stopnia względem prędkości.  
-Domyślnie zakładamy, że 
-$\dot{x}\cdot \dot{x}$ nie zeruje się tożsamościowo.
-
-%Nie jest to najogólniejszy relatywistyczny 
-%rotator jaki można wziąć pod uwagę, gdyż $\xi$ nie jest jedyną 
-%możliwą bezwymiarową kombinacją wielkości charakterystycznych 
-%dla relatywistycznego rotatora~\cite{Bratek2009nonuniq}.
-
 Oznaczmy przez $P$ i $\Pi$ pędy kanoniczne związane 
 odpowiednio z $x$ i $k$ oraz przez $M$ całkowity moment pędu.
 \begin{align*}
@@ -107,14 +107,31 @@ P_\mu &= \frac{\partial L}{\partial \dot{x}^\mu}, \qquad
 \Pi_\mu = \frac{\partial L}{\partial \dot{k}^\mu}, \\
 M_{\mu\nu} &= x_\mu P_\nu - P_\mu x_\nu + k_\mu \Pi_\nu - \Pi_\mu k_\nu.
 \end{align*}
-Dla Lagrangianu~\eqref{rotatorStar} mamy 
-\begin{align*}
-P_\mu &=  \frac{m}{\sqrt{ \dot{x} \cdot \dot{x} }} f(\xi) \dot{x}_\mu 
-- 2 \frac{m}{k \cdot \dot{x}} \sqrt{ \dot{x} \cdot \dot{x} }
-f'(\xi) \xi k_\mu , \\
-\Pi_\mu &= 2 \frac{m}{\dot{k} \cdot \dot{k}} \sqrt{ \dot{x} \cdot \dot{x} }
-f'(\xi) \xi \dot{k}_\mu .
-\end{align*}
+%Więz $k\cdot k= 0$ możemy uwzględnić wprowadzając mnożnik Lagranga $\lambda$
+%\begin{align}
+%L = m \sqrt{ \dot{x} \cdot \dot{x} } f( \xi ) + \lambda( k\cdot k ).
+%\end{align}a
+%Wtedy równanie Eulera-Lagranga dla $\lambda$ daje odpowiedni więz.
+Działanie związane z Lagrangianem~\eqref{rotatorStar} 
+jest niezmiennicze ze względu transformację Lorentza oraz reparametryzację.
+Zmienna $\xi$ nie zmienia postaci po transformacji $k \to f k$, gdzie $f$ 
+jest dowolną funkcją $s$. Wynika z tego, że $\xi$ (a co za tym 
+idzie stan fizyczny układu)
+zależy jedynie 
+od kierunku zerowego, a nie zależy od skalowania wektora $k$.
+Pociąga to za sobą również, że 
+$\Pi_\mu k^\mu = 0$.
+Zatem Lagrangian rotatora relatywistycznego 
+zaproponowany przez Staruszkiewicza jest jedyną 
+możliwą postacią Lagrangianu 
+jednorodną stopnia pierwszego względem prędkości.  
+Zauważmy, że oprócz $\dot{x}\cdot \dot{x}$ oraz $\xi$,
+nie ma innych skalarów niezależnych od wspomnianego wyżej 
+skalowania wektora zerowego $k$, które można utworzyć 
+z~wektorów~$\dot{x}$ $k$ i $\dot{k}$.
+Zapisując Lagrangian~\eqref{rotatorStar} domyślnie zakładamy, że
+$\dot{x}\cdot \dot{x}$ nie zeruje się tożsamościowo.
+
 W tym przypadku rozważamy niezmienniki Casimira grupy 
 Poincarégo, którymi są
 $P_\mu P^\mu$ oraz
@@ -135,14 +152,19 @@ W_\mu = - \frac{1}{2} \varepsilon_{\mu\nu\rho\sigma}
   \varepsilon_{\mu\nu\rho\sigma}
  \Pi^\mu k^\nu P^\sigma .
 \end{align*}
-Dla Lagrangianu~\eqref{rotatorStar} możemy zapisać $W_\mu$ w postaci
+Dla Lagrangianu~\eqref{rotatorStar} mamy
 \begin{align*}
-W_\mu =  \varepsilon_{\mu\nu\rho\sigma}  \Pi^\mu k^\nu P^\sigma =
+P_\mu &=  \frac{m}{\sqrt{ \dot{x} \cdot \dot{x} }} f(\xi) \dot{x}_\mu 
+- 2 \frac{m}{k \cdot \dot{x}} \sqrt{ \dot{x} \cdot \dot{x} }
+f'(\xi) \xi k_\mu , \\
+\Pi_\mu &= 2 \frac{m}{\dot{k} \cdot \dot{k}} \sqrt{ \dot{x} \cdot \dot{x} }
+f'(\xi) \xi \dot{k}_\mu , \\
+W_\mu &=  
 2\frac{m^2}{ \dot{k} \cdot \dot{k}} 
 f(\xi) f'(\xi) \xi \varepsilon_{\mu\nu\rho\sigma} 
  \dot{k}^\mu k^\nu \dot{x}^\sigma .
 \end{align*}
-Pozwala to zapisać $W_\mu W^\mu$ w postaci wyznacznika Gramma
+Pozwala to zapisać $W_\mu W^\mu$ w postaci wyznacznika Grama
 \begin{align*}
 W_\mu W^\mu = 
 4 \frac{m^4}{ (\dot{k} \cdot \dot{k})^2} 
@@ -158,36 +180,42 @@ k \cdot \dot{k}& k \cdot k &k  \cdot \dot{x}\\
 Inwestując równości $k\cdot k=0$ 
 oraz $\dot{k} \cdot k= 0$ dostajemy
 \begin{align*}
-P_\mu P^\mu =  m^2( f(\xi)^2- 4 f(\xi) f'(\xi) \xi) \\
-W_\mu W^\mu = 
+P_\mu P^\mu &=  m^2( f(\xi)^2- 4 f(\xi) f'(\xi) \xi), \\
+W_\mu W^\mu &= 
  - 4 m^4\ell^2  f(\xi)^2 f'(\xi)^2 \xi .
 \end{align*}
 Zakładamy, że rotator jest fundamentalny, a więc niezmienniki
 Casimira powinny być parametrami, co można zapisać w postaci
 równości
 \begin{align} \label{casimir1}
-P_\mu P^\mu = m^2, \tag{C1}
+P_\mu P^\mu &= m^2, \tag{C1} \\ \label{casimir2}
+W_\mu W^\mu &= - \frac{1}{4} m^4 \ell^2 , \tag{C2}
 \end{align}
-\begin{align} \label{casimir2}
-W_\mu W^\mu = - \frac{1}{4} m^4 \ell^2 , \tag{C2}
-\end{align}
-\begin{align}\label{costam2} 
+\begin{align}\nonumber
  f(\xi)^2- 4 f(\xi) f'(\xi) \xi
 \stackrel{\text{\ref{casimir1}}}{=} 
 1 \stackrel{\text{\ref{casimir2}}}{=}
   16   f(\xi)^2 f'(\xi)^2 \xi .
 \end{align}
-Równania~\eqref{costam2} mają wspólne rozwiązanie (zobacz dodatek A)
+Powyższe równania mają $4$ wspólne rozwiązania (zobacz dodatek A)
 postaci 
-\begin{align*}
+\begin{align}\label{postacpmpm}
 f(\xi ) = \pm \sqrt{ 1 \pm \sqrt{\xi} }.
-\end{align*}
-Z fizycznych powodów wybieramy rozwiązanie ze znakami
-dodatnimi~\cite{Bratek2009nonuniq}.
+\end{align}
+Z przyjętej w tej pracy konwencji znaku Lagrangianu 
 \begin{align*}
-f(\xi ) =  \sqrt{ 1 + \sqrt{\xi} }.
+f(\xi ) =  \sqrt{ 1 \pm \sqrt{\xi} }.
 \end{align*}
-Otrzymany Lagrangian ma jednak defekt i ruch takiego 
+W pracy~\cite{star2008} przyjęto znak $(+)$ pod pierwiastkiem.
+Przyjmując $f(\xi)$ w jednej z postaci~\eqref{postacpmpm} otrzymujemy 
+za każdym razem Lagrangian, który ma defekt i ruch takiego 
 rotatora nie byłby deterministyczny~\cite{Bratek2012Spinorindeterm}.
+%Z fizycznych powodów wybieramy rozwiązanie ze znakami
+%dodatnimi~\cite{Bratek2009nonuniq}.
+%\begin{align*}
+%f(\xi ) =  \sqrt{ 1 + \sqrt{\xi} }.
+%\end{align*}
+%Otrzymany Lagrangian ma jednak defekt i ruch takiego 
+%rotatora nie byłby deterministyczny~\cite{Bratek2012Spinorindeterm}.
 
 

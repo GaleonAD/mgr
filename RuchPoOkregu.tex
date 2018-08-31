@@ -9,8 +9,8 @@ Zagadnienie rozpatrujemy w czasoprzestrzeni Minkowskiego.
 Rozpatrzmy punkt poruszający się po okręgu o promieniu $R$ i 
 częstości $\omega$. W układzie
 obserwatora inercjalnego $\mathcal{I}$ porusza się on po 
-trajektorii~$y=y(s)$. Współrzędne tej trajektorii mają, w kartezjańskim 
-układzie współrzędnych, postać
+trajektorii~$y=y(s)$. W kartezjańskim układzie współrzędnych
+współrzędne tej trajektorii wynoszą 
 %Zapis współrzędnych bez oznaczenia będziemy 
 %rozumieć jako współrzędne w bazie kanonicznej.
 \begin{align*}
@@ -18,12 +18,12 @@ układzie współrzędnych, postać
 \end{align*}
 Wtedy wektory prędkości i przyspieszenia mają postać
 \begin{align*}
-(u^\mu) = \left( \frac{\d y^\mu}{\d s} \right) 
+(u^\mu) %= \left( \frac{\d y^\mu}{\d s} \right) 
 = (\gamma,\ -R\omega\gamma\sin\omega\gamma s,
 \ R\omega\gamma\cos\omega\gamma s,\ 0),
 \end{align*}
 \begin{align*}
-(A^\mu) = \left( \frac{\D u^\mu}{\d s}\right) 
+(A^\mu) %= \left( \frac{\D u^\mu}{\d s}\right) 
 = (0,\ -R\omega^2\gamma^2\cos\omega s
 ,\ -R\omega^2\gamma^2\sin\omega\gamma s,\ 0),
 \end{align*}
@@ -32,12 +32,10 @@ a podczas ruchu zachowane jest przyspieszenie właściwe
 \alpha =\sqrt{ - A\cdot A} =  R\omega^2\gamma^2 .
 \end{align*}
 
-Teraz zajmiemy się znalezieniem reperu lokalnie nierotującego
+Teraz zajmiemy się znalezieniem reperu lokalnie nierotującego,
 poruszającego się po rozpatrywanej linii świata.
-Jako wersor czasowy $e$ wybieramy prędkość $u$. 
-Pierwszy z wersorów przestrzennych $e_1'$ wybieramy 
-przeciwny do przyspieszenia.
-Jako wersor $e_3$ wybieramy unormowany wektor 
+Za wersor $e$ obieramy prędkość $u$, za $e_1'$ --  
+wersor przeciwny do przyspieszenia, za $e_3$ -- wersor
 prostopadły do płaszczyzny ruchu.
 Wersor $e_2'$ wybieramy tak, aby był ortogonalny do pozostałych. 
 Uzyskaną bazę zapisujemy w postaci macierzowej
@@ -64,7 +62,7 @@ R\omega\gamma  & -\gamma\sin\omega\gamma    s
 Chcemy, aby obrana baza spełniała prawo transportu~\eqref{FW}. 
 Łatwo sprawdzić, że wersor $e_3$ spełnia prawo 
 transportu~\eqref{FW}, natomiast wersory $e_1'$ i $e_2'$ nie.
-Aby to naprawić
+Aby to naprawić,
 dokonamy obrotu bazy o kąt $\psi=\psi(s)$ w płaszczyźnie wyznaczonej 
 przez wersory $e_1'$ i $e_2'$. Odpowiedni obrót w bazie kanonicznej 
 ma w reprezentacji macierzowej 
@@ -85,15 +83,14 @@ równości~\eqref{e1e2Rotate}.
 e_1 =  \mathcal{O}^\mu_1 E_\mu ', \\
 e_2 =  \mathcal{O}^\mu_2 E_\mu ' .\nonumber
 \end{align}
-Wstawiając obrócone wersory do warunku~\eqref{FW} otrzymujemy 
+Wstawiając obrócone wersory do warunku~\eqref{FW}, otrzymujemy 
 równania  różniczkowe na kąt~$\psi$, które 
 (przyjmując bez straty ogólności
 $\psi(0)=0$) mają wspólne rozwiązanie postaci
 $\psi (s) = -\omega \gamma^2 s$.
 Otrzymana ortonormalna baza~\eqref{Esimple} spełnia 
 prawo transportu~\eqref{FW}.
-\begin{align}\label{PsiSimple}
-\end{align}
+
 \begin{align}\label{Esimple}
 E&=
 \begin{pmatrix}
@@ -137,7 +134,7 @@ R\omega\gamma \cos\omega\gamma^2 s       &
 0 & 0 & 0 & 1 \\
 \end{pmatrix}.
 \end{align}
-Mając odpowiedni reper możemy podać równanie na kąt $\varphi$
+Zapisujemy równanie na kąt $\varphi$
 \begin{align*}\nonumber
 \chi &= \omega \gamma^2 s = - \psi, \quad \alpha = R \omega \gamma^2, \\
 \dot{\varphi} &= \pm \frac{2}{\ell} + \label{phiSimple}

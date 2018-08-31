@@ -7,7 +7,7 @@ hiperpłaszczyzny ruchu tak, że
 $A\cdot e_3 = 0$.
 %Zawsze możemy wybrać bazę $E$ tak, aby powyższy warunek był 
 %spełniony~(zob. dodatek~\ref{e3proof}). 
-Nie jest to zbyt restrykcyjne założenie i pozwala 
+\mbox{Nie jest} to zbyt restrykcyjne założenie i pozwala 
 na zastosowanie modelu w wielu przypadkach.
 Zauważmy, że wtedy wektor~$A$~leży w płaszczyźnie rozpinanej przez 
 wektory~$e_1$~i~$e_2$. Liczymy przyspieszenie właściwe~$\alpha$ i 
@@ -15,7 +15,7 @@ dostajemy
 \begin{align*}
 \alpha^2 = (A\cdot e_1)^2 + (A\cdot e_2)^2.
 \end{align*}
-Interpretując poprzednią równość jako trójkę pitagorejską 
+Interpretując poprzednią równość jako trójkę pitagorejską,
 możemy wprowadzić następujące oznaczenia
 \begin{align*}
 \cos\chi = \frac{A\cdot e_1}{\alpha},\\
@@ -25,14 +25,14 @@ możemy wprowadzić następujące oznaczenia
 Z wersorów $e$ i $e_3$ tworzymy dwa zerowe wektory $k_+$ i $k_-$
 skierowane w przyszłość, 
 które uważamy za wektory własne pewnej transformacji Lorentza. 
-\begin{align}
+\begin{align*}
 k_+ &= \frac{e+e_3}{\sqrt{2}} ,\\
 k_- &= \frac{e-e_3}{\sqrt{2}} ,
-\end{align}
+\end{align*}
 \begin{align*}
 k_+\cdot k_- = 1, \qquad k_\pm\cdot k_\pm  = 0.
 \end{align*}
-Wektory te są wektorami własnymi pewnego obrotu $\mathcal{O}$.
+Te wektory są wektorami własnymi pewnego obrotu $\mathcal{O}$.
 \begin{align*}
 \mathcal{O}( k_\pm ) = \frac{1}{\sqrt{2}} \mathcal{O} 
 (e\pm e_3) =\frac{1}{\sqrt{2}} 
@@ -48,13 +48,13 @@ czyli eliptyczne przekształcenie \begin{wrapfigure}[15]{r}{5cm}
 \caption{Schemat obrazujący obrót~$\mathcal{O}$ wykonany na wersorze 
 przyspieszenia $A/\alpha$ w bazie $E$.}{\label{A_chi_plot}}
 \end{wrapfigure}Lorentza. 
-Obrót ten pozwala nam zinterpretować kąt~$\chi$. 
-Zauważmy, że możemy za pomocą obrotu~$\mathcal{O}$ obrócić, 
-wersor wektora przyspieszenia~o kąt~$-\chi$ 
-tak, aby spełniał prawo transportu~\eqref{FW}. 
+Ten obrót pozwala nam zinterpretować kąt~$\chi$. 
+Zauważmy, że możemy za pomocą obrotu~$\mathcal{O}$ obrócić 
+wersor wektora przyspieszenia~o kąt~$-\chi$,
+tak aby spełniał prawo transportu~\eqref{FW}. 
 Schematycznie przedstawiono to na rysunku~\ref{A_chi_plot}.
 
-Rozważamy trzeci wektor zerowy $k$ skierowany w przyszłość taki, 
+Rozważamy trzeci wektor zerowy $k$ skierowany w przyszłość, taki 
 że $k\cdot e_3 \equiv 0$ oraz $k(0)\cdot e_1(0) =0$.  
 %Z pierwszego warunku wynika że ostatnia współrzędna wektora $k$ 
 %jest zerowa. $e_1(0)=(0,1,0,0)$ co oznacza, że 
@@ -66,18 +66,18 @@ k = k^0 e +  k^i e_i, \qquad k^1(0)=0, k^3 = 0,
 \begin{align*}
 k(0) = k^0(0) e(0) + k^2(0) e_2(0) .
 \end{align*}
-Rozkładając $k$ w bazie $E$ stwierdzamy, że jego współrzędne 
+Rozkładając wektor $k$ w bazie $E$, stwierdzamy, że jego współrzędne 
 formują trójkę pitagorejską 
 \begin{align}
 (k \cdot e)^2 = (k \cdot e_1)^2 +  (k \cdot e_2)^2 .
 \end{align}
-\\
 Kierunek zerowy $k$ odpowiada kierunkowi wskazówki zegara. 
  W przypadku, gdy byłyby 
-dwie wskazówki poruszające się po tym samym okręgu ale w 
-przeciwnych kierunkach moglibyśmy kolejne tyknięcia zegara
+dwie wskazówki poruszające się po tym samym okręgu, ale w 
+przeciwnych kierunkach, moglibyśmy kolejne tyknięcia zegara
 wyznaczyć przez punkty spotkania się wskazówek. 
-Jednak nasz zegar wyposażony jest w jedną wskazówkę i 
+Jednak nasz zegar wyposażony jest w jedną wskazówkę, w wyniku 
+czego
 potrzebujemy kierunku odniesienia, względem którego będziemy 
 mierzyć jego wskazania. Fazę zegara definiujemy względem reperu
 przenoszonego transportem~\eqref{FW}, gdyż taki reper nie 
@@ -86,11 +86,11 @@ fazy zegara względem wersorów bazy.
 Wprowadzamy \textbf{fazę zegara} $\varphi$ 
 równością
 \begin{align}\label{phi_definition}
-\cos\varphi = \frac{k\cdot e_1}{k\cdot e} ,
+\cos\varphi = \frac{k\cdot e_1}{k\cdot e}.
 \end{align}
-\begin{align*}
-k = (k\cdot e) (e -\cos\varphi e_1 - \sin\varphi e_2 ).
-\end{align*}
+%\begin{align*}
+%k = (k\cdot e) (e -\cos\varphi e_1 - \sin\varphi e_2 ).
+%\end{align*}
 %gdzie $k^0=k\cdot e$, $k^1=-k\cdot e_1$, $k^2=-k\cdot e_2$.
 Z wektora $k(0)$ tworzymy wektor zerowy $k_0(s)$ tak, aby spełniał 
 prawo transportu~\eqref{FW}. Będzie on kierunkiem odniesienia 
@@ -99,7 +99,7 @@ bazie~$E$ są stałe. Niech zatem
 $k_0(s) =  \sqrt{2} (e + e_2)$.
 Warunek początkowy na fazę $\varphi$ ustalamy jako
 $\varphi(0)=-\frac{\pi}{2}$. Wtedy dla $s=0$ wektory
-$k$ i $k_0$ reprezentują ten sam kierunek zerowy. 
+$k$ i $k_0$ reprezentują ten \mbox{sam kierunek~zerowy.}
 %Z warunku uzyskujemy równość 
 %\begin{align*}
 %\frac{\d k_0(s)\cdot e }{\d s} = 0.
@@ -132,69 +132,97 @@ $k$ i $k_0$ reprezentują ten sam kierunek zerowy.
 %k_0(s) = e + e_2 =  (1,0,1,0)_Z \tag{k0} \label{eq:k0}
 %\end{align}
 Każdemu kierunkowi zerowemu możemy przyporządkować punkt na sferze,
-a następnie każdemu punktowi sfery możemy przyporządkować,
+a następnie każdemu punktowi sfery \mbox{możemy} przyporządkować,
 przez rzut stereograficzny, 
 punkt z płaszczyzny zespolonej 
-(odpowiednio uzwarconej)~\cite{star1993algebra}.
+(odpowiednio \mbox{uzwarconej)~\cite{star1993algebra}.}
+W ten sposób danemu wektorowi  
+zerowemu $x = (x_0,\ x_1,\ x_2,\ x_3)$ 
+przyporządkowujemy liczbę
+\begin{align*}
+z = \frac{x_1+i x_2 }{x_0 - x_3}.
+\end{align*}
 Mówimy, że wektory zerowe tworzą czwórkę symetryczną,
  kiedy dwustosunek odpowiadających im liczb zespolonych 
  wynosi $e^{\pm i\pi/3}$.  
-Dwustosunek liczb zespolonych $z_0,\ z_1,\ z_2,\ z_3$ przyjmujemy w 
+Dwustosunek liczb zespolonych $z_0,\ z_1,\ z_2$ i $z_3$ przyjmujemy w 
 postaci wyrażonej równością~\eqref{dwustosunek_definicja}~\cite{star1993algebra}.
 Skonstruujemy teraz czwarty wektor zerowy $k_3$, który razem z 
 wektorami $k_+$, $k_0$, $k_-$ utworzy czwórkę symetryczną.
 Liczby zespolone odpowiadające wektorom własnym $k_\nu$ oznaczamy
-przez $\kappa_\nu$, gdzie $\nu \in \{+,\ 0,\ -,\ 3\}$.
-W zależności od kolejności wektorów i 
-przyjętego znaku w wykładniku eksponenty~\eqref{dwustosunek_kappa}
-otrzymujemy dwie liczby $\kappa_3$ różniące się znakiem części 
-rzeczywistej \eqref{kappa3_wynikPM}. 
-\begin{align}\label{dwustosunek_definicja}
+przez $\kappa_\nu$, \mbox{gdzie  $\nu \in \{+,\ 0,\ -,\ 3\}$}. 
+Wykonując rzut stereograficzny,
+możemy wyznaczyć, że
+$ \kappa_0 = i,\ \kappa_+ = 0,\ \kappa_-=\infty $.
+W zależności od kolejności wektorów i~przyjętego 
+znaku w~wykładniku eksponenty~\eqref{dwustosunek_kappa},
+dostajemy dwie liczby $\kappa_3$ różniące się znakiem części 
+rzeczywistej oraz odpowiadające im wektory zerowe 
+$k_3$~\eqref{kappa3_wynikPM}. 
+\begin{gather}\label{dwustosunek_definicja}
+\begin{align}
 (z_0z_1z_2z_3) = 
 \frac{(z_0-z_1)}{(z_0-z_3)} 
 \frac{(z_2-z_3)}{(z_2 -z_1)} .
-\end{align}
-\begin{align}\label{dwustosunek_kappa}
-\kappa_0 = i,\ \kappa_+ = 0,\ \kappa_-=\infty,
-\qquad (\kappa_0\kappa_+\kappa_-\kappa_3),
- = e^{\pm i\pi/3} \\ \label{kappa3_wynikPM}
+\end{align}\\
+\label{dwustosunek_kappa}
+\begin{align}
+(\kappa_0\kappa_+\kappa_-\kappa_3)
+ = e^{\pm i\pi/3}. 
+\end{align} \\  \label{kappa3_wynikPM}
 \kappa_3 =\pm  \frac{\sqrt{3}}{2} + \frac{i}{2}, \qquad
-k_3 = \sqrt{2} e\pm \frac{\sqrt{3}}{\sqrt{2}}e_1+ \frac{1}{\sqrt{2}} e_2 ,
-\end{align}
+k_3 = \sqrt{2} e\pm 
+\frac{\sqrt{3}}{\sqrt{2}}e_1+ \frac{1}{\sqrt{2}} e_2.
+\end{gather}
+W czasoprzestrzeni Minkowskiego dwustosunek 
+jest niezmiennikiem transformacji Lorentza, co 
+pozwala zdefiniować fazę~\cite{Bratek2015wiele}
 \begin{align*}
-k_\mu \cdot k_\nu = 1 , 
-\quad k_\nu \cdot k_\nu = 0,\quad \mu \neq \nu ,\ 
-\mu,\ \nu \in \{0,\ +,\ -,\ 3\}.
-\end{align*} 
-Niech teraz wektorowi zerowemu~$k$ odpowiada 
-liczba $\kappa_\varphi$~\eqref{kappa}.
-Na rysunkach~4a i 4b
+\Phi = i \text{Ln} \left( \kappa_\phi 
+\kappa_+ \kappa_0 \kappa_- \right),
+\end{align*}
+gdzie liczba $\kappa_\varphi = -\cos\varphi - i \sin \varphi$
+odpowiada wektorowi zerowemu~$k$. Wstawiając wartości $\kappa_i$ do
+powyższego wzoru,
+otrzymujemy $\Phi = -\varphi - \pi/2$. Zatem $\varphi$ jest również 
+niezmiennikiem transformacji Lorentza w 
+czasoprzestrzeni Minkowskiego. W~zakrzywionych 
+czasoprzestrzeniach pojawia się problem z mierzeniem fazy pomiędzy 
+różnymi chwilami. W~lokalnych układach odniesienia mierzymy wyłącznie 
+nieskończenie małe przyrosty fazy. Dlatego potrzebujemy odpowiedniego
+przeniesienia wektorów zerowych pomiędzy odległymi chwilami. 
+Możliwe są również zaburzenia w~fazie, spowodowane rotacją 
+lokalnych inercjalnych układów odniesienia~\cite{Bratek2015wiele}.
+To uzasadnia mierzenie fazy $\varphi$ w~odniesieniu do 
+lokalnie nierotującego układu odniesienia i przenoszenie wektorów 
+zerowych za pomocą prawa transportu~\eqref{FW}.
+Na rysunkach~\ref{4aaa}~i~\ref{4bbb}
 widzimy wzajemne położenie 
 uzyskanej czwórki symetrycznej (dla Re$ (\kappa_3) >0$) 
 oraz obrazu wektora $k$. 
-Uzyskane wektory są liniowo niezależne i~tworzą bazę 
+Punkt $\kappa_\varphi$ porusza się po okręgu jednostkowym 
+wraz ze wzrostem $\varphi$. Uzyskane wektory są liniowo niezależne i~tworzą bazę 
 kierunków zerowych, która dodatkowo spełnia 
-prawo transportu~\eqref{FW}.
-\begin{align}\label{kappa}
-\kappa_\varphi = -\cos\varphi - i \sin \varphi .
-\end{align}
-\begin{figure}[h]
+prawo transportu~\eqref{FW} oraz równości
+\begin{align*}
+k_\mu \cdot k_\nu = 1 , 
+\quad k_\nu \cdot k_\nu = 0,\quad \text{dla } \mu \neq \nu ,\ \text{gdzie }
+\mu,\ \nu \in \{0,\ +,\ -,\ 3\}.
+\end{align*} 
+\begin{figure}[h]\vspace{-0.5cm}
 \begin{minipage}[b]{.5\linewidth}
 \centering
-\includegraphics[scale=0.62]{dwustosunek_sfera.eps}
-\subcaption{}
-\end{minipage}%
+\includegraphics[scale=0.58]{dwustosunek_sfera.eps}
+\subcaption{}\label{4aaa}
+\end{minipage}
 \begin{minipage}[b]{.5\linewidth}
 \centering
-\includegraphics[scale=0.8]{dwustosunek_plaszczyzna.eps}
-\subcaption{}
+\includegraphics[scale=0.70]{dwustosunek_plaszczyzna.eps}
+\subcaption{}\label{4bbb}
 \end{minipage}
 \caption{Obraz czwórki symetrycznej oraz kierunku $k$ na płaszczyźnie 
-zespolonej~(a) oraz na sferze jednostkowej~(b).
-Punkt $\kappa_\varphi$ porusza się po zaznaczonym okręgu jednostkowym 
-wraz ze wzrostem $\varphi$. Wektorem stycznym do okręgu zaznaczono 
+zespolonej~(a) oraz na sferze jednostkowej~(b). 
+Wektorem stycznym do okręgu zaznaczono 
 kierunek ruchu.}
 \label{dwustosunek_plaszczyzna}
 \end{figure}
-\\
-

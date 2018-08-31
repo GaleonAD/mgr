@@ -3,9 +3,6 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \newpage
 \section{Analiza równania fazy zegara}
-W tym rozdziale przeprowadzimy analizę równania na fazę zegara.
-Najbardziej interesującym nas parametrem jest przyspieszenie właściwe.
-
 \subsection{Zegar w przypadku stałego przyspieszenia.}
 Jeśli założymy stałe przyspieszenie właściwe~$\alpha$, to wektor 
 przyspieszenia $A$ będzie zależeć od parametru~$\chi$.
@@ -43,66 +40,70 @@ postaci
 \varphi = \pm \frac{2}{\ell} s + const.
 \end{align}
 Zakładając warunek początkowy $\varphi(0) = -\pi/2$
- możemy wyznaczyć stałą całkowania~$s_0$.
+ możemy wyznaczyć stałą całkowania
 \begin{align*}
 s_0 & = \frac{2}{BC} \text{arctg}  
 \left( - \frac{1}{C}\text{tg} (q/2 + \pi/4) +\frac{\alpha}{BC} \right).
 \end{align*}
-
-\newpage
 \subsection{Rozwiązanie przybliżone.}
 Interesuje nas jak zegar zachowuje się dla małych przyspieszeń. 
 W tym celu rozwiążemy równanie~\eqref{phi_equation} stosując 
 rachunek zaburzeń ze względu na 
 parametr~$\alpha$. Zapisujemy~$\phi$ oraz~$\chi$ w postaci
-szeregów~\eqref{phiszereg}~\eqref{chiszereg}. 
-Następnie w~równaniu~\eqref{phi_equation} rozwijamy sinus 
-w szereg~\eqref{phi_equation_sin_szereg}. 
-\begin{align}\label{phiszereg}
+szeregów %~\eqref{phiszereg}~\eqref{chiszereg}. 
+\begin{align}\nonumber %\label{phiszereg}
 \varphi = \sum_{n=0}^{\infty} \alpha^n \varphi_n, \\
-\chi = \sum_{n=0}^{\infty} \alpha^n \chi_n , \label{chiszereg}
+\chi = \sum_{n=0}^{\infty} \alpha^n \chi_n , \nonumber %\label{chiszereg}
 \end{align}
-\begin{align}\label{phi_equation_sin_szereg}
+Następnie w~równaniu~\eqref{phi_equation} rozwijamy sinus 
+w szereg %~\eqref{phi_equation_sin_szereg}. 
+\begin{align}\nonumber %\label{phi_equation_sin_szereg}
 \dot{\varphi} \mp \frac{2}{\ell} - \alpha
 \sum_{n=0}^{\infty} (-1)^n 
 \frac{(\varphi-\chi)^{2n+1}}{(2n+1)!} =0.
 \end{align}
+\newpage
 Wstawiamy 
 rozwinięcia~$\varphi$~i~$\chi$ do uzyskanego równania i porządkujemy wyrazy
 ze względu na~$\alpha$ z dokładnością do~$O(\alpha^2)$.
- Otrzymujemy równania~\eqref{phi_szereg_rownania}, których 
-rozwiązania są postaci~\eqref{phi_szereg_rozwiazania}.
-
-\begin{align}\label{phi_szereg_rownania}
+ Otrzymujemy układ równań %równania~\eqref{phi_szereg_rownania}, których 
+%rozwiązania są postaci~\eqref{phi_szereg_rozwiazania}.
+\begin{align*}%\label{phi_szereg_rownania}
 \left\{ 
 \begin{aligned}
 \dot{\varphi_0} & = \pm \frac{2}{\ell} , &\quad & 
 \varphi_0(0)=-\frac{\pi}{2},\\
 \dot{\varphi_1} & = \sin (\varphi_0 - \chi_0  ), &\quad & 
-\varphi_1(0) = 0 .
+\varphi_1(0) = 0 ,
 \end{aligned}
 \right.
-\end{align}
-\begin{align}\label{phi_szereg_rozwiazania}
+\end{align*}
+z którego wyznaczamy następujące rozwiązania
+\begin{align*}%\label{phi_szereg_rozwiazania}
 \left\{ 
 \begin{aligned}
 \varphi_0 & =  \pm \frac{2}{\ell}s - \frac{\pi}{2},\\
 \varphi_1 & =  -\alpha \int_0^s \cos 
-(\pm 2 s_1 / \ell  - \chi_0(s_1)  ) \d s_1 .
+\left( \pm \frac{2 s_1}{ \ell}  - \chi_0(s_1)  \right) \d s_1 .
 \end{aligned}
 \right.
-\end{align}
+\end{align*}
 Ostatecznie szukane przez nas rozwiązanie przybliżone ma 
 postać
 \begin{align}\label{phi_szereg_rozwiazanie}
 \varphi =  \pm \frac{2}{\ell}s - \frac{\pi}{2} 
--\alpha  \int_0^s \cos (\pm 2 s_1 / \ell  - \chi_0(s_1)  ) \d s_1 
+-\alpha  \int_0^s \cos \left( \pm \frac{2 s_1}{ \ell} 
+ - \chi_0(s_1)  \right) \d s_1 
 +O(\alpha^2).
 \end{align}
 Z rozwiązania przybliżonego wiemy, 
 że dla małych przyspieszeń nasz model zegara dobrze 
-mierzy czas własny~$s$. Przyspieszenie charakterystyczne, dla 
-którego efekt powinien mieć istotny wpływ to
-$\alpha_c = \frac{2}{\ell}$.
-Wpływ zaburzenia~$\varphi_1$ na działanie zegara jest 
-rzędu~$\epsilon = \frac{\alpha}{\alpha_c}.$
+mierzy czas własny~$s$. 
+Przyspieszenie charakterystyczne, przy którym poprawki pierwszego rzędu 
+zaczynają mieć istotny wpływ na działanie zegara, wynosi
+%Przyspieszenie charakterystyczne, czyli takie
+%dla którego istnienie przyspieszenia
+% zaczyna mieć istotny wpływ na działanie zegara, wynosi
+$\alpha_c = \frac{2}{\ell}$. 
+Dla małych przyspieszeń rząd wielkości poprawki szacujemy 
+przez~$\epsilon = \frac{\alpha}{\alpha_c}.$

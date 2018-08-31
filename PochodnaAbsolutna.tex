@@ -62,33 +62,20 @@ transformują się według reguły
 \end{align*} 
 oraz określają one całkowicie koneksję afiniczną.
 W ogólnej teorii względności 
-zakłada się, że koneksja jest
-\begin{enumerate}
-    \item zgodna z metryką ($\nabla g =0$),
-    \item beztorsyjna ($\Gamma^\mu_{\nu\sigma} 
+zakłada się, że koneksja jest zgodna z metryką ($\nabla g =0$) oraz
+ beztorsyjna ($\Gamma^\mu_{\nu\sigma} 
         = \Gamma^\mu_{\sigma\nu}$).
-\end{enumerate} 
 Wtedy koneksja jest jednoznacznie określona i nazywamy ją
- koneksją Leviego-Civity. Wówczas możemy utożsamić pojęcie 
- geodezyjnej powstałej z transportu równoległego wektora stycznego 
- oraz ekstremalnej krzywej łączącej dwa różne punkty.
- Współczynniki koneksji 
-$\Gamma^\mu_{\nu\sigma}$ nazywamy są symbolami Christoffela
-i możemy wyznaczyć z równości
-\begin{align*}
-\Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
-\left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
-\frac{\partial g_{\rho\sigma}}{\partial x^\nu}-
-\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right).
-\end{align*}
+ koneksją Leviego-Civity. 
 \end{definition}
 \begin{definition}
-Pochodną kowariantną wektora $v$ w kierunku wektora prędkości
-$y'$ krzywej $y$ w parametrze $\tau$ nazywamy
-pochodną absolutną wektora $v$ i oznaczamy 
+Pochodną absolutną wektora $v$ nazywamy
+pochodną kowariantną wektora $v$ w kierunku wektora prędkości
+$y'$ krzywej $y$ w parametrze $\tau$ 
+ i oznaczamy 
 \begin{align*}
 \frac{\D v^\mu }{\d \tau } = \frac{\d v^\mu}{\d \tau}
-+ \Gamma^\mu_{\nu\rho} v^\nu u^\rho.
++ \Gamma^\mu_{\nu\sigma} v^\nu y'^\sigma.
 \end{align*}
 \end{definition}\noindent
 Pochodną absolutną wektora $v$ wzdłuż krzywej $y$
@@ -108,6 +95,19 @@ krzywą $y$, dla której
 \end{align*} 
 gdzie $b=0$, gdy $\tau$ jest parametrem afinicznym.
 \end{definition}
+Koneksja Leviego-Civity pozwala utożsamić pojęcia linii
+ geodezyjnej powstałej z transportu równoległego wektora stycznego 
+ oraz ekstremalnej krzywej łączącej dwa różne punkty.
+ Wtedy współczynniki koneksji 
+$\Gamma^\mu_{\nu\sigma}$ nazywamy symbolami Christoffela
+i możemy wyznaczyć z równości
+\begin{align*}
+\Gamma^\mu_{\nu\sigma} = \frac{1}{2} g^{\mu\rho} 
+\left(\frac{\partial g_{\rho\nu}}{\partial x^\sigma}+ 
+\frac{\partial g_{\rho\sigma}}{\partial x^\nu}-
+\frac{\partial g_{\nu\sigma}}{\partial x^\rho}\right).
+\end{align*}
+
 W dalszej części pracy przez $u$ oraz $A$ będziemy oznaczać
 prędkość oraz przyspieszenie definiowane jak następuje
 \begin{align*}

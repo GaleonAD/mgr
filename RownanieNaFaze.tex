@@ -2,27 +2,28 @@
 % Rownanie na faze
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Konstrukcja zegara.}
-\begin{wrapfigure}[17]{r}{4cm}
-\includegraphics[scale=0.5]{clock.eps}
-\caption{Schematyczny rysunek obrazujący działania zegara.}
+\begin{wrapfigure}[15]{r}{4cm}
+\raisebox{0pt}[\dimexpr\height-0.6\baselineskip\relax]{
+\includegraphics[scale=0.5]{clock.eps}}
+\caption{Schematyczny rysunek obrazujący działanie zegara.}
 \label{clock_schemat}
 \end{wrapfigure}
-Zakładamy, że podczas ruchu mamy spełniony więz~\eqref{wiez}.
+Zakładamy, że podczas ruchu mamy spełniony więz~\eqref{wiez}
 oraz że wektor zerowy $\dot{x}$ można przedstawić
-jako kombinację liniową $e$ oraz $k$.
+jako kombinację liniową wektorów $e$ i $k$.
 Ostatnie założenie opieramy na równości~\eqref{r123} w cechowaniu 
 $e\cdot \dot{x} = 1$.
-Rozkładając $\dot{x}$ w bazie $E$ dostajemy
+Rozkładając $\dot{x}$ w bazie $E$, dostajemy
 \begin{align*}
 \dot{x} = e - C (k\cdot e_1) e_1 - C (k\cdot e_2)e_2.
 \end{align*}
-Korzystając z faktu, że $\dot{x}$ jest zerowy możemy wyznaczyć
+Korzystając z faktu, że $\dot{x}$ jest zerowy, możemy wyznaczyć
 współczynniki kombinacji liniowej.
-\begin{align*}
+\begin{gather*}
 0 = \dot{x} \cdot \dot{x} = 1 - C^2 (k\cdot e_1)^2 - C^2 (k\cdot e_2)^2
 = 1 - C^2 (k\cdot e)^2, \\
 C= \pm 1/(k\cdot e).
-\end{align*}
+\end{gather*}
 Wybieramy znak ujemny, gdyż w przeciwnym przypadku
 $\dot{x}\cdot k = 0$, co jest sprzeczne z~więzem~\eqref{wiezD}.
  Zatem
@@ -31,7 +32,7 @@ $\dot{x}\cdot k = 0$, co jest sprzeczne z~więzem~\eqref{wiezD}.
 e + \cos \varphi e_1 + \sin\varphi e_2
 ,\quad \dot{x}\cdot k = 2 k \cdot e .
 \end{align}
-Następnie obliczamy pochodną absolutną wektora $k$
+Wyznaczamy pochodną absolutną wektora $k$ i jej kwadrat
 \begin{align*}
 \dot{k} =\underbrace{ \frac{\d (k\cdot e)}{\d s} e - 
 \frac{\d (k\cdot e_1)}{\d s}e_1 -
@@ -44,7 +45,7 @@ Następnie obliczamy pochodną absolutną wektora $k$
 \end{align*}
 
 Obliczamy oddzielnie każdy ze składników powyższej sumy.
-Zaczniemy od przedstawienia pochodnych wersorów bazy w bardziej
+W tym celu przedstawimy pochodne wersorów bazy w bardziej
 użytecznej postaci 
 \begin{align*}
 \dot{e}= \frac{\D e}{\d s} = A,
@@ -70,11 +71,9 @@ użytecznej postaci
 
 Zgodnie z powyższym zachodzą równości
 \begin{align*}
-K= (k\cdot e) (A + \left(A\cdot e_1\right)\cos\varphi\ e+ 
-\left(A\cdot e_2\right)\sin\varphi\ e ),
-\end{align*}
-\begin{align*}
-K_p= (k\cdot e) \dot{\varphi} ( \sin\varphi\ e_1 - \cos\varphi\ e_2  ) + 
+K &= (k\cdot e) (A + \left(A\cdot e_1\right)\cos\varphi\ e+ 
+\left(A\cdot e_2\right)\sin\varphi\ e ), \\
+K_p &= (k\cdot e) \dot{\varphi} ( \sin\varphi\ e_1 - \cos\varphi\ e_2  ) + 
 \frac{\d(k\cdot e)}{\d s} (e-\cos\varphi\ e_1 - \sin\varphi\ e_2) ,
 \end{align*}
 
@@ -110,13 +109,15 @@ K\cdot K &= (k\cdot e)^2 ( (A\cdot A ) +( \left(A\cdot e_1\right)\cos\varphi+
     \\   &=- (k\cdot e)^2\left( (A\cdot e_1) \sin\varphi -
                     (A\cdot e_2) \cos\varphi \right)^2 .
 \end{align*}
-Sumę powyższych składników możemy zwinąć do kwadratu 
+\noindent
+Sumę obliczonych składników zwijamy do kwadratu 
+i wstawiamy do równości~\eqref{wiez}
 \begin{align*}
 1 = -\frac{\ell^2\dot{k}\cdot \dot{k}}{(k\cdot \dot{x})^2}  =
 \frac{\ell^2}{4} 
 ( \dot{\varphi} -(A\cdot e_1) \sin\varphi +(A\cdot e_2) \cos\varphi )^2 
 \end{align*}
-i wyznaczamy
+oraz wyznaczamy
 \begin{align*}
 \dot{\varphi} = \pm \frac{2}{\ell} +
 (A\cdot e_1) \sin\varphi - (A\cdot e_2) \cos\varphi .
